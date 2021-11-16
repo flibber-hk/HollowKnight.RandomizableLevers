@@ -1,0 +1,317 @@
+[
+  {
+    "key": "LEVER_SHOP_DESC",
+    "sheet": "UI",
+    "text": "Pull the lever, Kronk!"
+  },
+  {
+    "key": "LEVERNAME.Switch-Dirtmouth_Stag",
+    "sheet": "UI",
+    "text": "Dirtmouth Station Door"
+  },
+  {
+    "key": "LEVERNAME.Switch-Outside_Ancestral_Mound",
+    "sheet": "UI",
+    "text": "Shaman Mound Pillar"
+  },
+  {
+    "key": "LEVERNAME.Switch-Greenpath_Stag",
+    "sheet": "UI",
+    "text": "Greenpath Stag Gate"
+  },
+  {
+    "key": "LEVERNAME.Switch-Lower_Resting_Grounds",
+    "sheet": "UI",
+    "text": "Resting Grounds Floor"
+  },
+  {
+    "key": "LEVERNAME.Switch-Petra_Arena",
+    "sheet": "UI",
+    "text": "Petra Arena Gate"
+  },
+  {
+    "key": "LEVERNAME.Switch-Queen's_Gardens_Stag",
+    "sheet": "UI",
+    "text": "QG Stag Door"
+  },
+  {
+    "key": "LEVERNAME.Switch-Crossroads_East",
+    "sheet": "UI",
+    "text": "East Crossroads Gate"
+  },
+  {
+    "key": "LEVERNAME.Lever-Dung_Defender",
+    "sheet": "UI",
+    "text": "Waterways Acid Pool"
+  },
+  {
+    "key": "LEVERNAME.Lever-Waterways_Hwurmp_Arena",
+    "sheet": "UI",
+    "text": "Waterways Exit Gate"
+  },
+  {
+    "key": "LEVERNAME.Lever-Queen's_Station_Mask_Shard",
+    "sheet": "UI",
+    "text": "QS Mask Gauntlet Exit"
+  },
+  {
+    "key": "LEVERNAME.Lever-Queen's_Gardens_Ground_Block",
+    "sheet": "UI",
+    "text": "QG Ground Block"
+  },
+  {
+    "key": "LEVERNAME.Lever-Below_Overgrown_Mound",
+    "sheet": "UI",
+    "text": "Overgrown Mound Gate"
+  },
+  {
+    "key": "LEVERNAME.Lever-Tower_of_Love",
+    "sheet": "UI",
+    "text": "Tower of Love Exit"
+  },
+  {
+    "key": "LEVERNAME.Lever-Resting_Grounds_Stag",
+    "sheet": "UI",
+    "text": "RG Stag Lever"
+  },
+  {
+    "key": "LEVERNAME.Lever-Abyss_Lighthouse",
+    "sheet": "UI",
+    "text": "Abyss Lighthouse"
+  },
+  {
+    "key": "LEVERNAME.Lever-Failed_Tramway_Right",
+    "sheet": "UI",
+    "text": "Tramway Lower Gate"
+  },
+  {
+    "key": "LEVERNAME.Lever-Failed_Tramway_Left",
+    "sheet": "UI",
+    "text": "Tramway Exit Gates"
+  },
+  {
+    "key": "LEVERNAME.Lever-Below_Spell_Twister",
+    "sheet": "UI",
+    "text": "Gate Below Spell Twister"
+  },
+  {
+    "key": "LEVERNAME.Lever-Sanctum_East",
+    "sheet": "UI",
+    "text": "East Sanctum Gate"
+  },
+  {
+    "key": "LEVERNAME.Lever-Sanctum_Soul_Warrior",
+    "sheet": "UI",
+    "text": "Soul Warrior 1 Arena Gate"
+  },
+  {
+    "key": "LEVERNAME.Lever-Sanctum_Bottom",
+    "sheet": "UI",
+    "text": "Lower Sanctum Gate"
+  },
+  {
+    "key": "LEVERNAME.Lever-Sanctum_West_Upper",
+    "sheet": "UI",
+    "text": "West Sanctum Upper Gate"
+  },
+  {
+    "key": "LEVERNAME.Lever-Sanctum_West_Lower",
+    "sheet": "UI",
+    "text": "West Sanctum Lower Gate"
+  },
+  {
+    "key": "LEVERNAME.Lever-City_Fountain",
+    "sheet": "UI",
+    "text": "City Fountain Gate"
+  },
+  {
+    "key": "LEVERNAME.Lever-City_Spire_Sentry_Lower",
+    "sheet": "UI",
+    "text": "Spire Lower Gate"
+  },
+  {
+    "key": "LEVERNAME.Lever-City_Spire_Sentry_Upper",
+    "sheet": "UI",
+    "text": "Spire Upper Gate"
+  },
+  {
+    "key": "LEVERNAME.Lever-City_Bridge_Above_Fountain",
+    "sheet": "UI",
+    "text": "Spire Bridge Gate"
+  },
+  {
+    "key": "LEVERNAME.Lever-City_Storerooms",
+    "sheet": "UI",
+    "text": "City Storerooms Gate"
+  },
+  {
+    "key": "LEVERNAME.Lever-City_Lemm",
+    "sheet": "UI",
+    "text": "Gate Opposite Lemm"
+  },
+  {
+    "key": "LEVERNAME.Lever-City_Above_Lemm_Right",
+    "sheet": "UI",
+    "text": "Single Gate Above Lemm"
+  },
+  {
+    "key": "LEVERNAME.Lever-City_Above_Lemm_Left",
+    "sheet": "UI",
+    "text": "Triple Gate Above Lemm"
+  },
+  {
+    "key": "LEVERNAME.Lever-City_Above_Lemm_Upper",
+    "sheet": "UI",
+    "text": "City Gate Opposite Grub"
+  },
+  {
+    "key": "LEVERNAME.Lever-Shade_Soul_Exit",
+    "sheet": "UI",
+    "text": "Shade Soul Exit Gate"
+  },
+  {
+    "key": "LEVERNAME.Lever-Emilitia",
+    "sheet": "UI",
+    "text": "Emilitia Door"
+  },
+  {
+    "key": "LEVERNAME.Lever-Mantis_Lords_Top_Left",
+    "sheet": "UI",
+    "text": "Mantis Lords Top Left"
+  },
+  {
+    "key": "LEVERNAME.Lever-Mantis_Lords_Middle_Left",
+    "sheet": "UI",
+    "text": "Mantis Lords Middle Left"
+  },
+  {
+    "key": "LEVERNAME.Lever-Mantis_Lords_Bottom_Left",
+    "sheet": "UI",
+    "text": "Mantis Lords Bottom Left"
+  },
+  {
+    "key": "LEVERNAME.Lever-Mantis_Lords_Middle_Right",
+    "sheet": "UI",
+    "text": "Mantis Lords Middle Right"
+  },
+  {
+    "key": "LEVERNAME.Lever-Mantis_Lords_Bottom_Right",
+    "sheet": "UI",
+    "text": "Mantis Lords Bottom Right"
+  },
+  {
+    "key": "LEVERNAME.Lever-Mantis_Claw",
+    "sheet": "UI",
+    "text": "Mantis Claw Access"
+  },
+  {
+    "key": "LEVERNAME.Lever-Mantis_Lords_Access",
+    "sheet": "UI",
+    "text": "Mantis Lords Access"
+  },
+  {
+    "key": "LEVERNAME.Lever-Fungal_Wastes_Thorns_Gauntlet",
+    "sheet": "UI",
+    "text": "Fungal Thorns Gauntlet Exit"
+  },
+  {
+    "key": "LEVERNAME.Lever-Fungal_Wastes_Below_Shrumal_Ogres",
+    "sheet": "UI",
+    "text": "Gate Below Shrumal Ogres"
+  },
+  {
+    "key": "LEVERNAME.Lever-Fungal_Wastes_Bouncy_Grub",
+    "sheet": "UI",
+    "text": "Fungal Bouncy Grub Gate"
+  },
+  {
+    "key": "LEVERNAME.Lever-Dirtmouth_Elevator",
+    "sheet": "UI",
+    "text": "Dirtmouth Elevator"
+  },
+  {
+    "key": "LEVERNAME.Lever-Crystal_Peak_Tall_Room_Upper",
+    "sheet": "UI",
+    "text": "Peaks Tall Room Upper"
+  },
+  {
+    "key": "LEVERNAME.Lever-Crystal_Peak_Tall_Room_Middle",
+    "sheet": "UI",
+    "text": "Peaks Tall Room Middle"
+  },
+  {
+    "key": "LEVERNAME.Lever-Crystal_Peak_Tall_Room_Lower",
+    "sheet": "UI",
+    "text": "Peaks Tall Room Lower"
+  },
+  {
+    "key": "LEVERNAME.Lever-Crystal_Peak_Spike_Grub",
+    "sheet": "UI",
+    "text": "Peaks Spike Grub Gate"
+  },
+  {
+    "key": "LEVERNAME.Lever-Crystal_Peak_Below_Chest",
+    "sheet": "UI",
+    "text": "Peaks Gate Below Chest"
+  },
+  {
+    "key": "LEVERNAME.Lever-Crystal_Peak_Above_Chest",
+    "sheet": "UI",
+    "text": "Peaks Gate Above Chest"
+  },
+  {
+    "key": "LEVERNAME.Lever-Crystal_Peak_Crushers_Grub",
+    "sheet": "UI",
+    "text": "Peaks Upper Crushers"
+  },
+  {
+    "key": "LEVERNAME.Lever-Crystal_Peak_Crushers_Chest",
+    "sheet": "UI",
+    "text": "Peaks Lower Crushers"
+  },
+  {
+    "key": "LEVERNAME.Lever-Palace_Atrium",
+    "sheet": "UI",
+    "text": "Palace Atrium Gate"
+  },
+  {
+    "key": "LEVERNAME.Lever-Palace_Right",
+    "sheet": "UI",
+    "text": "Palace Right Gates"
+  },
+  {
+    "key": "LEVERNAME.Lever-Palace_Final",
+    "sheet": "UI",
+    "text": "Palace Final Gates"
+  },
+  {
+    "key": "LEVERNAME.Lever-Path_of_Pain",
+    "sheet": "UI",
+    "text": "Path of Pain Gate"
+  },
+  {
+    "key": "LEVERNAME.Lever-Palace_Entrance_Orb",
+    "sheet": "UI",
+    "text": "Palace Entrance Orb"
+  },
+  {
+    "key": "LEVERNAME.Lever-Palace_Left_Orb",
+    "sheet": "UI",
+    "text": "Palace Left Orb"
+  },
+  {
+    "key": "LEVERNAME.Lever-Palace_Right_Orb",
+    "sheet": "UI",
+    "text": "Palace Right Orb"
+  },
+  {
+    "key": "LEVERNAME.Lever-Pilgrim's_Way_Left",
+    "sheet": "UI",
+    "text": "Left Pilgrim's Way Bridge"
+  },
+  {
+    "key": "LEVERNAME.Lever-Pilgrim's_Way_Right",
+    "sheet": "UI",
+    "text": "Right Pilgrim's Way Bridge"
+  }
+]

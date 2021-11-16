@@ -1,0 +1,1902 @@
+{
+  "Switch-Dirtmouth_Stag": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [
+      {
+        "$type": "ItemChanger.PDBool, ItemChanger",
+        "boolName": "openedTownBuilding"
+      }
+    ],
+    "targets": [
+      "Station Door"
+    ],
+    "sceneName": "Room_Town_Stag_Station",
+    "leverType": "Switch",
+    "name": "Switch-Dirtmouth_Stag",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Switch-Dirtmouth_Stag"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.Switch"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Switch-Outside_Ancestral_Mound": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [
+      {
+        "$type": "ItemChanger.PDBool, ItemChanger",
+        "boolName": "shamanPillar"
+      },
+      {
+        "$type": "ItemChanger.SDBool, ItemChanger",
+        "id": "Raising Pillar",
+        "sceneName": "Crossroads_06",
+        "semiPersistent": false
+      }
+    ],
+    "targets": [
+      "Raising Pillar"
+    ],
+    "sceneName": "Crossroads_06",
+    "leverType": "Switch",
+    "name": "Switch-Outside_Ancestral_Mound",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Switch-Outside_Ancestral_Mound"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.Switch"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Switch-Greenpath_Stag": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Metal Gate"
+    ],
+    "sceneName": "Fungus1_22",
+    "leverType": "Switch",
+    "name": "Switch-Greenpath_Stag",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Switch-Greenpath_Stag"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.Switch"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Switch-Lower_Resting_Grounds": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [
+      {
+        "$type": "ItemChanger.PDBool, ItemChanger",
+        "boolName": "openedRestingGrounds02"
+      },
+      {
+        "$type": "ItemChanger.SDBool, ItemChanger",
+        "id": "Resting Grounds Slide Floor",
+        "sceneName": "RestingGrounds_06",
+        "semiPersistent": false
+      }
+    ],
+    "targets": [
+      "Resting Grounds Slide Floor"
+    ],
+    "sceneName": "RestingGrounds_06",
+    "leverType": "Switch",
+    "name": "Switch-Lower_Resting_Grounds",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Switch-Lower_Resting_Grounds"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.Switch"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Switch-Petra_Arena": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Metal Gate v2"
+    ],
+    "sceneName": "Fungus3_05",
+    "leverType": "Switch",
+    "name": "Switch-Petra_Arena",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Switch-Petra_Arena"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.Switch"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Switch-Queen's_Gardens_Stag": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [
+      {
+        "$type": "ItemChanger.PDBool, ItemChanger",
+        "boolName": "openedGardensStagStation"
+      }
+    ],
+    "targets": [
+      "royal_garden_slide_door (1)"
+    ],
+    "sceneName": "Fungus3_40",
+    "leverType": "Switch",
+    "name": "Switch-Queen's_Gardens_Stag",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Switch-Queen's_Gardens_Stag"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.Switch"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Switch-Crossroads_East": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Toll Gate",
+      "Toll Gate 1"
+    ],
+    "sceneName": "Crossroads_03",
+    "leverType": "TollSwitch",
+    "name": "Switch-Crossroads_East",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Switch-Crossroads_East"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.Switch"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Dung_Defender": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [
+      {
+        "$type": "ItemChanger.PDBool, ItemChanger",
+        "boolName": "waterwaysAcidDrained"
+      }
+    ],
+    "targets": [
+      "Waterways_tank_anim"
+    ],
+    "sceneName": "Waterways_05",
+    "leverType": "WaterwaysCrank",
+    "name": "Lever-Dung_Defender",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Dung_Defender"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.Crank"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Waterways_Hwurmp_Arena": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [
+      {
+        "$type": "ItemChanger.PDBool, ItemChanger",
+        "boolName": "waterwaysGate"
+      }
+    ],
+    "targets": [
+      "Waterways Gate"
+    ],
+    "sceneName": "Waterways_09",
+    "leverType": "Ruins",
+    "name": "Lever-Waterways_Hwurmp_Arena",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Waterways_Hwurmp_Arena"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Queen's_Station_Mask_Shard": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate Iron"
+    ],
+    "sceneName": "Fungus2_01",
+    "leverType": "Ruins",
+    "name": "Lever-Queen's_Station_Mask_Shard",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Queen's_Station_Mask_Shard"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Queen's_Gardens_Ground_Block": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [
+      {
+        "$type": "ItemChanger.SDBool, ItemChanger",
+        "id": "Garden Slide Floor",
+        "sceneName": "Fungus3_04",
+        "semiPersistent": false
+      }
+    ],
+    "targets": [
+      "Garden Slide Floor"
+    ],
+    "sceneName": "Fungus3_04",
+    "leverType": "Ruins",
+    "name": "Lever-Queen's_Gardens_Ground_Block",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Queen's_Gardens_Ground_Block"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Below_Overgrown_Mound": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Metal Gate v2"
+    ],
+    "sceneName": "Fungus3_44",
+    "leverType": "Ruins",
+    "name": "Lever-Below_Overgrown_Mound",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Below_Overgrown_Mound"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Tower_of_Love": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate",
+      "Ruins Gate (1)"
+    ],
+    "sceneName": "Ruins2_11_b",
+    "leverType": "Ruins",
+    "name": "Lever-Tower_of_Love",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Tower_of_Love"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Resting_Grounds_Stag": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [
+      {
+        "$type": "ItemChanger.PDBool, ItemChanger",
+        "boolName": "openedRestingGrounds"
+      }
+    ],
+    "targets": [
+      "Station Bell Lever"
+    ],
+    "sceneName": "RestingGrounds_09",
+    "leverType": "Ruins",
+    "name": "Lever-Resting_Grounds_Stag",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Resting_Grounds_Stag"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Abyss_Lighthouse": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [
+      {
+        "$type": "ItemChanger.PDBool, ItemChanger",
+        "boolName": "abyssLighthouse"
+      }
+    ],
+    "targets": [
+      "Light Control"
+    ],
+    "sceneName": "Abyss_Lighthouse_room",
+    "leverType": "Ruins",
+    "name": "Lever-Abyss_Lighthouse",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Abyss_Lighthouse"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Failed_Tramway_Right": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate Iron"
+    ],
+    "sceneName": "Deepnest_26",
+    "leverType": "Ruins",
+    "name": "Lever-Failed_Tramway_Right",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Failed_Tramway_Right"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Failed_Tramway_Left": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [
+      {
+        "$type": "ItemChanger.PDBool, ItemChanger",
+        "boolName": "deepnest26b_switch"
+      }
+    ],
+    "targets": [
+      "Toll Gate"
+    ],
+    "sceneName": "Deepnest_26b",
+    "leverType": "Ruins",
+    "name": "Lever-Failed_Tramway_Left",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Failed_Tramway_Left"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Below_Spell_Twister": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate"
+    ],
+    "sceneName": "Ruins1_30",
+    "leverType": "Ruins",
+    "name": "Lever-Below_Spell_Twister",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Below_Spell_Twister"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Sanctum_East": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate"
+    ],
+    "sceneName": "Ruins1_25",
+    "leverType": "Ruins",
+    "name": "Lever-Sanctum_East",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Sanctum_East"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Sanctum_Soul_Warrior": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate Iron"
+    ],
+    "sceneName": "Ruins1_23",
+    "leverType": "Ruins",
+    "name": "Lever-Sanctum_Soul_Warrior",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Sanctum_Soul_Warrior"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Sanctum_Bottom": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate"
+    ],
+    "sceneName": "Ruins1_23",
+    "leverType": "Ruins",
+    "name": "Lever-Sanctum_Bottom",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Sanctum_Bottom"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Sanctum_West_Upper": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate"
+    ],
+    "sceneName": "Ruins1_32",
+    "leverType": "Ruins",
+    "name": "Lever-Sanctum_West_Upper",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Sanctum_West_Upper"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Sanctum_West_Lower": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate 2"
+    ],
+    "sceneName": "Ruins1_32",
+    "leverType": "Ruins",
+    "name": "Lever-Sanctum_West_Lower",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Sanctum_West_Lower"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-City_Fountain": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate"
+    ],
+    "sceneName": "Ruins1_27",
+    "leverType": "Ruins",
+    "name": "Lever-City_Fountain",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-City_Fountain"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-City_Spire_Sentry_Lower": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate 1"
+    ],
+    "sceneName": "Ruins2_01",
+    "leverType": "Ruins",
+    "name": "Lever-City_Spire_Sentry_Lower",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-City_Spire_Sentry_Lower"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-City_Spire_Sentry_Upper": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [
+      {
+        "$type": "ItemChanger.SDBool, ItemChanger",
+        "id": "Secret Mask",
+        "sceneName": "Ruins2_01",
+        "semiPersistent": false
+      }
+    ],
+    "targets": [
+      "Ruins Gate 2"
+    ],
+    "sceneName": "Ruins2_01",
+    "leverType": "Ruins",
+    "name": "Lever-City_Spire_Sentry_Upper",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-City_Spire_Sentry_Upper"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-City_Bridge_Above_Fountain": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate"
+    ],
+    "sceneName": "Ruins1_18",
+    "leverType": "Ruins",
+    "name": "Lever-City_Bridge_Above_Fountain",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-City_Bridge_Above_Fountain"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-City_Storerooms": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate"
+    ],
+    "sceneName": "Ruins1_17",
+    "leverType": "Ruins",
+    "name": "Lever-City_Storerooms",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-City_Storerooms"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-City_Lemm": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate 1"
+    ],
+    "sceneName": "Ruins1_05b",
+    "leverType": "Ruins",
+    "name": "Lever-City_Lemm",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-City_Lemm"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-City_Above_Lemm_Right": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate 2"
+    ],
+    "sceneName": "Ruins1_05c",
+    "leverType": "Ruins",
+    "name": "Lever-City_Above_Lemm_Right",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-City_Above_Lemm_Right"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-City_Above_Lemm_Left": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [
+      {
+        "$type": "ItemChanger.PDBool, ItemChanger",
+        "boolName": "ruins1_5_tripleDoor"
+      }
+    ],
+    "targets": [
+      "Ruins Gate 3a",
+      "Ruins Gate 3b",
+      "Ruins Gate 3c"
+    ],
+    "sceneName": "Ruins1_05c",
+    "leverType": "Ruins",
+    "name": "Lever-City_Above_Lemm_Left",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-City_Above_Lemm_Left"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-City_Above_Lemm_Upper": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate 4"
+    ],
+    "sceneName": "Ruins1_05",
+    "leverType": "Ruins",
+    "name": "Lever-City_Above_Lemm_Upper",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-City_Above_Lemm_Upper"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Shade_Soul_Exit": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate"
+    ],
+    "sceneName": "Ruins1_31b",
+    "leverType": "Ruins",
+    "name": "Lever-Shade_Soul_Exit",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Shade_Soul_Exit"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Emilitia": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [
+      {
+        "$type": "ItemChanger.PDBool, ItemChanger",
+        "boolName": "city2_sewerDoor"
+      }
+    ],
+    "targets": [
+      "Open Door"
+    ],
+    "sceneName": "Ruins_House_03",
+    "leverType": "Ruins",
+    "name": "Lever-Emilitia",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Emilitia"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Mantis_Lords_Top_Left": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Mantis Gate"
+    ],
+    "sceneName": "Fungus2_15",
+    "leverType": "Mantis",
+    "name": "Lever-Mantis_Lords_Top_Left",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Mantis_Lords_Top_Left"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.MantisLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Mantis_Lords_Middle_Left": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Mantis Gate (1)"
+    ],
+    "sceneName": "Fungus2_15",
+    "leverType": "Mantis",
+    "name": "Lever-Mantis_Lords_Middle_Left",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Mantis_Lords_Middle_Left"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.MantisLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Mantis_Lords_Bottom_Left": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Mantis Gate (2)"
+    ],
+    "sceneName": "Fungus2_15",
+    "leverType": "Mantis",
+    "name": "Lever-Mantis_Lords_Bottom_Left",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Mantis_Lords_Bottom_Left"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.MantisLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Mantis_Lords_Middle_Right": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Mantis Gate (4)"
+    ],
+    "sceneName": "Fungus2_15",
+    "leverType": "Mantis",
+    "name": "Lever-Mantis_Lords_Middle_Right",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Mantis_Lords_Middle_Right"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.MantisLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Mantis_Lords_Bottom_Right": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Mantis Gate (3)"
+    ],
+    "sceneName": "Fungus2_15",
+    "leverType": "Mantis",
+    "name": "Lever-Mantis_Lords_Bottom_Right",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Mantis_Lords_Bottom_Right"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.MantisLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Mantis_Claw": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Mantis Gate"
+    ],
+    "sceneName": "Fungus2_14",
+    "leverType": "Mantis",
+    "name": "Lever-Mantis_Claw",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Mantis_Claw"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.MantisLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Mantis_Lords_Access": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Mantis Floor Gate"
+    ],
+    "sceneName": "Fungus2_14",
+    "leverType": "Mantis",
+    "name": "Lever-Mantis_Lords_Access",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Mantis_Lords_Access"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.MantisLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Fungal_Wastes_Thorns_Gauntlet": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Mantis Gate"
+    ],
+    "sceneName": "Fungus2_04",
+    "leverType": "Mantis",
+    "name": "Lever-Fungal_Wastes_Thorns_Gauntlet",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Fungal_Wastes_Thorns_Gauntlet"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.MantisLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Fungal_Wastes_Below_Shrumal_Ogres": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Mantis Gate (1)"
+    ],
+    "sceneName": "Fungus2_04",
+    "leverType": "Mantis",
+    "name": "Lever-Fungal_Wastes_Below_Shrumal_Ogres",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Fungal_Wastes_Below_Shrumal_Ogres"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.MantisLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Fungal_Wastes_Bouncy_Grub": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Mantis Gate"
+    ],
+    "sceneName": "Fungus2_18",
+    "leverType": "Mantis",
+    "name": "Lever-Fungal_Wastes_Bouncy_Grub",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Fungal_Wastes_Bouncy_Grub"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.MantisLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Dirtmouth_Elevator": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [
+      {
+        "$type": "ItemChanger.PDBool, ItemChanger",
+        "boolName": "mineLiftOpened"
+      }
+    ],
+    "targets": [
+      "Mines Exit Lift"
+    ],
+    "sceneName": "Town",
+    "leverType": "Mines",
+    "name": "Lever-Dirtmouth_Elevator",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Dirtmouth_Elevator"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Crystal_Peak_Tall_Room_Upper": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Metal Gate v2"
+    ],
+    "sceneName": "Mines_20",
+    "leverType": "Mines",
+    "name": "Lever-Crystal_Peak_Tall_Room_Upper",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Crystal_Peak_Tall_Room_Upper"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Crystal_Peak_Tall_Room_Middle": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Metal Gate v2 (1)"
+    ],
+    "sceneName": "Mines_20",
+    "leverType": "Mines",
+    "name": "Lever-Crystal_Peak_Tall_Room_Middle",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Crystal_Peak_Tall_Room_Middle"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Crystal_Peak_Tall_Room_Lower": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate Iron"
+    ],
+    "sceneName": "Mines_20",
+    "leverType": "Mines",
+    "name": "Lever-Crystal_Peak_Tall_Room_Lower",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Crystal_Peak_Tall_Room_Lower"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Crystal_Peak_Spike_Grub": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate Iron"
+    ],
+    "sceneName": "Mines_03",
+    "leverType": "Mines",
+    "name": "Lever-Crystal_Peak_Spike_Grub",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Crystal_Peak_Spike_Grub"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Crystal_Peak_Below_Chest": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate Iron"
+    ],
+    "sceneName": "Mines_04",
+    "leverType": "Mines",
+    "name": "Lever-Crystal_Peak_Below_Chest",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Crystal_Peak_Below_Chest"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Crystal_Peak_Above_Chest": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "Ruins Gate Iron (1)"
+    ],
+    "sceneName": "Mines_37",
+    "leverType": "Mines",
+    "name": "Lever-Crystal_Peak_Above_Chest",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Crystal_Peak_Above_Chest"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Crystal_Peak_Crushers_Grub": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "stomper_door_contraption"
+    ],
+    "sceneName": "Mines_19",
+    "leverType": "MinesCrushers",
+    "name": "Lever-Crystal_Peak_Crushers_Grub",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Crystal_Peak_Crushers_Grub"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Crystal_Peak_Crushers_Chest": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "stomper_door_contraption"
+    ],
+    "sceneName": "Mines_37",
+    "leverType": "MinesCrushers",
+    "name": "Lever-Crystal_Peak_Crushers_Chest",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Crystal_Peak_Crushers_Chest"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Palace_Atrium": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "WP Switch Gate"
+    ],
+    "sceneName": "White_Palace_03_hub",
+    "leverType": "Palace",
+    "name": "Lever-Palace_Atrium",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Palace_Atrium"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.PalaceLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Palace_Right": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [
+      {
+        "$type": "ItemChanger.PDBool, ItemChanger",
+        "boolName": "whitePalace05_lever"
+      }
+    ],
+    "targets": [
+      "WP Switch Gate",
+      "WP Switch Gate (1)"
+    ],
+    "sceneName": "White_Palace_15",
+    "leverType": "Palace",
+    "name": "Lever-Palace_Right",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Palace_Right"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.PalaceLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Palace_Final": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "WP Switch Gate",
+      "WP Switch Gate (1)"
+    ],
+    "sceneName": "White_Palace_12",
+    "leverType": "Palace",
+    "name": "Lever-Palace_Final",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Palace_Final"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.PalaceLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Path_of_Pain": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [],
+    "targets": [
+      "WP Switch Gate"
+    ],
+    "sceneName": "White_Palace_17",
+    "leverType": "Palace",
+    "name": "Lever-Path_of_Pain",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Path_of_Pain"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.PalaceLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Palace_Entrance_Orb": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [
+      {
+        "$type": "ItemChanger.PDBool, ItemChanger",
+        "boolName": "whitePalaceOrb_1"
+      }
+    ],
+    "targets": [
+      "Globe Lit"
+    ],
+    "sceneName": "White_Palace_02",
+    "leverType": "PalaceOrb",
+    "name": "Lever-Palace_Entrance_Orb",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Palace_Entrance_Orb"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.PalaceOrbLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Palace_Left_Orb": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [
+      {
+        "$type": "ItemChanger.PDBool, ItemChanger",
+        "boolName": "whitePalaceOrb_3"
+      }
+    ],
+    "targets": [
+      "Globe Lit"
+    ],
+    "sceneName": "White_Palace_14",
+    "leverType": "PalaceOrb",
+    "name": "Lever-Palace_Left_Orb",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Palace_Left_Orb"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.PalaceOrbLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Palace_Right_Orb": {
+    "$type": "RandomizableLevers.IC.LeverActionItem, RandomizableLevers",
+    "SaveDataOnHit": [
+      {
+        "$type": "ItemChanger.PDBool, ItemChanger",
+        "boolName": "whitePalaceOrb_2"
+      }
+    ],
+    "targets": [
+      "Globe Lit"
+    ],
+    "sceneName": "White_Palace_15",
+    "leverType": "PalaceOrb",
+    "name": "Lever-Palace_Right_Orb",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Palace_Right_Orb"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.PalaceOrbLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Pilgrim's_Way_Left": {
+    "$type": "RandomizableLevers.IC.BridgeLevers.BridgeLeverActionItem, RandomizableLevers",
+    "bridgeNum": 1,
+    "name": "Lever-Pilgrim's_Way_Left",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Pilgrim's_Way_Left"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  },
+  "Lever-Pilgrim's_Way_Right": {
+    "$type": "RandomizableLevers.IC.BridgeLevers.BridgeLeverActionItem, RandomizableLevers",
+    "bridgeNum": 2,
+    "name": "Lever-Pilgrim's_Way_Right",
+    "UIDef": {
+      "$type": "ItemChanger.UIDefs.MsgUIDef, ItemChanger",
+      "name": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVERNAME.Lever-Pilgrim's_Way_Right"
+      },
+      "shopDesc": {
+        "$type": "ItemChanger.LanguageString, ItemChanger",
+        "sheet": "UI",
+        "key": "LEVER_SHOP_DESC"
+      },
+      "sprite": {
+        "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
+        "key": "Images.RuinsLever"
+      }
+    },
+    "tags": null,
+    "obtainState": "Unobtained"
+  }
+}
