@@ -1,0 +1,20 @@
+﻿{
+    "Town": "Town[left1] | Town[top1] | Town[bot1] | Town[right1] + (LEFTCLAW | Lever-Dirtmouth_Elevator) | Town[door_station] | Town[door_sly] | Town[door_mapper] | Town[door_bretta] | Town[door_jiji]",
+    "Crossroads_03": "Crossroads_03[right1] | Crossroads_03[right2] | Crossroads_03[left1] | Crossroads_03[left2] | Crossroads_03[bot1] | Crossroads_03[top1] + Switch-Crossroads_East",
+    "Fungus2_04": "Fungus2_04[left1] | Fungus2_04[right2] | (Fungus2_04[right1] | Fungus2_04[top1]) + Lever-Fungal_Wastes_Below_Shrumal_Ogres",
+    "Fungus2_15": "(Fungus2_15[left1] + RIGHTCLAW) | Fungus2_15[top3] | Fungus2_15[right1] + (LEFTCLAW | (WINGS + RIGHTCLAW) | Lever-Mantis_Lords_Middle_Right)",
+    "Fungus2_23": "Fungus2_23[right1] | Fungus2_23[right2] + Lever-Waterways_Hwurmp_Arena",
+    "Deepnest_26": "Deepnest_26[right1] | Deepnest_26[bot1] | Deepnest_26[left1] + Lever-Failed_Tramway_Left + (RIGHTCLAW | WINGS | LEFTCLAW + RIGHTSUPERDASH) | Deepnest_26[left2] + Lever-Failed_Tramway_Right + WINGS",
+    "Abyss_09": "(Abyss_09[left1] + ((RIGHTCLAW + (RIGHTDASH | RIGHTSUPERDASH | (SWIM + VOIDHEART))) | WINGS)) | (Abyss_09[right1] + (Lever-Abyss_Lighthouse | VOIDHEART) + (LEFTSUPERDASH | SWIM)) | Abyss_09[right2]",
+    "Ruins1_05b": "Ruins1_05b[top1] + Lever-City_Lemm | Ruins1_05b[right1] | Ruins1_05b[left1] | Ruins1_05b[bot1]",
+    "Ruins1_05c": "Ruins1_05c[bot1] | Ruins1_05c[left2] | Ruins1_05c[top1] | Ruins1_05c[top2] + Lever-City_Above_Lemm_Left | Ruins1_05c[top3] + (Lever-City_Above_Lemm_Right | Lever-City_Above_Lemm_Left)",
+    "Ruins1_23": "Ruins1_23[right2] + Lever-Sanctum_Bottom | Ruins1_23[left1] | Ruins1_23[bot1] | Ruins1_23[top1] + Lever-Sanctum_Soul_Warrior",
+    "Ruins2_01": "Ruins2_01[top1] + (Lever-City_Spire_Sentry_Lower | Lever-City_Spire_Sentry_Upper) | Ruins2_01[bot1] | Ruins2_01[left2]",
+    "Mines_04": "Mines_04[left1] | Mines_04[left2] | (Mines_04[left3] + (FULLCLAW | (WINGS + (ANYCLAW | SPICYSKIPS)))) | Mines_04[right1] | Mines_04[top1] + Lever-Crystal_Peak_Below_Chest",
+    "Mines_20": "Mines_20[left1] | Mines_20[right1] | (Mines_20[right2] | Lever-Crystal_Peak_Tall_Room_Lower + (Mines_20[left3] | Mines_20[bot1])) + (LEFTCLAW | WINGS + RIGHTCLAW) | Mines_20[left2] + ANYCLAW + Lever-Crystal_Peak_Tall_Room_Upper",
+    "Fungus3_04": "(Fungus3_04[left1] | Fungus3_04[left2]) + Lever-Queen's_Gardens_Ground_Block | Fungus3_04[right1] | Fungus3_04[right2]",
+    "Fungus3_44": "Fungus3_44[bot1] + (RIGHTCLAW | WINGS) + (RIGHTSHADOWDASH | Lever-Below_Overgrown_Mound) | Fungus3_44[door1] | Fungus3_44[right1]",
+    "White_Palace_01": "White_Palace_01[left1] + (WINGS | (RIGHTCLAW + RIGHTDASH))  | White_Palace_01[right1] + (LEFTDASH | (FULLCLAW + LEFTSUPERDASH) | WINGS) | White_Palace_01[top1] + Lever-Palace_Entrance_Orb",
+    "White_Palace_03_hub": "(White_Palace_03_hub[left1] + Lever-Palace_Atrium) | White_Palace_03_hub[left2] | (White_Palace_03_hub[bot1] + ANYCLAW) | White_Palace_03_hub[right1] | (White_Palace_03_hub[top1] + Lever-Palace_Left_Orb + Lever-Palace_Right_Orb)",
+    "Abyss_05": "Abyss_05[left1] | Abyss_05[right1] | White_Palace_11[door2] | White_Palace_03_hub"
+}

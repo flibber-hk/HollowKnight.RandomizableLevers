@@ -43,8 +43,7 @@
       {
         "$type": "ItemChanger.SDBool, ItemChanger",
         "id": "Raising Pillar",
-        "sceneName": "Crossroads_06",
-        "semiPersistent": false
+        "sceneName": "Crossroads_06"
       }
     ],
     "targets": [
@@ -112,8 +111,7 @@
       {
         "$type": "ItemChanger.SDBool, ItemChanger",
         "id": "Resting Grounds Slide Floor",
-        "sceneName": "RestingGrounds_06",
-        "semiPersistent": false
+        "sceneName": "RestingGrounds_06"
       }
     ],
     "targets": [
@@ -338,8 +336,7 @@
       {
         "$type": "ItemChanger.SDBool, ItemChanger",
         "id": "Garden Slide Floor",
-        "sceneName": "Fungus3_04",
-        "semiPersistent": false
+        "sceneName": "Fungus3_04"
       }
     ],
     "targets": [
@@ -796,8 +793,7 @@
       {
         "$type": "ItemChanger.SDBool, ItemChanger",
         "id": "Secret Mask",
-        "sceneName": "Ruins2_01",
-        "semiPersistent": false
+        "sceneName": "Ruins2_01"
       }
     ],
     "targets": [

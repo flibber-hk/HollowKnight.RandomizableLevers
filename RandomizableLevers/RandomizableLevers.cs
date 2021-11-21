@@ -30,6 +30,7 @@ namespace RandomizableLevers
         {
             Log("Initializing Mod...");
 
+            #region Hook Itemchanger
             Serializer.DeserializeLevers();
 
             // Define the lever container, so the lever locations (which are implemented as ExistingContainerLocations) know how to work
@@ -67,10 +68,12 @@ namespace RandomizableLevers
 
             // TODO - get an "on hook itemchanger" event, and subscribe this to that
             LanguageData.Hook();
+            #endregion
+
+            // if (ModHooks.GetMod("Randomizer 4") is Mod)
+            //    Rando.LmbPatcher.Hook();
 
             On.UIManager.StartNewGame += UIManager_StartNewGame;
-
-            
         }
 
         
@@ -80,71 +83,15 @@ namespace RandomizableLevers
             ItemChangerMod.CreateSettingsProfile(false, false);
             ItemChangerMod.Modules.GetOrAdd<TransitionFixes>();
 
-            AbstractPlacement pmt = Finder.GetLocation(LeverNames.Lever_Dirtmouth_Elevator).Wrap();
-            pmt.Add(Finder.GetItem(ItemNames.Soul_Refill));
-            pmt.Add(Finder.GetItem(LeverNames.Lever_Emilitia));
-            pmt.Add(Finder.GetItem(ItemNames.Herrah));
-            pmt.Add(Finder.GetItem(ItemNames.Lumafly_Escape));
-            ItemChangerMod.AddPlacements(pmt.Yield());
-
-            // ItemChangerMod.AddPlacements(GetRandomPlacements());
+            Dictionary<string, string> pairs = Vanilla.GetRandomPairs(new Random());
+            foreach (KeyValuePair<string, string> pair in pairs)
+            {
+                AbstractPlacement pmt = Finder.GetLocation(pair.Key).Wrap();
+                pmt.Add(Finder.GetItem(pair.Value));
+                ItemChangerMod.AddPlacements(pmt.Yield());
+            }
 
             orig(self, permaDeath, bossRush);
-        }
-
-        private List<AbstractPlacement> GetRandomPlacements()
-        {
-            List<AbstractPlacement> ret = null;
-            int ct = 0;
-
-            Random rand = new Random();
-
-            while (ret == null)
-            {
-                Log($"Attempt {ct++}...");
-                ret = TryGetRandomPlacements(rand);
-            }
-
-            return ret;
-        }
-
-        private List<AbstractPlacement> TryGetRandomPlacements(Random rand)
-        {
-            List<AbstractPlacement> placements = LeverNames.ToArray().Select(x => Finder.GetLocation(x).Wrap()).ToList();
-            List<AbstractItem> items = LeverNames.ToArray().Select(x => Finder.GetItem(x)).ToList();
-
-            Dictionary<string, AbstractLocation> itemToLoc = new();
-
-            while (items.Count > 0)
-            {
-                int n = rand.Next(items.Count);
-                placements[items.Count - 1].Add(items[n]);
-
-                itemToLoc[items[n].name] = Finder.GetLocation(placements[items.Count - 1].Name);
-                
-                items.RemoveAt(n);
-            }
-
-            if (itemToLoc[LeverNames.Lever_Mantis_Lords_Access].sceneName == SceneNames.Fungus2_15) return null;
-
-            bool inSanctum(string locName)
-            {
-                return locName == LeverNames.Lever_Sanctum_Bottom
-                    || locName == LeverNames.Lever_Sanctum_East
-                    || locName == LeverNames.Lever_Sanctum_West_Lower
-                    || locName == LeverNames.Lever_Sanctum_West_Upper
-                    || locName == LeverNames.Lever_Below_Spell_Twister;
-            }
-
-            if (inSanctum(itemToLoc[LeverNames.Lever_Sanctum_Soul_Warrior].name) && inSanctum(itemToLoc[LeverNames.Lever_Sanctum_Bottom].name)) return null;
-
-            if (itemToLoc[LeverNames.Lever_Palace_Entrance_Orb].sceneName.Contains("Palace") && itemToLoc[LeverNames.Lever_Palace_Entrance_Orb].name != LeverNames.Lever_Palace_Entrance_Orb) return null;
-
-            if (itemToLoc[LeverNames.Lever_Palace_Left_Orb].name == LeverNames.Lever_Path_of_Pain || itemToLoc[LeverNames.Lever_Palace_Left_Orb].name == LeverNames.Lever_Palace_Final) return null;
-            if (itemToLoc[LeverNames.Lever_Palace_Right_Orb].name == LeverNames.Lever_Path_of_Pain || itemToLoc[LeverNames.Lever_Palace_Right_Orb].name == LeverNames.Lever_Palace_Final) return null;
-            if (itemToLoc[LeverNames.Lever_Palace_Right].name == LeverNames.Lever_Path_of_Pain || itemToLoc[LeverNames.Lever_Palace_Right].name == LeverNames.Lever_Palace_Final) return null;
-            if (itemToLoc[LeverNames.Lever_Palace_Right].name == LeverNames.Lever_Palace_Right_Orb) return null;
-            return placements;
         }
     }
 }

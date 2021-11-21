@@ -26,12 +26,15 @@ namespace RandomizableLevers
         // Ruins Levers
         public const string Lever_Dung_Defender = "Lever-Dung_Defender";
 
+        // The item for RG stag is currently a bit bugged, because it doesn't increase unlocked stags count.
+        // Best to use the StagItem for now.
+        public const string Lever_Resting_Grounds_Stag = "Lever-Resting_Grounds_Stag";
+
         public const string Lever_Waterways_Hwurmp_Arena = "Lever-Waterways_Hwurmp_Arena";
         public const string Lever_Queens_Station_Mask_Shard = "Lever-Queen's_Station_Mask_Shard";
         public const string Lever_Queens_Gardens_Ground_Block = "Lever-Queen's_Gardens_Ground_Block";
         public const string Lever_Below_Overgrown_Mound = "Lever-Below_Overgrown_Mound";
         public const string Lever_Tower_of_Love = "Lever-Tower_of_Love";
-        public const string Lever_Resting_Grounds_Stag = "Lever-Resting_Grounds_Stag";
         public const string Lever_Abyss_Lighthouse = "Lever-Abyss_Lighthouse";
         public const string Lever_Failed_Tramway_Right = "Lever-Failed_Tramway_Right";
         public const string Lever_Failed_Tramway_Left = "Lever-Failed_Tramway_Left";
