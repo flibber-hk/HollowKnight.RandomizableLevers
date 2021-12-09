@@ -1,6 +1,6 @@
 {
   "Switch-Dirtmouth_Stag": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Gate Switch",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -14,7 +14,7 @@
     "HintActive": false
   },
   "Switch-Outside_Ancestral_Mound": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Gate Switch",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -43,7 +43,7 @@
     "HintActive": false
   },
   "Switch-Greenpath_Stag": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Gate Switch",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -57,7 +57,7 @@
     "HintActive": false
   },
   "Switch-Lower_Resting_Grounds": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Gate Switch",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -86,7 +86,7 @@
     "HintActive": false
   },
   "Switch-Petra_Arena": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Gate Switch",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -100,7 +100,7 @@
     "HintActive": false
   },
   "Switch-Queen's_Gardens_Stag": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Gate Switch",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -129,7 +129,7 @@
     "HintActive": false
   },
   "Switch-Crossroads_East": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Toll Gate Switch",
     "fsmName": "toll switch",
     "containerType": "Lever",
@@ -143,7 +143,7 @@
     "HintActive": false
   },
   "Lever-Dung_Defender": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Waterways_Crank_Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -165,7 +165,7 @@
     "HintActive": false
   },
   "Lever-Waterways_Hwurmp_Arena": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -179,7 +179,7 @@
     "HintActive": false
   },
   "Lever-Queen's_Station_Mask_Shard": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -193,7 +193,7 @@
     "HintActive": false
   },
   "Lever-Queen's_Gardens_Ground_Block": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -207,7 +207,7 @@
     "HintActive": false
   },
   "Lever-Below_Overgrown_Mound": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -221,7 +221,7 @@
     "HintActive": false
   },
   "Lever-Tower_of_Love": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -235,7 +235,7 @@
     "HintActive": false
   },
   "Lever-Resting_Grounds_Stag": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -249,7 +249,7 @@
     "HintActive": false
   },
   "Lever-Abyss_Lighthouse": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -263,7 +263,7 @@
     "HintActive": false
   },
   "Lever-Failed_Tramway_Right": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -277,7 +277,7 @@
     "HintActive": false
   },
   "Lever-Failed_Tramway_Left": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever Remade",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -291,7 +291,7 @@
     "HintActive": false
   },
   "Lever-Below_Spell_Twister": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -305,7 +305,7 @@
     "HintActive": false
   },
   "Lever-Sanctum_East": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -319,7 +319,7 @@
     "HintActive": false
   },
   "Lever-Sanctum_Soul_Warrior": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -333,7 +333,7 @@
     "HintActive": false
   },
   "Lever-Sanctum_Bottom": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever (1)",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -347,7 +347,7 @@
     "HintActive": false
   },
   "Lever-Sanctum_West_Upper": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -361,7 +361,7 @@
     "HintActive": false
   },
   "Lever-Sanctum_West_Lower": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever (1)",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -375,7 +375,7 @@
     "HintActive": false
   },
   "Lever-City_Fountain": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -389,7 +389,7 @@
     "HintActive": false
   },
   "Lever-City_Spire_Sentry_Lower": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -403,7 +403,7 @@
     "HintActive": false
   },
   "Lever-City_Spire_Sentry_Upper": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever (1)",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -417,7 +417,7 @@
     "HintActive": false
   },
   "Lever-City_Bridge_Above_Fountain": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -431,7 +431,7 @@
     "HintActive": false
   },
   "Lever-City_Storerooms": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -445,7 +445,7 @@
     "HintActive": false
   },
   "Lever-City_Lemm": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever 1",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -459,7 +459,7 @@
     "HintActive": false
   },
   "Lever-City_Above_Lemm_Right": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever 2",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -473,7 +473,7 @@
     "HintActive": false
   },
   "Lever-City_Above_Lemm_Left": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever 3",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -487,7 +487,7 @@
     "HintActive": false
   },
   "Lever-City_Above_Lemm_Upper": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -501,7 +501,7 @@
     "HintActive": false
   },
   "Lever-Shade_Soul_Exit": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -533,7 +533,7 @@
     "HintActive": false
   },
   "Lever-Emilitia": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Ruins Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -562,7 +562,7 @@
     "HintActive": false
   },
   "Lever-Mantis_Lords_Top_Left": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Mantis Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -576,7 +576,7 @@
     "HintActive": false
   },
   "Lever-Mantis_Lords_Middle_Left": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Mantis Lever (1)",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -590,7 +590,7 @@
     "HintActive": false
   },
   "Lever-Mantis_Lords_Bottom_Left": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Mantis Lever (2)",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -604,7 +604,7 @@
     "HintActive": false
   },
   "Lever-Mantis_Lords_Middle_Right": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Mantis Lever (4)",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -618,7 +618,7 @@
     "HintActive": false
   },
   "Lever-Mantis_Lords_Bottom_Right": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Mantis Lever (3)",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -632,7 +632,7 @@
     "HintActive": false
   },
   "Lever-Mantis_Claw": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Mantis Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -646,7 +646,7 @@
     "HintActive": false
   },
   "Lever-Mantis_Lords_Access": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Mantis Lever (1)",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -660,7 +660,7 @@
     "HintActive": false
   },
   "Lever-Fungal_Wastes_Thorns_Gauntlet": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Mantis Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -674,7 +674,7 @@
     "HintActive": false
   },
   "Lever-Fungal_Wastes_Below_Shrumal_Ogres": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Mantis Lever (1)",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -688,7 +688,7 @@
     "HintActive": false
   },
   "Lever-Fungal_Wastes_Bouncy_Grub": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Mantis Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -702,7 +702,7 @@
     "HintActive": false
   },
   "Lever-Dirtmouth_Elevator": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Mines Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -716,7 +716,7 @@
     "HintActive": false
   },
   "Lever-Crystal_Peak_Tall_Room_Upper": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Mines Lever (1)",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -730,7 +730,7 @@
     "HintActive": false
   },
   "Lever-Crystal_Peak_Tall_Room_Middle": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Mines Lever (2)",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -744,7 +744,7 @@
     "HintActive": false
   },
   "Lever-Crystal_Peak_Tall_Room_Lower": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Mines Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -758,7 +758,7 @@
     "HintActive": false
   },
   "Lever-Crystal_Peak_Spike_Grub": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Mines Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -772,7 +772,7 @@
     "HintActive": false
   },
   "Lever-Crystal_Peak_Below_Chest": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Mines Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -786,7 +786,7 @@
     "HintActive": false
   },
   "Lever-Crystal_Peak_Above_Chest": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Mines Lever (3)",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -800,7 +800,7 @@
     "HintActive": false
   },
   "Lever-Crystal_Peak_Crushers_Grub": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Mines Lever New",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -814,7 +814,7 @@
     "HintActive": false
   },
   "Lever-Crystal_Peak_Crushers_Chest": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "Mines Lever New",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -828,7 +828,7 @@
     "HintActive": false
   },
   "Lever-Palace_Atrium": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "WP Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -842,7 +842,7 @@
     "HintActive": false
   },
   "Lever-Palace_Right": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "WP Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -856,7 +856,7 @@
     "HintActive": false
   },
   "Lever-Palace_Final": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "WP Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -870,7 +870,7 @@
     "HintActive": false
   },
   "Lever-Path_of_Pain": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "WP Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -884,7 +884,7 @@
     "HintActive": false
   },
   "Lever-Palace_Entrance_Orb": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "White Palace Orb Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -898,7 +898,7 @@
     "HintActive": false
   },
   "Lever-Palace_Left_Orb": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "White Palace Orb Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -912,7 +912,7 @@
     "HintActive": false
   },
   "Lever-Palace_Right_Orb": {
-    "$type": "ItemChanger.Locations.ExistingContainerLocation, ItemChanger",
+    "$type": "ItemChanger.Locations.ExistingFsmContainerLocation, ItemChanger",
     "objectName": "White Palace Orb Lever",
     "fsmName": "Switch Control",
     "containerType": "Lever",
@@ -925,20 +925,26 @@
     "tags": null,
     "HintActive": false
   },
-  "Lever-Pilgrim's_Way_Left": {
-    "$type": "RandomizableLevers.IC.BridgeLevers.BridgeLeverLocation, RandomizableLevers",
-    "bridgeNum": 1,
-    "name": "Lever-Pilgrim's_Way_Left",
-    "sceneName": "Fungus2_21",
-    "flingType": "Everywhere",
-    "tags": null
-  },
-  "Lever-Pilgrim's_Way_Right": {
-    "$type": "RandomizableLevers.IC.BridgeLevers.BridgeLeverLocation, RandomizableLevers",
-    "bridgeNum": 2,
-    "name": "Lever-Pilgrim's_Way_Right",
-    "sceneName": "Fungus2_21",
-    "flingType": "Everywhere",
-    "tags": null
-  }
+    "Lever-Pilgrim's_Way_Left": {
+        "$type": "RandomizableLevers.IC.BridgeLevers.BridgeLeverLocation, RandomizableLevers",
+        "bridgeNum": 1,
+        "replacePath": null,
+        "nonreplaceable": true,
+        "elevation": 0.0,
+        "name": "Lever-Pilgrim's_Way_Left",
+        "sceneName": "Fungus2_21",
+        "flingType": "Everywhere",
+        "tags": null
+    },
+    "Lever-Pilgrim's_Way_Right": {
+        "$type": "RandomizableLevers.IC.BridgeLevers.BridgeLeverLocation, RandomizableLevers",
+        "bridgeNum": 2,
+        "replacePath": null,
+        "nonreplaceable": true,
+        "elevation": 0.0,
+        "name": "Lever-Pilgrim's_Way_Right",
+        "sceneName": "Fungus2_21",
+        "flingType": "Everywhere",
+        "tags": null
+    }
 }

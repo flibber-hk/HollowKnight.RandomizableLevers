@@ -52,13 +52,13 @@ namespace RandomizableLevers.Rando
         private static void ModifyExistingMacros(GenerationSettings gs, LogicManagerBuilder lmb)
         {
             using Stream s = typeof(LmbPatcher).Assembly.GetManifestResourceStream("RandomizableLevers.Resources.Logic.MacroOverrides.json");
-            lmb.DeserializeJson(LogicManagerBuilder.JsonType.Macros, s);
+            lmb.DeserializeJson(LogicManagerBuilder.JsonType.MacroEdit, s);
         }
 
         private static void ModifyExistingLogic(GenerationSettings gs, LogicManagerBuilder lmb)
         {
             using Stream s = typeof(LmbPatcher).Assembly.GetManifestResourceStream("RandomizableLevers.Resources.Logic.LogicOverrides.json");
-            lmb.DeserializeJson(LogicManagerBuilder.JsonType.Logic, s);
+            lmb.DeserializeJson(LogicManagerBuilder.JsonType.LogicEdit, s);
         }
 
         private static void AddLeverLocations(GenerationSettings gs, LogicManagerBuilder lmb)

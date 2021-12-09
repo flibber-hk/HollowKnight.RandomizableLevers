@@ -100,10 +100,6 @@
         "logic": "Fungus2_23[right2] | Fungus2_23[right1] + Lever-Waterways_Hwurmp_Arena"
     },
     {
-        "name": "Dashmaster",
-        "logic": "Fungus2_23"
-    },
-    {
         "name": "Boss_Essence-Grey_Prince_Zote",
         "logic": "Room_Bretta[right1] + DREAMNAIL + BOSS + (Fungus2_23[right1] | Fungus2_23[right2] + Lever-Waterways_Hwurmp_Arena) + (LEFTCLAW | (RIGHTCLAW + MILDSKIPS)) + WINGS + Deepnest_33[top1] + Room_Colosseum_01[left1] + (SPICYCOMBATSKIPS | FOCUS)"
     },
@@ -368,30 +364,6 @@
         "logic": "Fungus2_15[left1] | Fungus2_15"
     },
     {
-        "name": "Mark_of_Pride",
-        "logic": "Fungus2_31[left1] + (Fungus2_15 | Fungus2_15[left1]) + (LEFTCLAW | WINGS | (RIGHTCLAW + SHADESKIPS))"
-    },
-    {
-        "name": "Geo_Chest-Mantis_Lords",
-        "logic": "Fungus2_31[left1] + (Fungus2_15 | Fungus2_15[left1]) + (ANYCLAW | WINGS)"
-    },
-    {
-        "name": "Hallownest_Seal-Mantis_Lords",
-        "logic": "Fungus2_31[left1] + (Fungus2_15 | Fungus2_15[left1]) + (ANYCLAW | WINGS)"
-    },
-    {
-        "name": "Lifeblood_Cocoon-Mantis_Village",
-        "logic": "(Fungus2_15 | Fungus2_15[left1]) + ((LEFTCLAW + WINGS) | (RIGHTCLAW + LEFTSUPERDASH))"
-    },
-    {
-        "name": "Geo_Rock-Above_Mantis_Lords_1",
-        "logic": "Fungus2_15 + (ANYCLAW | WINGS | RIGHTDASH | RIGHTSUPERDASH)"
-    },
-    {
-        "name": "Geo_Rock-Above_Mantis_Lords_2",
-        "logic": "Fungus2_15"
-    },
-    {
         "name": "Fungus2_14[bot3]",
         "logic": "Fungus2_14 + Lever-Mantis_Lords_Access"
     },
@@ -436,14 +408,6 @@
         "logic": "Fungus2_04 + (Lever-Fungal_Wastes_Thorns_Gauntlet | ((LEFTCLAW + WINGS) | (RIGHTCLAW + (WINGS | RIGHTDASH | (RIGHTSUPERDASH + LEFTCLAW) | AIRSTALL))))"
     },
     {
-        "name": "Geo_Rock-Fungal_Below_Shrumal_Ogres",
-        "logic": "Fungus2_04"
-    },
-    {
-        "name": "Lore_Tablet-Fungal_Wastes_Below_Shrumal_Ogres",
-        "logic": "Fungus2_04 + Spore_Shroom"
-    },
-    {
         "name": "Fungus2_18[right1]",
         "logic": "Fungus2_18[right1] | (Fungus2_18[bot1] | Fungus2_18[bot1] + (RIGHTCLAW | WINGS)) + Lever-Fungal_Wastes_Bouncy_Grub"
     },
@@ -456,24 +420,8 @@
         "logic": "Fungus2_18[top1] | (Fungus2_18[right1] + Lever-Fungal_Wastes_Bouncy_Grub + (LEFTDASH | LEFTCLAW | WINGS | (RIGHTCLAW + LEFTSUPERDASH) | MILDSKIPS)) | (Fungus2_18[bot1] + (RIGHTCLAW | WINGS))"
     },
     {
-        "name": "Grub-Fungal_Bouncy",
-        "logic": "Fungus2_18[right1]"
-    },
-    {
         "name": "Fungal_Wastes_Map",
         "logic": "Fungus2_18[top1] | Fungus2_18[right1] + Lever-Fungal_Wastes_Bouncy_Grub + (LEFTDASH | LEFTCLAW | WINGS | MILDSKIPS) | (Fungus2_18[bot1] + (RIGHTCLAW | WINGS))"
-    },
-    {
-        "name": "Geo_Rock-Fungal_After_Bouncy_Grub",
-        "logic": "Fungus2_18[right1]"
-    },
-    {
-        "name": "Geo_Rock-Fungal_After_Bouncy_Grub_Dupe",
-        "logic": "Fungus2_18[right1]"
-    },
-    {
-        "name": "Geo_Rock-Fungal_Bouncy_Grub_Lever",
-        "logic": "Fungus2_18[right1]"
     },
     {
         "name": "Geo_Rock-Fungal_After_Cornifer",
@@ -536,26 +484,6 @@
         "logic": "Mines_20[right2] | Mines_20 | Mines_20[bot1] + Lever-Crystal_Peak_Tall_Room_Lower"
     },
     {
-        "name": "Rancid_Egg-Crystal_Peak_Tall_Room",
-        "logic": "Mines_20 + QUAKE"
-    },
-    {
-        "name": "Wanderer's_Journal-Crystal_Peak_Crawlers",
-        "logic": "Mines_20 + (RIGHTCLAW | WINGS | MILDSKIPS)"
-    },
-    {
-        "name": "Geo_Rock-Crystal_Peak_Dive_Egg",
-        "logic": "Mines_20 + QUAKE"
-    },
-    {
-        "name": "Geo_Rock-Crystal_Peak_Dive_Egg_Dupe",
-        "logic": "Mines_20 + QUAKE"
-    },
-    {
-        "name": "Geo_Rock-Crystal_Peak_Conga_Line",
-        "logic": "Mines_20"
-    },
-    {
         "name": "Soul_Totem-Upper_Crystal_Peak",
         "logic": "Mines_20 + Lever-Crystal_Peak_Tall_Room_Upper + Lever-Crystal_Peak_Tall_Room_Middle | Mines_20[left2] + Lever-Crystal_Peak_Tall_Room_Middle | ((Mines_20[left3] | Mines_20[bot1]) + ANYCLAW)"
     },
@@ -590,14 +518,6 @@
     {
         "name": "Grub-Crystal_Peak_Below_Chest",
         "logic": "Mines_04[top1] | Mines_04 + Lever-Crystal_Peak_Below_Chest"
-    },
-    {
-        "name": "Geo_Rock-Crystal_Peak_Before_Dark_Room",
-        "logic": "Mines_04"
-    },
-    {
-        "name": "Geo_Rock-Crystal_Peak_Before_Dark_Room_Dupe",
-        "logic": "Mines_04"
     },
     {
         "name": "Mines_37[bot1]",
@@ -682,10 +602,6 @@
     {
         "name": "Soul_Totem-Path_of_Pain_Below_Lever",
         "logic": "White_Palace_17[bot1] + FULLCLAW + WINGS | White_Palace_17[right1] + Lever-Path_of_Pain"
-    },
-    {
-        "name": "Soul_Totem-Path_of_Pain_Left_of_Lever",
-        "logic": "White_Palace_17[bot1] + FULLDASH + FULLCLAW + WINGS"
     },
     {
         "name": "White_Palace_01[left1]",

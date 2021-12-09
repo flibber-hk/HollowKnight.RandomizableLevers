@@ -130,7 +130,7 @@ namespace RandomizableLevers.IC.BridgeLevers
         {
             GameObject.Find($"Bridge Collider {bridgeNum}").GetComponent<Collider2D>().enabled = true;
 
-            BridgeLever lever = GameObject.Find($"Bridge Lever {bridgeNum}").GetComponent<BridgeLever>();
+            BridgeLever lever = UnityEngine.Object.FindObjectsOfType<BridgeLever>(true).First(x => x.name == $"Bridge Lever {bridgeNum}");
 
             foreach (BridgeSection section in UnityEngine.Object.FindObjectsOfType<BridgeSection>())
             {

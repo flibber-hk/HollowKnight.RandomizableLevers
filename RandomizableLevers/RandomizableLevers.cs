@@ -59,24 +59,22 @@ namespace RandomizableLevers
                 }
             }
 
+            LanguageData.Load();
+
+            ItemChanger.Events.OnItemChangerHook += LanguageData.Hook;
+            ItemChanger.Events.OnItemChangerUnhook += LanguageData.Unhook;
+            #endregion
+
             if (LeverDB.ModifyLeverDefinitions())
             {
                 Serializer.SerializeLevers();
             }
-
-            LanguageData.Load();
-
-            // TODO - get an "on hook itemchanger" event, and subscribe this to that
-            LanguageData.Hook();
-            #endregion
 
             // if (ModHooks.GetMod("Randomizer 4") is Mod)
             //    Rando.LmbPatcher.Hook();
 
             On.UIManager.StartNewGame += UIManager_StartNewGame;
         }
-
-        
 
         private void UIManager_StartNewGame(On.UIManager.orig_StartNewGame orig, UIManager self, bool permaDeath, bool bossRush)
         {
