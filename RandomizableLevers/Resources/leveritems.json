@@ -432,9 +432,7 @@
         "boolName": "openedRestingGrounds"
       }
     ],
-    "targets": [
-      "Station Bell Lever"
-    ],
+    "targets": null,
     "sceneName": "RestingGrounds_09",
     "leverType": "Ruins",
     "name": "Lever-Resting_Grounds_Stag",
@@ -455,7 +453,11 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type":  "RandomizableLevers.IC.IncrementStagsOnGiveTag, RandomizableLevers"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Abyss_Lighthouse": {

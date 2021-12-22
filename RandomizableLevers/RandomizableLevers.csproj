@@ -27,7 +27,10 @@
       <HintPath>$(HollowKnightRefs)\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="ItemChanger">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Hollow Knight\hollow_knight_Data\Managed\Mods\ItemChanger\ItemChanger.dll</HintPath>
+      <HintPath>$(HollowKnightRefs)\Mods\ItemChanger\ItemChanger.dll</HintPath>
+    </Reference>
+    <Reference Include="MenuChanger">
+      <HintPath>$(HollowKnightRefs)\Mods\MenuChanger\MenuChanger.dll</HintPath>
     </Reference>
     <Reference Include="MMHOOK_Assembly-CSharp">
       <HintPath>$(HollowKnightRefs)\MMHOOK_Assembly-CSharp.dll</HintPath>
@@ -55,10 +58,10 @@
       <HintPath>$(HollowKnightRefs)\PlayMaker.dll</HintPath>
     </Reference>
     <Reference Include="RandomizerCore">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Hollow Knight\hollow_knight_Data\Managed\Mods\RandomizerCore\RandomizerCore.dll</HintPath>
+      <HintPath>$(HollowKnightRefs)\Mods\RandomizerCore\RandomizerCore.dll</HintPath>
     </Reference>
     <Reference Include="RandomizerMod">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Hollow Knight\hollow_knight_Data\Managed\Mods\RandomizerMod\RandomizerMod.dll</HintPath>
+      <HintPath>$(HollowKnightRefs)\Mods\RandomizerMod\RandomizerMod.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
       <HintPath>$(HollowKnightRefs)\UnityEngine.dll</HintPath>

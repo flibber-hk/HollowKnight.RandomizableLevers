@@ -12,7 +12,7 @@ using RandomizableLevers.IC;
 
 namespace RandomizableLevers
 {
-    public class RandomizableLevers : Mod
+    public class RandomizableLevers : Mod, IGlobalSettings<GlobalSettings>
     {
         internal static RandomizableLevers instance;
         
@@ -25,6 +25,10 @@ namespace RandomizableLevers
 		{
 			return "0.1";
 		}
+
+        public static GlobalSettings GS { get; set; } = new();
+        public void OnLoadGlobal(GlobalSettings s) => GS = s;
+        public GlobalSettings OnSaveGlobal() => GS;
 
         public override void Initialize()
         {
@@ -65,13 +69,14 @@ namespace RandomizableLevers
             ItemChanger.Events.OnItemChangerUnhook += LanguageData.Unhook;
             #endregion
 
-            if (LeverDB.ModifyLeverDefinitions())
-            {
-                Serializer.SerializeLevers();
-            }
+#if DEBUG
+            Serializer.SerializeLevers();
+#endif
 
-            // if (ModHooks.GetMod("Randomizer 4") is Mod)
-            //    Rando.LmbPatcher.Hook();
+            if (ModHooks.GetMod("Randomizer 4") is Mod)
+            {
+                Rando.RandoInterop.HookRandomizer();
+            }
 
             On.UIManager.StartNewGame += UIManager_StartNewGame;
         }
@@ -81,15 +86,42 @@ namespace RandomizableLevers
             ItemChangerMod.CreateSettingsProfile(false, false);
             ItemChangerMod.Modules.GetOrAdd<TransitionFixes>();
 
-            Dictionary<string, string> pairs = Vanilla.GetRandomPairs(new Random());
-            foreach (KeyValuePair<string, string> pair in pairs)
+            static void AddILP(string loc, string itm)
             {
-                AbstractPlacement pmt = Finder.GetLocation(pair.Key).Wrap();
-                pmt.Add(Finder.GetItem(pair.Value));
+                AbstractPlacement pmt = Finder.GetLocation(loc).Wrap();
+                pmt.Add(Finder.GetItem(itm));
                 ItemChangerMod.AddPlacements(pmt.Yield());
+            }
+
+            foreach (string s in LeverNames.ToArray())
+            {
+                AddILP(s, ItemNames.Grub);
             }
 
             orig(self, permaDeath, bossRush);
         }
+
+        /*
+        private void UIManager_StartNewGame(On.UIManager.orig_StartNewGame orig, UIManager self, bool permaDeath, bool bossRush)
+        {
+            ItemChangerMod.CreateSettingsProfile(false, false);
+            ItemChangerMod.Modules.GetOrAdd<TransitionFixes>();
+
+            static void AddILP(string loc, string itm)
+            {
+                AbstractPlacement pmt = Finder.GetLocation(loc).Wrap();
+                pmt.Add(Finder.GetItem(itm));
+                ItemChangerMod.AddPlacements(pmt.Yield());
+            }
+
+            Dictionary<string, string> pairs = Vanilla.GetRandomPairs(new Random());
+            foreach (KeyValuePair<string, string> pair in pairs)
+            {
+                AddILP(pair.Key, pair.Value);
+            }
+
+            orig(self, permaDeath, bossRush);
+        }
+        */
     }
 }

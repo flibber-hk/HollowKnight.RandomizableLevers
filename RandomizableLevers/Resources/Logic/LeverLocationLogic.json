@@ -1,5 +1,9 @@
 ﻿[
     {
+        "name": "Switch-Dirtmouth_Stag",
+        "logic": "Room_Town_Stag_Station[left1] | CANSTAG-R"
+    },
+    {
         "name": "Switch-Outside_Ancestral_Mound",
         "logic": "Crossroads_06[left1] | Crossroads_06[door1] | Crossroads_06[right1]"
     },
@@ -26,6 +30,10 @@
     {
         "name": "Lever-Dung_Defender",
         "logic": "Waterways_05 + (ANYCLAW | WINGS)"
+    },
+    {
+        "name": "Lever-Resting_Grounds_Stag",
+        "logic": "RestingGrounds_09[left1] | (Resting_Grounds_Stag + CANSTAG-R)"
     },
     {
         "name": "Lever-Waterways_Hwurmp_Arena",
