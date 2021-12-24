@@ -1,15 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using ItemChanger;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using RandomizerMod.Settings;
 using RandomizerMod.RC;
 using RandomizerCore;
-using RandomizerCore.Json;
 using RandomizerCore.Logic;
 using RandomizerCore.LogicItems;
-using System;
 
 namespace RandomizableLevers.Rando
 {

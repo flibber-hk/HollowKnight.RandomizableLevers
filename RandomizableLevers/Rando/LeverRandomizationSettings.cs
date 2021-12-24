@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MenuChanger.Attributes;
-
-namespace RandomizableLevers.Rando
+﻿namespace RandomizableLevers.Rando
 {
     public class LeverRandomizationSettings
     {

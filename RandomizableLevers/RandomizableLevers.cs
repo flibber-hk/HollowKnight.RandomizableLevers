@@ -1,12 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 using ItemChanger;
-using ItemChanger.Extensions;
-using ItemChanger.Locations;
-using ItemChanger.Modules;
-using ItemChanger.UIDefs;
 using Modding;
 using RandomizableLevers.IC;
 
@@ -23,7 +15,7 @@ namespace RandomizableLevers
         
 		public override string GetVersion()
 		{
-			return "0.1";
+            return GetType().Assembly.GetName().Version.ToString();
 		}
 
         public static GlobalSettings GS { get; set; } = new();
@@ -34,7 +26,16 @@ namespace RandomizableLevers
         {
             Log("Initializing Mod...");
 
-            #region Hook Itemchanger
+            HookItemChanger();
+
+            if (ModHooks.GetMod("Randomizer 4") is Mod)
+            {
+                Rando.RandoInterop.HookRandomizer();
+            }
+        }
+
+        private void HookItemChanger()
+        {
             Serializer.DeserializeLevers();
 
             // Define the lever container, so the lever locations (which are implemented as ExistingContainerLocations) know how to work
@@ -67,61 +68,6 @@ namespace RandomizableLevers
 
             ItemChanger.Events.OnItemChangerHook += LanguageData.Hook;
             ItemChanger.Events.OnItemChangerUnhook += LanguageData.Unhook;
-            #endregion
-
-#if DEBUG
-            Serializer.SerializeLevers();
-#endif
-
-            if (ModHooks.GetMod("Randomizer 4") is Mod)
-            {
-                Rando.RandoInterop.HookRandomizer();
-            }
-
-            On.UIManager.StartNewGame += UIManager_StartNewGame;
         }
-
-        private void UIManager_StartNewGame(On.UIManager.orig_StartNewGame orig, UIManager self, bool permaDeath, bool bossRush)
-        {
-            ItemChangerMod.CreateSettingsProfile(false, false);
-            ItemChangerMod.Modules.GetOrAdd<TransitionFixes>();
-
-            static void AddILP(string loc, string itm)
-            {
-                AbstractPlacement pmt = Finder.GetLocation(loc).Wrap();
-                pmt.Add(Finder.GetItem(itm));
-                ItemChangerMod.AddPlacements(pmt.Yield());
-            }
-
-            foreach (string s in LeverNames.ToArray())
-            {
-                AddILP(s, ItemNames.Grub);
-            }
-
-            orig(self, permaDeath, bossRush);
-        }
-
-        /*
-        private void UIManager_StartNewGame(On.UIManager.orig_StartNewGame orig, UIManager self, bool permaDeath, bool bossRush)
-        {
-            ItemChangerMod.CreateSettingsProfile(false, false);
-            ItemChangerMod.Modules.GetOrAdd<TransitionFixes>();
-
-            static void AddILP(string loc, string itm)
-            {
-                AbstractPlacement pmt = Finder.GetLocation(loc).Wrap();
-                pmt.Add(Finder.GetItem(itm));
-                ItemChangerMod.AddPlacements(pmt.Yield());
-            }
-
-            Dictionary<string, string> pairs = Vanilla.GetRandomPairs(new Random());
-            foreach (KeyValuePair<string, string> pair in pairs)
-            {
-                AddILP(pair.Key, pair.Value);
-            }
-
-            orig(self, permaDeath, bossRush);
-        }
-        */
     }
 }
