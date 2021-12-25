@@ -10,7 +10,22 @@
     "name": "Switch-Dirtmouth_Stag",
     "sceneName": "Room_Town_Stag_Station",
     "flingType": "Everywhere",
-    "tags": null,
+    "tags": [
+      {
+        "$type": "RandomizableLevers.IC.PreventTransitionFixTag, RandomizableLevers",
+        "excludedTransition": {
+          "SceneName": "Town",
+          "GateName": "door_station"
+        }
+      },
+      {
+        "$type": "RandomizableLevers.IC.PreventTransitionFixTag, RandomizableLevers",
+        "excludedTransition": {
+          "SceneName": "Room_Town_Stag_Station",
+          "GateName": "left1"
+        }
+      }
+    ],
     "HintActive": false
   },
   "Switch-Outside_Ancestral_Mound": {

@@ -50,6 +50,10 @@ namespace RandomizableLevers.IC
                     case SceneNames.Ruins1_31b when t.GateName == "right1":
                         Finder.GetItem(LeverNames.Lever_Shade_Soul_Exit).GiveImmediate(null);
                         break;
+                    case SceneNames.Room_Town_Stag_Station when t.GateName == "left1":
+                    case SceneNames.Town when t.GateName == "door_station":
+                        Finder.GetItem(LeverNames.Switch_Dirtmouth_Stag).GiveImmediate(null);
+                        break;
                 }
             }
         }
