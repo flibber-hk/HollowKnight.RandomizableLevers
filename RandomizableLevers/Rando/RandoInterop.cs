@@ -9,6 +9,7 @@
             LogicPatcher.Hook();
             RandoMenuPage.Hook();
             RequestModifier.Hook();
+            LateRandoChanges.Hook();
         }
     }
 }

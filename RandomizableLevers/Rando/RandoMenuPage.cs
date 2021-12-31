@@ -3,23 +3,33 @@ using MenuChanger.MenuElements;
 using MenuChanger.MenuPanels;
 using MenuChanger.Extensions;
 using RandomizerMod.Menu;
+using UnityEngine.SceneManagement;
 
 namespace RandomizableLevers.Rando
 {
-    public static class RandoMenuPage
+    public class RandoMenuPage
     {
-        internal static MenuPage LeverRandoPage;
-        internal static MenuElementFactory<LeverRandomizationSettings> leverMEF;
-        internal static VerticalItemPanel leverVIP;
+        internal MenuPage LeverRandoPage;
+        internal MenuElementFactory<LeverRandomizationSettings> leverMEF;
+        internal VerticalItemPanel leverVIP;
         
-        internal static SmallButton JumpToLeverRandoButton;
+        internal SmallButton JumpToLeverRandoButton;
+
+        private static RandoMenuPage _instance = null;
+        internal static RandoMenuPage Instance => _instance ?? (_instance = new RandoMenuPage());
+
+        public static void OnExitMenu(Scene from, Scene to)
+        {
+            if (from.name == "Menu_Title") _instance = null;
+        }
 
         public static void Hook()
         {
-            RandomizerMenuAPI.AddMenuPage(ConstructMenu, HandleButton);
+            RandomizerMenuAPI.AddMenuPage(Instance.ConstructMenu, Instance.HandleButton);
+            UnityEngine.SceneManagement.SceneManager.activeSceneChanged += OnExitMenu;
         }
 
-        private static bool HandleButton(MenuPage landingPage, out SmallButton button)
+        private bool HandleButton(MenuPage landingPage, out SmallButton button)
         {
             JumpToLeverRandoButton = new(landingPage, "Levers");
             JumpToLeverRandoButton.AddHideAndShowEvent(landingPage, LeverRandoPage);
@@ -27,8 +37,7 @@ namespace RandomizableLevers.Rando
             return true;
         }
 
-
-        private static void ConstructMenu(MenuPage landingPage)
+        private void ConstructMenu(MenuPage landingPage)
         {
             LeverRandoPage = new MenuPage("Levers", landingPage);
             leverMEF = new(LeverRandoPage, RandoInterop.Settings);

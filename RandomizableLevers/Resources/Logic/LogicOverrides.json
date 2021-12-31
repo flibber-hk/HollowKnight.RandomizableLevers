@@ -1,13 +1,5 @@
 ﻿[
     {
-        "name": "Crossroads_06[left1]",
-        "logic": "Crossroads_06[left1] | (Crossroads_06[door1] | Crossroads_06[right1]) + Switch-Outside_Ancestral_Mound"
-    },
-    {
-        "name": "Crossroads_33[right1]",
-        "logic": "Crossroads_33[right1] | Crossroads_33 + Switch-Outside_Ancestral_Mound"
-    },
-    {
         "name": "Fungus1_22[bot1]",
         "logic": "Fungus1_22[bot1] | (Fungus1_22[top1] | Fungus1_22[left1]) + Switch-Greenpath_Stag"
     },
@@ -32,14 +24,6 @@
         "logic": "(Fungus1_22[top1] | Fungus1_22[left1]) + Switch-Greenpath_Stag | Fungus1_22[bot1]"
     },
     {
-        "name": "RestingGrounds_02[bot1]",
-        "logic": "RestingGrounds_02[bot1] | RestingGrounds_02 + Switch-Lower_Resting_Grounds"
-    },
-    {
-        "name": "RestingGrounds_06[top1]",
-        "logic": "RestingGrounds_06[top1] | (RestingGrounds_06[left1] | RestingGrounds_06[right1]) + (LEFTCLAW | WINGS | LEFTDASH | MILDSKIPS) + Switch-Lower_Resting_Grounds"
-    },
-    {
         "name": "Fungus3_05[left1]",
         "logic": "Fungus3_05[left1] | Fungus3_05[right1] | Fungus3_05[right2] + (LEFTCLAW | WINGS) + Switch-Petra_Arena"
     },
@@ -50,14 +34,6 @@
     {
         "name": "Fungus3_05[right2]",
         "logic": "Fungus3_05[right2] | (Fungus3_05[right1] | Fungus3_05[left1]) + Switch-Petra_Arena"
-    },
-    {
-        "name": "Fungus3_40[right1]",
-        "logic": "Fungus3_40[right1] | (Fungus3_40[top1] | (CANSTAG-R + Queen's_Gardens_Stag)) + Switch-Queen's_Gardens_Stag"
-    },
-    {
-        "name": "Fungus3_13[left2]",
-        "logic": "Fungus3_13[left2] | Fungus3_13 + Switch-Queen's_Gardens_Stag"
     },
     {
         "name": "Crossroads_03[right1]",
@@ -84,24 +60,8 @@
         "logic": "Crossroads_03[top1] | Crossroads_03 + Switch-Crossroads_East"
     },
     {
-        "name": "Waterways_07[right1]",
-        "logic": "Waterways_07[right1] | Lever-Dung_Defender + ((Waterways_07 + ANYCLAW) | ((Waterways_07[door1] | Waterways_07[top1]) + (ANYCLAW | WINGS)))"
-    },
-    {
         "name": "Waterways_09[left1]",
-        "logic": "Waterways_09[left1] | Waterways_09[right1] + Lever-Waterways_Hwurmp_Arena"
-    },
-    {
-        "name": "Fungus2_23[right1]",
-        "logic": "Fungus2_23[right1] | Fungus2_23[right2] + Lever-Waterways_Hwurmp_Arena"
-    },
-    {
-        "name": "Fungus2_23[right2]",
-        "logic": "Fungus2_23[right2] | Fungus2_23[right1] + Lever-Waterways_Hwurmp_Arena"
-    },
-    {
-        "name": "Boss_Essence-Grey_Prince_Zote",
-        "logic": "Room_Bretta[right1] + DREAMNAIL + BOSS + (Fungus2_23[right1] | Fungus2_23[right2] + Lever-Waterways_Hwurmp_Arena) + (LEFTCLAW | (RIGHTCLAW + MILDSKIPS)) + WINGS + Deepnest_33[top1] + Room_Colosseum_01[left1] + (SPICYCOMBATSKIPS | FOCUS)"
+        "logic": "Waterways_09[left1] | Waterways_09[right1] + Opened_Waterways_Exit"
     },
     {
         "name": "Mask_Shard-Queen's_Station",
@@ -148,48 +108,24 @@
         "logic": "Ruins2_11_b[bot1] | (Ruins2_11_b[right1] | Ruins2_11_b[left1]) + Lever-Tower_of_Love"
     },
     {
-        "name": "Abyss_09[right1]",
-        "logic": "Abyss_09[right1] | Abyss_09 + (Lever-Abyss_Lighthouse | VOIDHEART) + (SWIM | RIGHTSUPERDASH)"
-    },
-    {
-        "name": "Abyss_09[right2]",
-        "logic": "Abyss_09[right2] | Abyss_09 + ((FULLCLAW + FULLDASH) | WINGS)"
-    },
-    {
-        "name": "Abyss_09[left1]",
-        "logic": "Abyss_09[left1] | Abyss_09"
-    },
-    {
         "name": "Deepnest_26[left1]",
-        "logic": "Deepnest_26[left1] | (Deepnest_26[left2] + Lever-Failed_Tramway_Left + Lever-Failed_Tramway_Right + WINGS) | (Deepnest_26[right1] | Deepnest_26[bot1]) + Lever-Failed_Tramway_Left + (LEFTCLAW | (WINGS + MILDSKIPS))"
+        "logic": "Deepnest_26[left1] | (Deepnest_26[left2] + Opened_Tramway_Exit_Gate + Lever-Failed_Tramway_Right + WINGS) | (Deepnest_26[right1] | Deepnest_26[bot1]) + Opened_Tramway_Exit_Gate + (LEFTCLAW | (WINGS + MILDSKIPS))"
     },
     {
         "name": "Deepnest_26[left2]",
-        "logic": "Deepnest_26[left2] | (Deepnest_26[right1] | Deepnest_26[bot1]) + Lever-Failed_Tramway_Right + (LEFTCLAW | (WINGS + MILDSKIPS)) | Deepnest_26[left1] + Lever-Failed_Tramway_Right + Lever-Failed_Tramway_Left"
-    },
-    {
-        "name": "Deepnest_26[right1]",
-        "logic": "Deepnest_26[right1] | Deepnest_26"
-    },
-    {
-        "name": "Deepnest_26[bot1]",
-        "logic": "Deepnest_26[bot1] | Deepnest_26"
+        "logic": "Deepnest_26[left2] | (Deepnest_26[right1] | Deepnest_26[bot1]) + Lever-Failed_Tramway_Right + (LEFTCLAW | (WINGS + MILDSKIPS)) | Deepnest_26[left1] + Lever-Failed_Tramway_Right + Opened_Tramway_Exit_Gate"
     },
     {
         "name": "Deepnest_26b[right2]",
-        "logic": "Deepnest_26b[right2] | Deepnest_26b[right1] + Lever-Failed_Tramway_Left"
-    },
-    {
-        "name": "Deepnest_26b[right1]",
-        "logic": "Deepnest_26b[right1] | Deepnest_26b[right2] + (WINGS | (LEFTCLAW + (RIGHTDASH | MILDSKIPS))) + Lever-Failed_Tramway_Left"
+        "logic": "Deepnest_26b[right2] | Deepnest_26b[right1] + Opened_Tramway_Exit_Gate"
     },
     {
         "name": "Tram_Pass",
-        "logic": "(Deepnest_26b[right2] | Deepnest_26b[right1] + Lever-Failed_Tramway_Left) + (LEFTCLAW | WINGS)"
+        "logic": "(Deepnest_26b[right2] | Deepnest_26b[right1] + Opened_Tramway_Exit_Gate) + (LEFTCLAW | WINGS)"
     },
     {
         "name": "Lifeblood_Cocoon-Failed_Tramway",
-        "logic": "(Deepnest_26 | Deepnest_26[left1] + Lever-Failed_Tramway_Left) + (LEFTCLAW | (WINGS + MILDSKIPS))"
+        "logic": "(Deepnest_26 | Deepnest_26[left1] + Opened_Tramway_Exit_Gate) + (LEFTCLAW | (WINGS + MILDSKIPS))"
     },
     {
         "name": "Ruins1_30[right1]",
@@ -336,20 +272,12 @@
         "logic": "Ruins1_05[bot2] | Ruins1_05[bot1] + (FULLCLAW | (WINGS + (ANYCLAW | MILDSKIPS))) + Lever-City_Above_Lemm_Upper"
     },
     {
-        "name": "Ruins1_31[left2]",
-        "logic": "Ruins1_31[left2] | Ruins1_31 + Lever-Shade_Soul_Exit + ANYCLAW + WINGS + (RIGHTCLAW | RIGHTDASH | RIGHTSUPERDASH)"
-    },
-    {
-        "name": "Ruins1_31b[right1] + Lever-Shade_Soul_Exit",
-        "logic": "Ruins1_31b[right1] | Ruins1_31b[right2] + MINIBOSS"
+        "name": "Ruins1_31b[right1]",
+        "logic": "Ruins1_31b[right1] | Ruins1_31b[right2] + Defeated_Elegant_Warrior + Lever-Shade_Soul"
     },
     {
         "name": "Ruins_House_03[left1]",
-        "logic": "Ruins_House_03[left1] | Ruins_House_03[left2] + ANYCLAW + Lever-Emilitia"
-    },
-    {
-        "name": "Ruins2_04[door_Ruin_House_03]",
-        "logic": "Ruins2_04[door_Ruin_House_03] | Ruins2_04 + Lever-Emilitia"
+        "logic": "Ruins_House_03[left1] | Ruins_House_03[left2] + ANYCLAW + Opened_Emilitia_Door"
     },
     {
         "name": "Fungus2_15[top3]",
@@ -434,30 +362,6 @@
     {
         "name": "Town[right1]",
         "logic": "Town[right1] | Town + (LEFTCLAW | Town[left1]) + WINGS + RIGHTSUPERDASH | Town + Lever-Dirtmouth_Elevator"
-    },
-    {
-        "name": "Town[bot1]",
-        "logic": "Town[bot1] | Town"
-    },
-    {
-        "name": "Town[door_station]",
-        "logic": "Town[door_station] | Town + Dirtmouth_Stag"
-    },
-    {
-        "name": "Town[door_sly]",
-        "logic": "Town[door_sly] | Town + Room_ruinhouse[left1]"
-    },
-    {
-        "name": "Town[door_mapper]",
-        "logic": "Town[door_mapper] | Town"
-    },
-    {
-        "name": "Town[door_jiji]",
-        "logic": "Town[door_jiji] | Town + JIJIUNLOCK"
-    },
-    {
-        "name": "Town[door_bretta]",
-        "logic": "Town[door_bretta] | Town + Fungus2_23 + ((FULLCLAW + (FULLDASH | FULLSUPERDASH | WINGS)) | ((LEFTCLAW | (RIGHTCLAW + MILDSKIPS)) + WINGS))"
     },
     {
         "name": "Mines_20[left1]",
@@ -556,24 +460,12 @@
         "logic": "White_Palace_03_hub[right1] | White_Palace_03_hub + ((RIGHTCLAW + (RIGHTDASH | LEFTCLAW)) | WINGS)"
     },
     {
-        "name": "White_Palace_03_hub[top1]",
-        "logic": "White_Palace_03_hub[top1] + (ANYCLAW | WINGS) | White_Palace_03_hub + Lever-Palace_Left_Orb + Lever-Palace_Right_Orb + (ANYCLAW | WINGS)"
-    },
-    {
         "name": "White_Palace_03_hub[bot1]",
         "logic": "White_Palace_03_hub[bot1] | White_Palace_03_hub"
     },
     {
         "name": "Soul_Totem-White_Palace_Hub",
         "logic": "White_Palace_03_hub + (LEFTDASH | FULLCLAW | WINGS | White_Palace_03_hub[left1] + Lever-Palace_Atrium)"
-    },
-    {
-        "name": "Abyss_05[left1]",
-        "logic": "Abyss_05[left1] | Abyss_05"
-    },
-    {
-        "name": "Abyss_05[right1]",
-        "logic": "Abyss_05[right1] | Abyss_05"
     },
     {
         "name": "White_Palace_15[left1]",
@@ -602,18 +494,6 @@
     {
         "name": "Soul_Totem-Path_of_Pain_Below_Lever",
         "logic": "White_Palace_17[bot1] + FULLCLAW + WINGS | White_Palace_17[right1] + Lever-Path_of_Pain"
-    },
-    {
-        "name": "White_Palace_01[left1]",
-        "logic": "White_Palace_01[left1] | White_Palace_01"
-    },
-    {
-        "name": "White_Palace_01[right1]",
-        "logic": "White_Palace_01[right1] | White_Palace_01"
-    },
-    {
-        "name": "White_Palace_01[top1]",
-        "logic": "White_Palace_01[top1] | White_Palace_01 + Lever-Palace_Entrance_Orb"
     },
     {
         "name": "Fungus2_21[right1]",

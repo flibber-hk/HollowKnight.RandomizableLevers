@@ -1,43 +1,15 @@
 ﻿[
     {
-        "name": "Switch-Dirtmouth_Stag",
-        "logic": "Room_Town_Stag_Station[left1] | CANSTAG-R"
-    },
-    {
-        "name": "Switch-Outside_Ancestral_Mound",
-        "logic": "Crossroads_06[left1] | Crossroads_06[door1] | Crossroads_06[right1]"
-    },
-    {
         "name": "Switch-Greenpath_Stag",
         "logic": "Fungus1_22[top1] | Fungus1_22[left1] | Fungus1_22[bot1] + Switch-Greenpath_Stag"
-    },
-    {
-        "name": "Switch-Lower_Resting_Grounds",
-        "logic": "RestingGrounds_06[top1] | (RestingGrounds_06[left1] | RestingGrounds_06[right1]) + (LEFTCLAW | WINGS | LEFTDASH | MILDSKIPS) + Switch-Lower_Resting_Grounds"
     },
     {
         "name": "Switch-Petra_Arena",
         "logic": "(Fungus3_05[left1] | Fungus3_05[right1] | Fungus3_05[right2] + Switch-Petra_Arena) + ((LEFTDASH + (RIGHTDASH | RIGHTSUPERDASH)) | ((RIGHTCLAW | WINGS) + LEFTSUPERDASH + (RIGHTDASH | RIGHTSUPERDASH)))"
     },
     {
-        "name": "Switch-Queen's_Gardens_Stag",
-        "logic": "Fungus3_40[top1] | Fungus3_40[right1]"
-    },
-    {
         "name": "Switch-Crossroads_East",
         "logic": "Crossroads_03 | Crossroads_03[top1] + Switch-Crossroads_East"
-    },
-    {
-        "name": "Lever-Dung_Defender",
-        "logic": "Waterways_05 + (ANYCLAW | WINGS)"
-    },
-    {
-        "name": "Lever-Resting_Grounds_Stag",
-        "logic": "RestingGrounds_09[left1] | (Resting_Grounds_Stag + CANSTAG-R)"
-    },
-    {
-        "name": "Lever-Waterways_Hwurmp_Arena",
-        "logic": "Waterways_09[left1] | Waterways_09[right1] + (LEFTCLAW | WINGS | (RIGHTCLAW + (LEFTDASH | LEFTSUPERDASH)))"
     },
     {
         "name": "Lever-Queen's_Station_Mask_Shard",
@@ -56,16 +28,8 @@
         "logic": "Ruins2_11_b[right1] | Ruins2_11_b[left1] | Ruins2_11_b[bot1] + ANYCLAW + Lever-Tower_of_Love"
     },
     {
-        "name": "Lever-Abyss_Lighthouse",
-        "logic": "Abyss_Lighthouse_room[left1]"
-    },
-    {
         "name": "Lever-Failed_Tramway_Right",
         "logic": "Deepnest_26[left2] + Lever-Failed_Tramway_Right | (Deepnest_26[right1] | Deepnest_26[bot1]) + (LEFTCLAW | (WINGS + MILDSKIPS)) | Deepnest_26[left1] + Lever-Failed_Tramway_Left"
-    },
-    {
-        "name": "Lever-Failed_Tramway_Left",
-        "logic": "Deepnest_26b[right1] + Lever-Failed_Tramway_Left | Deepnest_26b[right2] + (WINGS | (LEFTCLAW + (RIGHTDASH | MILDSKIPS)))"
     },
     {
         "name": "Lever-Below_Spell_Twister",
@@ -126,14 +90,6 @@
     {
         "name": "Lever-City_Above_Lemm_Upper",
         "logic": "Ruins1_05[bot2] + ANYCLAW + Lever-City_Above_Lemm_Upper | Ruins1_05[bot1] + (FULLCLAW | (WINGS + (ANYCLAW | MILDSKIPS)))"
-    },
-    {
-        "name": "Lever-Shade_Soul_Exit",
-        "logic": "Ruins1_31b"
-    },
-    {
-        "name": "Lever-Emilitia",
-        "logic": "Ruins_House_03[left1] | Ruins_House_03[left2] + ANYCLAW"
     },
     {
         "name": "Lever-Mantis_Lords_Top_Left",
@@ -216,28 +172,12 @@
         "logic": "White_Palace_03_hub[left1] | White_Palace_03_hub + Lever-Palace_Atrium + (LEFTCLAW | WINGS)"
     },
     {
-        "name": "Lever-Palace_Right",
-        "logic": "White_Palace_15[right1]"
-    },
-    {
-        "name": "Lever-Palace_Right_Orb",
-        "logic": "Lever-Palace_Right + (White_Palace_15[right1] | White_Palace_15[left1] | White_Palace_15[right2])"
-    },
-    {
         "name": "Lever-Palace_Final",
         "logic": "White_Palace_12[right1] + Lever-Palace_Final + (WINGS | RIGHTCLAW) | White_Palace_12[bot1] + (SPIKETUNNELS | RIGHTDASH | (RIGHTSUPERDASH + LEFTCLAW) | WINGS) + RIGHTCLAW + LEFTSUPERDASH"
     },
     {
         "name": "Lever-Path_of_Pain",
         "logic": "(White_Palace_17[right1] + Lever-Path_of_Pain | White_Palace_17[bot1]) + FULLDASH + FULLCLAW + WINGS + FULLSUPERDASH"
-    },
-    {
-        "name": "Lever-Palace_Entrance_Orb",
-        "logic": "White_Palace_02[left1] + LEFTCLAW + WINGS"
-    },
-    {
-        "name": "Lever-Palace_Left_Orb",
-        "logic": "White_Palace_14[right1]"
     },
     {
         "name": "Lever-Pilgrim's_Way_Left",
