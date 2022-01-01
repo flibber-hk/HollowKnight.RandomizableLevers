@@ -68,7 +68,6 @@ namespace RandomizableLevers.Rando
 
             AddTermsAndItemsToLmb(gs, lmb);
             BifurcateLevers(gs, lmb);
-            ModifyExistingMacros(gs, lmb);
             ModifyExistingLogic(gs, lmb);
             AddLeverLocations(gs, lmb);
         }
@@ -101,7 +100,8 @@ namespace RandomizableLevers.Rando
                 // In-built logic is incorrect - vertical is needed to get to the location.
                 LogicClauseBuilder lcb = lmb.LP.ParseInfixToBuilder("ORIG + (ANYCLAW | WINGS)");
                 lcb.Subst(lmb.LP.GetTermToken("ORIG"), lmb.LogicLookup["Lever-Dung_Defender"]);
-                lmb.LogicLookup["Lever-Dung_Defender"] = new(lcb);
+                lmb.LogicLookup[LeverNames.Lever_Dung_Defender] = new(lcb);
+                lmb.Waypoints.Remove("Lever-Dung_Defender");
             }
 
             {
@@ -148,12 +148,6 @@ namespace RandomizableLevers.Rando
                     lmb.AddItem(new SingleItem(lever, new TermValue(leverTerm, 1)));
                 }
             }
-        }
-
-        private static void ModifyExistingMacros(GenerationSettings gs, LogicManagerBuilder lmb)
-        {
-            using Stream s = typeof(LogicPatcher).Assembly.GetManifestResourceStream("RandomizableLevers.Resources.Logic.MacroOverrides.json");
-            lmb.DeserializeJson(LogicManagerBuilder.JsonType.MacroEdit, s);
         }
 
         private static void ModifyExistingLogic(GenerationSettings gs, LogicManagerBuilder lmb)
