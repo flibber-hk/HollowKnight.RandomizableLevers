@@ -1,0 +1,97 @@
+﻿[
+    {
+        "name": "Town",
+        "old": "Town[right1]",
+        "replacement": "Town[right1] + (Lever-Dirtmouth_Elevator | LEFTCLAW)"
+    },
+    {
+        "name": "Ruins1_05b",
+        "old": "Ruins1_05b[top1]",
+        "replacement": "Ruins1_05b[top1] + Lever-City_Lemm"
+    },
+    {
+        "name": "Ruins1_05c",
+        "old": "Ruins1_05c[top2]",
+        "replacement": "Ruins1_05c[top2] + Lever-City_Above_Lemm_Left"
+    },
+    {
+        "name": "Ruins1_05c",
+        "old": "Ruins1_05c[top3]",
+        "replacement": "Ruins1_05c[top3] + (Lever-City_Above_Lemm_Right | Lever-City_Above_Lemm_Left)"
+    },
+    {
+        "name": "Mines_04",
+        "old": "Mines_04[top1]",
+        "replacement": "Mines_04[top1] + Lever-Crystal_Peak_Below_Chest"
+    },
+    {
+        "name": "Ruins1_23[top1]",
+        "old": "Ruins1_23",
+        "replacement": "Ruins1_23 + Lever-Sanctum_Soul_Warrior"
+    },
+    {
+        "name": "Ruins1_23[right1]",
+        "old": "Ruins1_23",
+        "replacement": "Ruins1_23 + Lever-Sanctum_Soul_Warrior"
+    },
+    {
+        "name": "Boss_Geo-Sanctum_Soul_Warrior",
+        "old": "Ruins1_23",
+        "replacement": "Ruins1_23 + Lever-Sanctum_Soul_Warrior"
+    },
+    {
+        "name": "Ruins1_05c[top3]",
+        "old": "Ruins1_05c[top2]",
+        "replacement": "Ruins1_05c + (Lever-City_Above_Lemm_Left | Lever-City_Above_Lemm_Right)"
+    },
+    {
+        "name": "Ruins1_05c[top1]",
+        "old": "Ruins1_05c[top2]",
+        "replacement": "Ruins1_05c[top2] + Lever-City_Above_Lemm_Left"
+    },
+    {
+        "name": "Ruins1_05[bot2]",
+        "old": "Ruins1_05[bot1]",
+        "replacement": "Ruins1_05[bot1] + Lever-City_Above_Lemm_Upper"
+    },
+    {
+        "name": "Mines_04[left1]",
+        "old": "Mines_04[top1]",
+        "replacement": "Mines_04[top1] + Lever-Crystal_Peak_Below_Chest"
+    },
+    {
+        "name": "Mines_37[top1]",
+        "old": "Mines_37[bot1]",
+        "replacement": "Mines_37[bot1] + (FULLDASH | Lever-Crystal_Peak_Crushers_Chest)"
+    },
+    {
+        "name": "Fungus2_18[bot1]",
+        "old": "Fungus2_18[right1]",
+        "replacement": "Fungus2_18[right1] + Lever-Fungal_Wastes_Bouncy_Grub"
+    },
+    {
+        "name": "Fungus2_18[top1]",
+        "old": "Fungus2_18[right1]",
+        "replacement": "Fungus2_18[right1] + Lever-Fungal_Wastes_Bouncy_Grub"
+    },
+    {
+        "name": "Fungal_Wastes_Map",
+        "old": "Fungus2_18[right1]",
+        "replacement": "Fungus2_18[right1] + Lever-Fungal_Wastes_Bouncy_Grub"
+    },
+    {
+        "name": "Geo_Rock-Fungal_After_Cornifer",
+        "old": "Fungus2_18[right1]",
+        "replacement": "Fungus2_18[right1] + Lever-Fungal_Wastes_Bouncy_Grub"
+    },
+    {
+        "name": "Town[left1]",
+        "old": "Town[right1]",
+        "replacement": "Town[right1] + Lever-Dirtmouth_Elevator"
+    },
+    {
+        "name": "Ruins2_01[left2]",
+        "old": "Ruins2_01[top1]",
+        "replacement": "Ruins2_01[top1] + Lever-City_Spire_Sentry_Upper"
+    }
+]

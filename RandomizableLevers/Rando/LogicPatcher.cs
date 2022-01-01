@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using ItemChanger;
+using Newtonsoft.Json;
 using RandomizerMod.Settings;
 using RandomizerMod.RC;
 using RandomizerCore;
@@ -68,6 +69,7 @@ namespace RandomizableLevers.Rando
 
             AddTermsAndItemsToLmb(gs, lmb);
             BifurcateLevers(gs, lmb);
+            MakeManualChanges(gs, lmb);
             ModifyExistingLogic(gs, lmb);
             AddLeverLocations(gs, lmb);
         }
@@ -124,6 +126,12 @@ namespace RandomizableLevers.Rando
             }
         }
 
+        private static void MakeManualChanges(GenerationSettings gs, LogicManagerBuilder lmb)
+        {
+            lmb.LogicLookup[LeverNames.Lever_Queens_Station_Mask_Shard] = lmb.LogicLookup[LocationNames.Mask_Shard_Queens_Station];
+            lmb.LogicLookup[LeverNames.Lever_Fungal_Wastes_Thorns_Gauntlet] = lmb.LogicLookup[LocationNames.Wanderers_Journal_Fungal_Wastes_Thorns_Gauntlet];
+        }
+
         // Add terms, so that they can be used for logic
         private static void AddTermsAndItemsToLmb(GenerationSettings gs, LogicManagerBuilder lmb)
         {
@@ -154,6 +162,18 @@ namespace RandomizableLevers.Rando
         {
             using Stream s = typeof(LogicPatcher).Assembly.GetManifestResourceStream("RandomizableLevers.Resources.Logic.LogicOverrides.json");
             lmb.DeserializeJson(LogicManagerBuilder.JsonType.LogicEdit, s);
+
+            using Stream r = typeof(LogicPatcher).Assembly.GetManifestResourceStream("RandomizableLevers.Resources.Logic.LogicSubstitutions.json");
+            using StreamReader sr = new(r);
+            using JsonTextReader jtr = new(sr);
+            List<LogicSubstitution> replacements = RandomizerCore.Json.JsonUtil.Deserialize<List<LogicSubstitution>>(jtr);
+
+            foreach (LogicSubstitution subst in replacements)
+            {
+                LogicClauseBuilder lcb = new(lmb.LogicLookup[subst.name]);
+                lcb.Subst(lmb.LP.GetTermToken(subst.old), lmb.LP.ParseInfixToClause(subst.replacement));
+                lmb.LogicLookup[subst.name] = new(lcb);
+            }
         }
 
         private static void AddLeverLocations(GenerationSettings gs, LogicManagerBuilder lmb)

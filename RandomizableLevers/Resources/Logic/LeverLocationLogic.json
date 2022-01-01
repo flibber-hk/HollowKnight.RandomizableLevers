@@ -12,10 +12,6 @@
         "logic": "Crossroads_03 | Crossroads_03[top1] + Switch-Crossroads_East"
     },
     {
-        "name": "Lever-Queen's_Station_Mask_Shard",
-        "logic": "Fungus2_01 + Lever-Queen's_Station_Mask_Shard | Fungus2_01 + ((FULLCLAW + (LEFTDASH | LEFTSUPERDASH)) | WINGS | (RIGHTDASH + RIGHTCLAW + (LEFTDASH | LEFTSUPERDASH) + MILDSKIPS))"
-    },
-    {
         "name": "Lever-Queen's_Gardens_Ground_Block",
         "logic": "Fungus3_04[left1] | Fungus3_04[left2] | (Fungus3_04[right1] + Fungus3_04[right2]) + (ANYCLAW | WINGS) + Lever-Queen's_Gardens_Ground_Block"
     },
@@ -29,7 +25,7 @@
     },
     {
         "name": "Lever-Failed_Tramway_Right",
-        "logic": "Deepnest_26[left2] + Lever-Failed_Tramway_Right | (Deepnest_26[right1] | Deepnest_26[bot1]) + (LEFTCLAW | (WINGS + MILDSKIPS)) | Deepnest_26[left1] + Lever-Failed_Tramway_Left"
+        "logic": "Deepnest_26 | Deepnest_26[left1] + Lever-Failed_Tramway_Left"
     },
     {
         "name": "Lever-Below_Spell_Twister",
@@ -41,7 +37,7 @@
     },
     {
         "name": "Lever-Sanctum_Soul_Warrior",
-        "logic": "Ruins1_23 + (LEFTCLAW | WINGS | (RIGHTCLAW + MILDSKIPS))"
+        "logic": "Ruins1_23 + (LEFTCLAW | WINGS | (RIGHTCLAW + LEFTSUPERDASH + ENEMYPOGOS))"
     },
     {
         "name": "Lever-Sanctum_Bottom",
@@ -65,7 +61,7 @@
     },
     {
         "name": "Lever-City_Spire_Sentry_Upper",
-        "logic": "Ruins2_01[top1] | Ruins2_01 + Lever-City_Spire_Sentry_Lower + (ANYCLAW | WINGS) | Ruins2_01 + Lever-City_Spire_Sentry_Upper + (ANYCLAW | WINGS + SPICYSKIPS)"
+        "logic": "Ruins2_01[top1]"
     },
     {
         "name": "Lever-City_Bridge_Above_Fountain",
@@ -89,11 +85,11 @@
     },
     {
         "name": "Lever-City_Above_Lemm_Upper",
-        "logic": "Ruins1_05[bot2] + ANYCLAW + Lever-City_Above_Lemm_Upper | Ruins1_05[bot1] + (FULLCLAW | (WINGS + (ANYCLAW | MILDSKIPS)))"
+        "logic": "Ruins1_05[bot2] + ANYCLAW + Lever-City_Above_Lemm_Upper | Ruins1_05[bot1] + (FULLCLAW | (WINGS + (ANYCLAW | ENEMYPOGOS)))"
     },
     {
         "name": "Lever-Mantis_Lords_Top_Left",
-        "logic": "(Fungus2_15[top3] | Fungus2_15[left1] + (RIGHTCLAW | LEFTCLAW + RIGHTSUPERDASH + WINGS) | Fungus2_15[right1] + (LEFTCLAW | (WINGS + RIGHTCLAW) | Lever-Mantis_Lords_Middle_Right)) + (RIGHTCLAW + (LEFTCLAW | RIGHTDASH | MILDSKIPS) | WINGS) | Fungus2_15[top3] + Lever-Mantis_Lords_Top_Left"
+        "logic": "(Fungus2_15[top3] | Fungus2_15[left1] + (RIGHTCLAW | LEFTCLAW + RIGHTSUPERDASH + WINGS) | Fungus2_15[right1] + (LEFTCLAW | (WINGS + RIGHTCLAW) | Lever-Mantis_Lords_Middle_Right)) + (RIGHTCLAW + (LEFTCLAW | RIGHTDASH | ENEMYPOGOS) | WINGS) | Fungus2_15[top3] + Lever-Mantis_Lords_Top_Left"
     },
     {
         "name": "Lever-Mantis_Lords_Middle_Left",
@@ -117,11 +113,7 @@
     },
     {
         "name": "Lever-Mantis_Lords_Access",
-        "logic": "Fungus2_14[bot3] | ((Fungus2_14 + (LEFTDASH | LEFTSUPERDASH | WINGS | FULLCLAW | MILDSKIPS) + (LEFTCLAW | (WINGS + RIGHTCLAW) | (RIGHTCLAW + MILDSKIPS))) | Fungus2_14[top1]) + (RIGHTCLAW | WINGS | (LEFTCLAW + (RIGHTDASH | RIGHTSUPERDASH | MILDSKIPS)))"
-    },
-    {
-        "name": "Lever-Fungal_Wastes_Thorns_Gauntlet",
-        "logic": "Fungus2_04 + (Lever-Fungal_Wastes_Thorns_Gauntlet | ((LEFTCLAW + WINGS) | (RIGHTCLAW + (WINGS | RIGHTDASH | (RIGHTSUPERDASH + LEFTCLAW) | AIRSTALL))))"
+        "logic": "Fungus2_14[bot3] | ((Fungus2_14 + (LEFTDASH | LEFTSUPERDASH | WINGS | FULLCLAW | ENEMYPOGOS) + (LEFTCLAW | (WINGS + RIGHTCLAW) | (RIGHTCLAW + ENEMYPOGOS))) | Fungus2_14[top1]) + (RIGHTCLAW | WINGS | (LEFTCLAW + (RIGHTDASH | RIGHTSUPERDASH | BACKGROUNDPOGOS)))"
     },
     {
         "name": "Lever-Fungal_Wastes_Below_Shrumal_Ogres",
@@ -129,7 +121,7 @@
     },
     {
         "name": "Lever-Fungal_Wastes_Bouncy_Grub",
-        "logic": "Fungus2_18[top1] + Lever-Fungal_Wastes_Bouncy_Grub | Fungus2_18[right1] + (LEFTDASH | LEFTCLAW | WINGS | MILDSKIPS)"
+        "logic": "Fungus2_18[top1] + Lever-Fungal_Wastes_Bouncy_Grub | Fungus2_18[right1] + (LEFTDASH | LEFTCLAW | WINGS | ENEMYPOGOS)"
     },
     {
         "name": "Lever-Dirtmouth_Elevator",
