@@ -88,6 +88,33 @@ namespace RandomizableLevers.Rando
                 }
             }
 
+            foreach (string lever in leverPool)
+            {
+                rb.EditItemRequest(lever, info =>
+                {
+                    info.getItemDef = () => new()
+                    {
+                        Name = lever,
+                        Pool = "Levers",
+                        MajorItem = false,
+                        PriceCap = 500
+                    };
+                });
+                rb.EditLocationRequest(lever, info =>
+                {
+                    string sceneName = Finder.GetLocation(lever).sceneName;
+
+                    info.getLocationDef = () => new()
+                    {
+                        Name = lever,
+                        Multi = false,
+                        SceneName = sceneName,
+                        // MapArea
+                        // TitledArea
+                    };
+                });
+            }
+
             foreach (string lever in LeverNames.ToArray().Except(leverPool))
             {
                 rb.AddToVanilla(lever, lever);
