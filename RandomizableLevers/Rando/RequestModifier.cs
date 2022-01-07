@@ -67,9 +67,25 @@ namespace RandomizableLevers.Rando
             else
             {
                 StageBuilder sb = rb.MainItemStage;
-                ItemGroupBuilder gb = sb.AddItemGroup("Lever Rando Group");
-                gb.Items.AddRange(leverPool);
-                gb.Locations.AddRange(leverPool);
+                ItemGroupBuilder leverGroup = sb.AddItemGroup("Lever Rando Group");
+                leverGroup.Items.AddRange(leverPool);
+                leverGroup.Locations.AddRange(leverPool);
+
+                rb.OnGetGroupFor.Subscribe(-99.7f, ResolveLeverGroup);
+
+                bool ResolveLeverGroup(RequestBuilder rb, string item, RequestBuilder.ElementType type, out GroupBuilder gb)
+                {
+                    if (type == RequestBuilder.ElementType.Item || type == RequestBuilder.ElementType.Location)
+                    {
+                        if (leverPool.Contains(item))
+                        {
+                            gb = leverGroup;
+                            return true;
+                        }
+                    }
+                    gb = default;
+                    return false;
+                }
             }
 
             foreach (string lever in LeverNames.ToArray().Except(leverPool))
