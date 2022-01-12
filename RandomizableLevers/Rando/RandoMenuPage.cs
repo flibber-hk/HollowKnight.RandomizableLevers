@@ -41,7 +41,7 @@ namespace RandomizableLevers.Rando
         {
             LeverRandoPage = new MenuPage("Levers", landingPage);
             leverMEF = new(LeverRandoPage, RandoInterop.Settings);
-            leverVIP = new(LeverRandoPage, new(0, 300), 50f, false, leverMEF.Elements);
+            leverVIP = new(LeverRandoPage, new(0, 300), 75f, false, leverMEF.Elements);
         }
     }
 }

@@ -3,7 +3,8 @@
     public class LeverRandomizationSettings
     {
         public bool RandomizeLevers = true;
-        public bool StagsAsLevers = true;
-        public bool LeversToLevers = true;
+
+        [MenuChanger.Attributes.MenuRange(-1, 99)]
+        public int LeverGroup = -1;
     }
 }
