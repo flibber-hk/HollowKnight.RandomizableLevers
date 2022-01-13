@@ -116,22 +116,15 @@ namespace RandomizableLevers.Rando
             }
 
             // Remove Dirtmouth and RG stag items, because we're randomizing them as levers
-            if (rb.gs.PoolSettings.Stags)
             {
                 rb.RemoveItemByName(ItemNames.Dirtmouth_Stag);
                 rb.RemoveLocationByName(LocationNames.Dirtmouth_Stag);
+                rb.StartItems.RemoveAll(ItemNames.Dirtmouth_Stag);
+                rb.Vanilla.RemoveAll(new(ItemNames.Dirtmouth_Stag, LocationNames.Dirtmouth_Stag));
+
                 rb.RemoveItemByName(ItemNames.Resting_Grounds_Stag);
                 rb.RemoveLocationByName(LocationNames.Resting_Grounds_Stag);
-
-                // Remove levers from start items
-                // It's easiest to simply not support this setting, plus if the stags are levers
-                // then they're not starting with stags :)
-                rb.StartItems.RemoveAll(ItemNames.Dirtmouth_Stag);
                 rb.StartItems.RemoveAll(ItemNames.Resting_Grounds_Stag);
-            }
-            else
-            {
-                rb.Vanilla.RemoveAll(new(ItemNames.Dirtmouth_Stag, LocationNames.Dirtmouth_Stag));
                 rb.Vanilla.RemoveAll(new(ItemNames.Resting_Grounds_Stag, LocationNames.Resting_Grounds_Stag));
             }
 

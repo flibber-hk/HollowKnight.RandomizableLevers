@@ -20,44 +20,6 @@ namespace RandomizableLevers.Rando
         public static void Hook()
         {
             RCData.RuntimeLogicOverride.Subscribe(0.3f, PatchLogic);
-            RCData.RuntimeLogicOverride.Subscribe(0.3f, EnableLocalLogicEdits);
-        }
-
-        private static void EnableLocalLogicEdits(GenerationSettings gs, LogicManagerBuilder lmb)
-        {
-            if (!RandoInterop.Settings.RandomizeLevers) return;
-
-            string directory = Path.Combine(Path.GetDirectoryName(typeof(LogicPatcher).Assembly.Location), "Logic");
-            try
-            {
-                DirectoryInfo di = new(directory);
-                if (di.Exists)
-                {
-                    List<FileInfo> macros = new();
-                    List<FileInfo> logic = new();
-
-                    foreach (FileInfo fi in di.EnumerateFiles())
-                    {
-                        if (!fi.Extension.ToLower().EndsWith("json")) continue;
-                        else if (fi.Name.ToLower().StartsWith("macro")) macros.Add(fi);
-                        else logic.Add(fi);
-                    }
-                    foreach (FileInfo fi in macros)
-                    {
-                        using FileStream fs = fi.OpenRead();
-                        lmb.DeserializeJson(LogicManagerBuilder.JsonType.MacroEdit, fs);
-                    }
-                    foreach (FileInfo fi in logic)
-                    {
-                        using FileStream fs = fi.OpenRead();
-                        lmb.DeserializeJson(LogicManagerBuilder.JsonType.LogicEdit, fs);
-                    }
-                }
-            }
-            catch (Exception e)
-            {
-                RandomizableLevers.instance.LogError("Error fetching local logic changes:\n" + e);
-            }
         }
 
         private static void PatchLogic(GenerationSettings gs, LogicManagerBuilder lmb)
@@ -69,8 +31,8 @@ namespace RandomizableLevers.Rando
 
             AddTermsAndItemsToLmb(gs, lmb);
             BifurcateLevers(gs, lmb);
-            MakeManualChanges(gs, lmb);
             ModifyExistingLogic(gs, lmb);
+            MakeManualChanges(gs, lmb);
             AddLeverLocations(gs, lmb);
         }
 
@@ -97,6 +59,7 @@ namespace RandomizableLevers.Rando
                 lmb.LogicLookup[eventName] = lmb.LP.ParseInfixToClause(leverName);
             }
 
+            // Manual changes
             {
                 // Lever name = event name here
                 // In-built logic is incorrect - vertical is needed to get to the location.
@@ -164,16 +127,7 @@ namespace RandomizableLevers.Rando
             lmb.DeserializeJson(LogicManagerBuilder.JsonType.LogicEdit, s);
 
             using Stream r = typeof(LogicPatcher).Assembly.GetManifestResourceStream("RandomizableLevers.Resources.Logic.LogicSubstitutions.json");
-            using StreamReader sr = new(r);
-            using JsonTextReader jtr = new(sr);
-            List<LogicSubstitution> replacements = RandomizerCore.Json.JsonUtil.Deserialize<List<LogicSubstitution>>(jtr);
-
-            foreach (LogicSubstitution subst in replacements)
-            {
-                LogicClauseBuilder lcb = new(lmb.LogicLookup[subst.name]);
-                lcb.Subst(lmb.LP.GetTermToken(subst.old), lmb.LP.ParseInfixToClause(subst.replacement));
-                lmb.LogicLookup[subst.name] = new(lcb);
-            }
+            lmb.DeserializeJson(LogicManagerBuilder.JsonType.LogicSubst, r);
         }
 
         private static void AddLeverLocations(GenerationSettings gs, LogicManagerBuilder lmb)
