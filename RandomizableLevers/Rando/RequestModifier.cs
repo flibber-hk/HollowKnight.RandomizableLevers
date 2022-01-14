@@ -72,7 +72,7 @@ namespace RandomizableLevers.Rando
 
             HashSet<string> leverNames = new(LeverNames.ToArray());
             
-            // If the value is 0 or -1, then levers will be placed in the main item group by default, so we don't need a matcher.
+            // If the value is 0 or -1, then levers will be placed in the main item group by default, so we don't need a resolver.
             if (RandoInterop.Settings.LeverGroup > 0)
             {
                 ItemGroupBuilder leverGroup = null;
@@ -153,7 +153,7 @@ namespace RandomizableLevers.Rando
                 leverPool = leverPool.Where(i => i != LeverNames.Lever_Path_of_Pain).ToArray();
             }
 
-            // These will get added to the lever group because of the matcher we applied.
+            // These will get added to the lever group because of the GroupResolver we applied.
             foreach (string lever in leverPool)
             {
                 rb.AddItemByName(lever);
