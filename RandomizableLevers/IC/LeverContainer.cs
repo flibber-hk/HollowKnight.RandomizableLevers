@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using HutongGames.PlayMaker;
 using HutongGames.PlayMaker.Actions;
 using ItemChanger;
@@ -42,7 +43,7 @@ namespace RandomizableLevers.IC
             FsmState init = fsm.GetState("Initiate");
             BoolTest test = init.GetFirstActionOfType<BoolTest>();
             int pos = init.Actions.IndexOf(test);
-            init.Actions[pos] = new DelegateBoolTest(() => info.placement.AllObtained(), test);
+            init.Actions[pos] = new DelegateBoolTest(() => info.placement.CheckVisitedAny(VisitState.Opened), test);
 
             fsm.GetState("Activated")?.RemoveActionsOfType<SendEventByName>();
 
@@ -53,21 +54,38 @@ namespace RandomizableLevers.IC
             // Gate Switch
             fsm.GetState("PD On?")?.RemoveActionsOfType<FsmStateAction>();
 
-            // WP orb levers use the Globe state
+            // WP orb levers use the Globe state; all others use the Open state
             FsmState open = fsm.GetState("Open") ?? fsm.GetState("Globe");
             open.RemoveActionsOfType<SendEventByName>();
 
-            // Correctly add the visit flag even though we're not using it to determine lever hit state
+            // Use the Opened visit state flag to mark that the lever has been hit
             open.AddFirstAction(new Lambda(() => info.placement.AddVisitFlag(VisitState.Opened)));
             
+            // When hit, give all items immediately rather than spawning shinies.
             open.AddFirstAction(new AsyncLambda(callback => ItemUtility.GiveSequentially(info.items, info.placement, new GiveInfo()
             {
                 FlingType = info.flingType,
-                Container = "Lever",
+                Container = LeverContainer.Lever,
                 // Only support corner message type because the lever doesn't take control
                 MessageType = MessageType.Corner,
                 Transform = fsm.transform
             }, callback)));
+
+            // Spawn shinies for respawned items in the target state of the BoolTest from Initiate
+            FsmState activatedState = init.Transitions.First(x => x.FsmEvent == test.isTrue).ToFsmState;
+            activatedState.AddFirstAction(new Lambda(() =>
+            {
+                foreach (AbstractItem item in info.items)
+                {
+                    if (!item.IsObtained())
+                    {
+                        GameObject shiny = ShinyUtility.MakeNewShiny(info.placement, item, info.flingType);
+                        shiny.transform.SetPosition2D(fsm.transform.position.x, fsm.transform.position.y);
+                        ShinyUtility.FlingShinyRandomly(shiny.LocateFSM("Shiny Control"));
+                        shiny.SetActive(true);
+                    }
+                }
+            }));
 
             // Speed things up, I guess
             FsmState hit = fsm.GetState("Hit");

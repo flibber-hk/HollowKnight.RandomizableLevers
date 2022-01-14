@@ -24,7 +24,7 @@ namespace RandomizableLevers.Rando
 
         private static void PatchLogic(GenerationSettings gs, LogicManagerBuilder lmb)
         {
-            if (!RandoInterop.Settings.RandomizeLevers)
+            if (!RandoInterop.Settings.Any)
             {
                 return;
             }

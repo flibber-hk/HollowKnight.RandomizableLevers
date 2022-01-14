@@ -27,7 +27,7 @@ namespace RandomizableLevers.Rando
         private static void DerangeLevers(RequestBuilder rb)
         {
             if (!rb.gs.CursedSettings.Deranged) return;
-            if (!RandoInterop.Settings.RandomizeLevers) return;
+            if (!RandoInterop.Settings.Any) return;
 
             ItemGroupBuilder igb = rb.GetItemGroupFor(LeverNames.Lever_Dirtmouth_Elevator);
             if (igb.strategy is DefaultGroupPlacementStrategy dgps)
@@ -39,7 +39,7 @@ namespace RandomizableLevers.Rando
 
         private static void SetupRefs(RequestBuilder rb)
         {
-            if (!RandoInterop.Settings.RandomizeLevers)
+            if (!RandoInterop.Settings.Any)
             {
                 return;
             }
@@ -87,7 +87,7 @@ namespace RandomizableLevers.Rando
                 }
                 leverGroup ??= rb.MainItemStage.AddItemGroup(label);
 
-                rb.OnGetGroupFor.Subscribe(-0f, ResolveLeverGroup);
+                rb.OnGetGroupFor.Subscribe(0.01f, ResolveLeverGroup);
                 bool ResolveLeverGroup(RequestBuilder rb, string item, RequestBuilder.ElementType type, out GroupBuilder gb)
                 {
                     if (type == RequestBuilder.ElementType.Transition)
@@ -110,8 +110,23 @@ namespace RandomizableLevers.Rando
 
         private static void AddLevers(RequestBuilder rb)
         {
+            if (!RandoInterop.Settings.Any)
+            {
+                return;
+            }
+
             if (!RandoInterop.Settings.RandomizeLevers)
             {
+                foreach (string lever in LeverNames.ToArray())
+                {
+                    if (lever == LeverNames.Switch_Dirtmouth_Stag || lever == LeverNames.Lever_Resting_Grounds_Stag)
+                    {
+                        continue;
+                    }
+
+                    rb.AddToVanilla(lever, lever);
+                }
+
                 return;
             }
 
