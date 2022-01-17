@@ -72,6 +72,10 @@ namespace RandomizableLevers.Rando
 
             HashSet<string> leverNames = new(LeverNames.ToArray());
             
+            if (rb.gs.SplitGroupSettings.RandomizeOnStart && RandoInterop.Settings.LeverGroup >= 0 && RandoInterop.Settings.LeverGroup <= 2)
+            {
+                RandoInterop.Settings.LeverGroup = rb.rng.Next(3);
+            }
             // If the value is 0 or -1, then levers will be placed in the main item group by default, so we don't need a resolver.
             if (RandoInterop.Settings.LeverGroup > 0)
             {
