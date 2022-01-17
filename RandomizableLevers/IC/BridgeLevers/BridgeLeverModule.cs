@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using ItemChanger;
 using ItemChanger.Extensions;
+using ItemChanger.Internal;
 using ItemChanger.Modules;
 
 namespace RandomizableLevers.IC.BridgeLevers
@@ -44,15 +45,30 @@ namespace RandomizableLevers.IC.BridgeLevers
         {
             if (bridgeNum == 1)
             {
-                return new PlacementAllObtainedBool(LeverNames.Lever_Pilgrims_Way_Left, new PDBool(nameof(PlayerData.cityBridge1))).Value;
+                if (Ref.Settings?.Placements?.TryGetValue(LeverNames.Lever_Pilgrims_Way_Left, out AbstractPlacement pmt) ?? false)
+                {
+                    return pmt.CheckVisitedAny(VisitState.Opened);
+                }
+                else
+                {
+                    return PlayerData.instance.GetBool(nameof(PlayerData.cityBridge1));
+                }
             }
             else
             {
-                return new PlacementAllObtainedBool(LeverNames.Lever_Pilgrims_Way_Right, new PDBool(nameof(PlayerData.cityBridge2))).Value;
+                if (Ref.Settings?.Placements?.TryGetValue(LeverNames.Lever_Pilgrims_Way_Right, out AbstractPlacement pmt) ?? false)
+                {
+                    return pmt.CheckVisitedAny(VisitState.Opened);
+                }
+                else
+                {
+                    return PlayerData.instance.GetBool(nameof(PlayerData.cityBridge2));
+                }
             }
         }
 
         // Rewriting the function in an on hook omegamaggotprime but it makes no sense to use an IL hook to cut away most of the function
+        // Note that rewriting is necessary even if the placement does not exist so that the item can exist too.
         private void PatchBridgeLeverOnSceneEntry(On.BridgeLever.orig_Start orig, BridgeLever self)
         {
             int leverNum = self.playerDataBool.EndsWith("1") ? 1 : 2;

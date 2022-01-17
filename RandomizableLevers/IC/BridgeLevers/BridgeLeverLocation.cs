@@ -2,6 +2,8 @@
 using ItemChanger.Extensions;
 using ItemChanger.Locations;
 using ItemChanger.Placements;
+using ItemChanger.Util;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,8 +19,32 @@ namespace RandomizableLevers.IC.BridgeLevers
 
         protected override void OnLoad()
         {
-            ItemChangerMod.Modules.GetOrAdd<BridgeLeverModule>().OnHitBridgeLever += OnHitLever;
-            if (WillBeReplaced()) Events.AddSceneChangeEdit(sceneName, ReplaceOnSceneChange);
+            if (WillBeReplaced())
+            {
+                Events.AddSceneChangeEdit(sceneName, ReplaceOnSceneChange);
+            }
+            else
+            {
+                ItemChangerMod.Modules.GetOrAdd<BridgeLeverModule>().OnHitBridgeLever += OnHitLever;
+                Events.AddSceneChangeEdit(sceneName, SpawnShinies);
+            }
+        }
+
+        private void SpawnShinies(Scene scene)
+        {
+            if (!Placement.CheckVisitedAny(VisitState.Opened)) return;
+
+            GameObject target = scene.FindGameObject(ObjectName);
+
+            foreach (AbstractItem item in Placement.Items)
+            {
+                if (!item.IsObtained())
+                {
+                    GameObject shiny = ShinyUtility.MakeNewShiny(Placement, item, flingType);
+                    shiny.transform.SetPosition2D(target.transform.position);
+                    ShinyUtility.FlingShinyRandomly(shiny.LocateFSM("Shiny Control"));
+                }
+            }
         }
 
         private void ReplaceOnSceneChange(Scene scene)
@@ -32,8 +58,9 @@ namespace RandomizableLevers.IC.BridgeLevers
 
         protected override void OnUnload()
         {
-            ItemChangerMod.Modules.Get<BridgeLeverModule>().OnHitBridgeLever -= OnHitLever;
+            ItemChangerMod.Modules.GetOrAdd<BridgeLeverModule>().OnHitBridgeLever -= OnHitLever;
             Events.RemoveSceneChangeEdit(sceneName, ReplaceOnSceneChange);
+            Events.RemoveSceneChangeEdit(sceneName, SpawnShinies);
         }
 
         public GiveInfo GetGiveInfo()
@@ -57,6 +84,7 @@ namespace RandomizableLevers.IC.BridgeLevers
         {
             if (arg != bridgeNum) return false;
 
+            Placement.AddVisitFlag(VisitState.Opened);
             Placement.GiveAll(GetGiveInfo());
             return true;
         }
