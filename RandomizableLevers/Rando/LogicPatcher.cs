@@ -29,10 +29,21 @@ namespace RandomizableLevers.Rando
                 return;
             }
 
+            // For each lever, define a term to indicate that the lever has been obtained, and a capped item to correspond to giving the term.
             AddTermsAndItemsToLmb(gs, lmb);
+
+            // For some levers, we can use a base rando event (waypoint) to provide the logic for the lever. In those cases, we simply
+            // treat the waypoint as not pre-placed.
             BifurcateLevers(gs, lmb);
+
+            // For many existing locations and transitions, we need to apply edits to be compatible with lever rando.
             ModifyExistingLogic(gs, lmb);
+
+            // For some lever locations, the logic will be identical to existing locations. (When it is identical to an existing transition, we simply mark its
+            // logic as the logic for the transition - when the transition becomes accessible RandomizerCore will add it to logic.
             ApplyClonedLogic(gs, lmb);
+
+            // Provide the logic for the remaining lever locations.
             AddLeverLocations(gs, lmb);
         }
 
@@ -93,6 +104,7 @@ namespace RandomizableLevers.Rando
         {
             lmb.LogicLookup[LeverNames.Lever_Queens_Station_Mask_Shard] = lmb.LogicLookup[LocationNames.Mask_Shard_Queens_Station];
             lmb.LogicLookup[LeverNames.Lever_Fungal_Wastes_Thorns_Gauntlet] = lmb.LogicLookup[LocationNames.Wanderers_Journal_Fungal_Wastes_Thorns_Gauntlet];
+            lmb.LogicLookup[LeverNames.Lever_Crystal_Peak_Spike_Grub] = lmb.LogicLookup[LocationNames.Grub_Crystal_Peak_Spike];
         }
 
         // Add terms, so that they can be used for logic

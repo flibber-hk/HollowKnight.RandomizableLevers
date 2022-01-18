@@ -140,10 +140,6 @@
         "logic": "Mines_20[right2]"
     },
     {
-        "name": "Lever-Crystal_Peak_Spike_Grub",
-        "logic": "Mines_03 + ((FULLCLAW + FULLDASH) | (WINGS + SPIKETUNNELS + (FULLDASH | AIRSTALL))) | Mines_03[top1] + Lever-Crystal_Peak_Spike_Grub"
-    },
-    {
         "name": "Lever-Crystal_Peak_Below_Chest",
         "logic": "Mines_04[top1] | Mines_04 + Lever-Crystal_Peak_Below_Chest"
     },
