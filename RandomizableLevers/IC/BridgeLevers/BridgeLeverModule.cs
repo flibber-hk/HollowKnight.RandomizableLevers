@@ -23,8 +23,10 @@ namespace RandomizableLevers.IC.BridgeLevers
         public bool OpenedBridge1 { get; set; } = false;
         public bool OpenedBridge2 { get; set; } = false;
 
-        // Event raised when a bridge lever is hit. Return true to override the original behaviour.
-        public event Func<int, bool> OnHitBridgeLever;
+        /// <summary>
+        /// Event raised when a bridge lever is hit. Return true to override the original behaviour.
+        /// </summary>
+        [field: Newtonsoft.Json.JsonIgnore] public event Func<int, bool> OnHitBridgeLever;
 
         public override void Initialize()
         {

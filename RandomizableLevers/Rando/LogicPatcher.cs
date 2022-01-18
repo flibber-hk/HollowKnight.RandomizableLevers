@@ -32,7 +32,7 @@ namespace RandomizableLevers.Rando
             AddTermsAndItemsToLmb(gs, lmb);
             BifurcateLevers(gs, lmb);
             ModifyExistingLogic(gs, lmb);
-            MakeManualChanges(gs, lmb);
+            ApplyClonedLogic(gs, lmb);
             AddLeverLocations(gs, lmb);
         }
 
@@ -89,7 +89,7 @@ namespace RandomizableLevers.Rando
             }
         }
 
-        private static void MakeManualChanges(GenerationSettings gs, LogicManagerBuilder lmb)
+        private static void ApplyClonedLogic(GenerationSettings gs, LogicManagerBuilder lmb)
         {
             lmb.LogicLookup[LeverNames.Lever_Queens_Station_Mask_Shard] = lmb.LogicLookup[LocationNames.Mask_Shard_Queens_Station];
             lmb.LogicLookup[LeverNames.Lever_Fungal_Wastes_Thorns_Gauntlet] = lmb.LogicLookup[LocationNames.Wanderers_Journal_Fungal_Wastes_Thorns_Gauntlet];

@@ -1593,7 +1593,7 @@
       },
       "sprite": {
         "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
-        "key": "Images.RuinsLever"
+        "key": "Images.Stomper"
       }
     },
     "tags": null,
@@ -1622,7 +1622,7 @@
       },
       "sprite": {
         "$type": "RandomizableLevers.IC.EmbeddedSprite, RandomizableLevers",
-        "key": "Images.RuinsLever"
+        "key": "Images.Stomper"
       }
     },
     "tags": null,

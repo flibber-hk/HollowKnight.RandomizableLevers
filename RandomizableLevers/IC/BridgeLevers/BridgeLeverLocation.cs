@@ -9,6 +9,9 @@ using UnityEngine.SceneManagement;
 
 namespace RandomizableLevers.IC.BridgeLevers
 {
+    /// <summary>
+    /// Location that manages one of the bridge levers in Fungus2_21.
+    /// </summary>
     public class BridgeLeverLocation : ExistingContainerLocation
     {
         public int bridgeNum;
@@ -19,15 +22,24 @@ namespace RandomizableLevers.IC.BridgeLevers
 
         protected override void OnLoad()
         {
+            BridgeLeverModule blm = ItemChangerMod.Modules.GetOrAdd<BridgeLeverModule>();
+
             if (WillBeReplaced())
             {
                 Events.AddSceneChangeEdit(sceneName, ReplaceOnSceneChange);
             }
             else
             {
-                ItemChangerMod.Modules.GetOrAdd<BridgeLeverModule>().OnHitBridgeLever += OnHitLever;
+                blm.OnHitBridgeLever += OnHitLever;
                 Events.AddSceneChangeEdit(sceneName, SpawnShinies);
             }
+        }
+
+        protected override void OnUnload()
+        {
+            ItemChangerMod.Modules.GetOrAdd<BridgeLeverModule>().OnHitBridgeLever -= OnHitLever;
+            Events.RemoveSceneChangeEdit(sceneName, ReplaceOnSceneChange);
+            Events.RemoveSceneChangeEdit(sceneName, SpawnShinies);
         }
 
         private void SpawnShinies(Scene scene)
@@ -55,13 +67,6 @@ namespace RandomizableLevers.IC.BridgeLevers
             GameObject target = scene.FindGameObject(ObjectName);
             c.ApplyTargetContext(obj, target, elevation);
             target.SetActive(false); // Don't destroy because we need the target available to open the bridge
-        }
-
-        protected override void OnUnload()
-        {
-            ItemChangerMod.Modules.GetOrAdd<BridgeLeverModule>().OnHitBridgeLever -= OnHitLever;
-            Events.RemoveSceneChangeEdit(sceneName, ReplaceOnSceneChange);
-            Events.RemoveSceneChangeEdit(sceneName, SpawnShinies);
         }
 
         public GiveInfo GetGiveInfo()
