@@ -43,6 +43,7 @@ namespace RandomizableLevers.IC.BridgeLevers
                     GameObject shiny = ShinyUtility.MakeNewShiny(Placement, item, flingType);
                     shiny.transform.SetPosition2D(target.transform.position);
                     ShinyUtility.FlingShinyRandomly(shiny.LocateFSM("Shiny Control"));
+                    shiny.SetActive(true);
                 }
             }
         }
