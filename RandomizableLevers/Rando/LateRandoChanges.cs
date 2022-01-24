@@ -21,14 +21,19 @@ namespace RandomizableLevers.Rando
 
                 foreach (IDeployer deployer in deployers)
                 {
-                    if (deployer is SmallPlatform sp && sp.SceneName == SceneNames.Waterways_04)
+                    if (ShouldRemoveDeployer(deployer))
                     {
                         Events.RemoveSceneChangeEdit(deployer.SceneName, deployer.OnSceneChange);
                     }
                 }
 
-                deployers.RemoveAll(dep => dep is SmallPlatform sp && sp.SceneName == SceneNames.Waterways_04);
+                deployers.RemoveAll(ShouldRemoveDeployer);
             }
+        }
+
+        public static bool ShouldRemoveDeployer(IDeployer d)
+        {
+            return d is SmallPlatform sp && sp.SceneName == SceneNames.Waterways_04;
         }
     }
 }
