@@ -25,7 +25,7 @@
     },
     {
         "name": "Lever-Failed_Tramway_Right",
-        "logic": "Deepnest_26 | Deepnest_26[left1] + Lever-Failed_Tramway_Left"
+        "logic": "Deepnest_26 + (LEFTCLAW | WINGS + ENEMYPOGOS) | Deepnest_26[left1] + Lever-Failed_Tramway_Left"
     },
     {
         "name": "Lever-Below_Spell_Twister",
@@ -141,7 +141,7 @@
     },
     {
         "name": "Lever-Crystal_Peak_Below_Chest",
-        "logic": "Mines_04[top1] | Mines_04 + Lever-Crystal_Peak_Below_Chest"
+        "logic": "Mines_04[top1] | Mines_04 + (LEFTCLAW | WINGS) + Lever-Crystal_Peak_Below_Chest"
     },
     {
         "name": "Lever-Crystal_Peak_Crushers_Chest",
