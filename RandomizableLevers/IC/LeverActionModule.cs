@@ -14,6 +14,12 @@ namespace RandomizableLevers.IC
     public class LeverActionModule : Module
     {
         public Dictionary<string, HashSet<(string, LeverType)>> OpenedGatesByScene = new();
+        public bool CheckGateOpened(string sceneName, string objectName, LeverType leverType)
+        {
+            if (!OpenedGatesByScene.TryGetValue(sceneName, out var gates)) return false;
+            if (gates.Contains((objectName, leverType))) return true;
+            return false;
+        }
 
         public override void Initialize()
         {

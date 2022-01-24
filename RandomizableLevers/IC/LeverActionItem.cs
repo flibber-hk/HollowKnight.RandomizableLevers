@@ -11,11 +11,11 @@ namespace RandomizableLevers.IC
     public class LeverActionItem : AbstractItem
     {
         /// <summary>
-        /// The PDBool set by hitting the lever, and any SD bools associated with the lever's targets
+        /// The PDBool set by hitting the lever, and any SD bools associated with the lever's targets.
         /// </summary>
         public List<IWritableBool> SaveDataOnHit;
         /// <summary>
-        /// The names of the gate objects opened by the lever (that are in the same scene as the lever)
+        /// The names of the gate objects opened by the lever (that are in the same scene as the lever).
         /// </summary>
         public List<string> targets;
         public string sceneName;
@@ -38,6 +38,26 @@ namespace RandomizableLevers.IC
             {
                 ItemChangerMod.Modules.GetOrAdd<LeverActionModule>().OpenGate(SceneNames.Ruins1_31, "Ruins Gate", leverType);
             }
+        }
+
+        public override bool Redundant()
+        {
+            foreach (IWritableBool @bool in SaveDataOnHit)
+            {
+                if (!@bool.Value) return false;
+            }
+
+            LeverActionModule module = ItemChangerMod.Modules.GetOrAdd<LeverActionModule>();
+            foreach (string target in targets)
+            {
+                if (!module.CheckGateOpened(sceneName, target, leverType)) return false;
+            }
+            if (sceneName == SceneNames.Ruins1_31b && !module.CheckGateOpened(SceneNames.Ruins1_31, "Ruins Gate", leverType))
+            {
+                return false;
+            }
+
+            return true;
         }
     }
 }

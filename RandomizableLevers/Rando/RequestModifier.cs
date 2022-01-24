@@ -29,11 +29,13 @@ namespace RandomizableLevers.Rando
             if (!rb.gs.CursedSettings.Deranged) return;
             if (!RandoInterop.Settings.Any) return;
 
-            ItemGroupBuilder igb = rb.GetItemGroupFor(LeverNames.Lever_Dirtmouth_Elevator);
-            if (igb.strategy is DefaultGroupPlacementStrategy dgps)
+            foreach (ItemGroupBuilder igb in rb.EnumerateItemGroups())
             {
-                HashSet<string> leverNames = new(LeverNames.ToArray());
-                dgps.Constraints += (x, y) => !(leverNames.Contains(x.Name) && x.Name == y.Name);
+                if (igb.strategy is DefaultGroupPlacementStrategy dgps)
+                {
+                    HashSet<string> leverNames = new(LeverNames.ToArray());
+                    dgps.Constraints += (x, y) => !(leverNames.Contains(x.Name) && x.Name == y.Name);
+                }
             }
         }
 

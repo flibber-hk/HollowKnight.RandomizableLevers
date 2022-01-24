@@ -16,12 +16,19 @@ namespace RandomizableLevers.IC.BridgeLevers
     /// </summary>
     public class BridgeLeverModule : Module
     {
-        public static readonly Vector2 BridgeLever1Position = new Vector2(69.1f, 12.7f);
-        public static readonly Vector2 BridgeLever2Position = new Vector2(111.1f, 12.8f);
+        public static readonly Vector2 BridgeLever1Position = new(69.1f, 12.7f);
+        public static readonly Vector2 BridgeLever2Position = new(111.1f, 12.8f);
         
         // Bools to mark that the bridges have been opened - set by the relevant Items
         public bool OpenedBridge1 { get; set; } = false;
         public bool OpenedBridge2 { get; set; } = false;
+
+        public bool IsOpened(int bridgeNum) => bridgeNum switch
+        {
+            1 => OpenedBridge1,
+            2 => OpenedBridge2,
+            _ => throw new ArgumentOutOfRangeException()
+        };
 
         /// <summary>
         /// Event raised when a bridge lever is hit. Return true to override the original behaviour.

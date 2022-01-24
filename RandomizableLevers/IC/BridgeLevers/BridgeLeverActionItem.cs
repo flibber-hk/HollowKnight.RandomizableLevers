@@ -11,5 +11,7 @@ namespace RandomizableLevers.IC.BridgeLevers
         {
             ItemChangerMod.Modules.GetOrAdd<BridgeLeverModule>().OpenBridge(bridgeNum);
         }
+
+        public override bool Redundant() => ItemChangerMod.Modules.GetOrAdd<BridgeLeverModule>().IsOpened(bridgeNum);
     }
 }
