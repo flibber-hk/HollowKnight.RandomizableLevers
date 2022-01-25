@@ -32,16 +32,16 @@ namespace RandomizableLevers.Rando
             // For each lever, define a term to indicate that the lever has been obtained, and a capped item to correspond to giving the term.
             AddTermsAndItemsToLmb(gs, lmb);
 
-            // For some levers, we can use a base rando event (waypoint) to provide the logic for the lever. In those cases, we simply
-            // treat the waypoint as not pre-placed.
-            BifurcateLevers(gs, lmb);
-
             // For many existing locations and transitions, we need to apply edits to be compatible with lever rando.
             ModifyExistingLogic(gs, lmb);
 
             // For some lever locations, the logic will be identical to existing locations. (When it is identical to an existing transition, we simply mark its
             // logic as the logic for the transition - when the transition becomes accessible RandomizerCore will add it to logic.
             ApplyClonedLogic(gs, lmb);
+
+            // For some levers, we can use a base rando event (waypoint) to provide the logic for the lever. In those cases, we simply
+            // treat the waypoint as not pre-placed.
+            BifurcateLevers(gs, lmb);
 
             // Provide the logic for the remaining lever locations.
             AddLeverLocations(gs, lmb);

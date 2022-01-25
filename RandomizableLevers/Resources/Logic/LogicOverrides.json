@@ -144,8 +144,16 @@
         "logic": "Deepnest_26b[right2] | Deepnest_26b[right1] + Opened_Tramway_Exit_Gate"
     },
     {
+        "name": "Opened_Tramway_Exit_Gate",
+        "logic": "ORIG + Deepnest_26b[right2] | Deepnest_26b[right1] + Lever-Failed_Tramway_Left"
+    },
+    {
         "name": "Ruins1_30[right1]",
         "logic": "Ruins1_30[right1] | Ruins1_30 + (ANYCLAW | WINGS | Lever-Below_Spell_Twister + Ruins1_30[left1])"
+    },
+    {
+        "name": "Ruins1_23[right1]",
+        "logic": "Ruins1_23[right1] | (Ruins1_23 + Lever-Sanctum_Soul_Warrior | Ruins1_23[top1]) + Defeated_Sanctum_Warrior"
     },
     {
         "name": "Ruins1_23[right2]",
