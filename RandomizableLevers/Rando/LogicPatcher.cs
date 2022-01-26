@@ -39,8 +39,8 @@ namespace RandomizableLevers.Rando
             // logic as the logic for the transition - when the transition becomes accessible RandomizerCore will add it to logic.
             ApplyClonedLogic(gs, lmb);
 
-            // For some levers, we can use a base rando event (waypoint) to provide the logic for the lever. In those cases, we simply
-            // treat the waypoint as not pre-placed.
+            // For some levers, we can use a base rando event (waypoint) to provide the logic for the lever. In those cases, we effectively
+            // treat the waypoint as no longer pre-placed.
             BifurcateLevers(gs, lmb);
 
             // Provide the logic for the remaining lever locations.
