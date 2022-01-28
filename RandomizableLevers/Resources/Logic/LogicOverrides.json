@@ -145,7 +145,7 @@
     },
     {
         "name": "Opened_Tramway_Exit_Gate",
-        "logic": "ORIG + Deepnest_26b[right2] | Deepnest_26b[right1] + Lever-Failed_Tramway_Left"
+        "logic": "ORIG + Deepnest_26b[right2] | Deepnest_26b[right1] + Opened_Tramway_Exit_Gate"
     },
     {
         "name": "Ruins1_30[right1]",
@@ -394,5 +394,13 @@
     {
         "name": "Soul_Totem-Pilgrim's_Way",
         "logic": "Fungus2_21[left1] + (RIGHTCLAW | (LEFTCLAW + WINGS)) + (RIGHTDASH | RIGHTSUPERDASH | ACID) + (WINGS | Lever-Pilgrim's_Way_Left) | Fungus2_21[right1] + ((FULLCLAW + (LEFTDASH | LEFTSUPERDASH)) | (ANYCLAW + WINGS)) + QUAKE + Lever-Pilgrim's_Way_Right + (WINGS | Lever-Pilgrim's_Way_Left)"
+    },
+    {
+        "name": "Fungus3_40[right1]",
+        "logic": "ORIG + (Fungus3_40[right1] | Opened_Gardens_Stag_Exit)"
+    },
+    {
+        "name": "RestingGrounds_06[top1]",
+        "logic": "ORIG + (RestingGrounds_06[top1] | Opened_Resting_Grounds_Floor)"
     }
 ]
