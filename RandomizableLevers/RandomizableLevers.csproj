@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <ProjectGuid>{9CC5009D-BE37-4EF8-9299-FC4D1F632CF7}</ProjectGuid>
     <TargetFramework>net472</TargetFramework>
     <RootNamespace>RandomizableLevers</RootNamespace>
     <AssemblyTitle>RandomizableLevers</AssemblyTitle>
-    <AssemblyVersion>1.0.3</AssemblyVersion>
+    <AssemblyVersion>1.1.0</AssemblyVersion>
     <Deterministic>true</Deterministic>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <LangVersion>latest</LangVersion>
