@@ -42,13 +42,13 @@ namespace RandomizableLevers.IC
 
         public override bool Redundant()
         {
-            foreach (IWritableBool @bool in SaveDataOnHit)
+            foreach (IWritableBool @bool in SaveDataOnHit ?? Enumerable.Empty<IWritableBool>())
             {
                 if (!@bool.Value) return false;
             }
 
             LeverActionModule module = ItemChangerMod.Modules.GetOrAdd<LeverActionModule>();
-            foreach (string target in targets)
+            foreach (string target in targets ?? Enumerable.Empty<string>())
             {
                 if (!module.CheckGateOpened(sceneName, target, leverType)) return false;
             }

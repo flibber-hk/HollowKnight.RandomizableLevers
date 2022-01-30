@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Modding;
 using RandomizerMod.Logging;
 
 namespace RandomizableLevers.Rando
@@ -19,6 +20,11 @@ namespace RandomizableLevers.Rando
             // Add important levers to the condensed spoiler log
             CondensedSpoilerLogger.AddCategory("Important Levers", (args) => true, ImportantLevers);
             CondensedSpoilerLogger.AddCategory("Palace Levers", (args) => true, PalaceLevers);
+
+            if (ModHooks.GetMod(nameof(CondensedSpoilerLogger)) is not null)
+            {
+                LogManager.AddLogger(new LeverByAreaLog());
+            }
         }
 
         private static void AddLeverRandoSettings(RandomizerMod.Logging.LogArguments args, System.IO.TextWriter tw)

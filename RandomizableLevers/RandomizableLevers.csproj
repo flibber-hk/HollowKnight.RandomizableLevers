@@ -26,6 +26,9 @@
     <Reference Include="Assembly-CSharp">
       <HintPath>$(HollowKnightRefs)\Assembly-CSharp.dll</HintPath>
     </Reference>
+    <Reference Include="CondensedSpoilerLogger">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Hollow Knight\hollow_knight_Data\Managed\Mods\CondensedSpoilerLogger\CondensedSpoilerLogger.dll</HintPath>
+    </Reference>
     <Reference Include="ItemChanger">
       <HintPath>$(HollowKnightRefs)\Mods\ItemChanger\ItemChanger.dll</HintPath>
     </Reference>
