@@ -21,9 +21,6 @@ namespace RandomizableLevers.Rando
             CondensedSpoilerLogger.AddCategory("Palace Levers", (args) => true, PalaceLevers);
         }
 
-        private static bool ShouldLogPalaceLevers(LogArguments args)
-            => Settings.RandomizeLevers && args.gs.LongLocationSettings.WhitePalaceRando != RandomizerMod.Settings.LongLocationSettings.WPSetting.ExcludeWhitePalace;
-
         private static void AddLeverRandoSettings(RandomizerMod.Logging.LogArguments args, System.IO.TextWriter tw)
         {
             tw.WriteLine("Logging Lever Rando settings:");
