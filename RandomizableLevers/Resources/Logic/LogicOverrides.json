@@ -32,6 +32,10 @@
         "logic": "Fungus3_44[bot1] + (RIGHTCLAW | WINGS) + (RIGHTSHADOWDASH | Lever-Below_Overgrown_Mound) | Fungus3_44[door1] | Fungus3_44[right1]"
     },
     {
+        "name": "Crossroads_06[left1]",
+        "logic": "ORIG + (Crossroads_06[left1] | Switch-Outside_Ancestral_Mound)"
+    },
+    {
         "name": "Fungus1_22[bot1]",
         "logic": "Fungus1_22[bot1] | (Fungus1_22[top1] | Fungus1_22[left1]) + Switch-Greenpath_Stag"
     },
@@ -161,7 +165,7 @@
     },
     {
         "name": "Ruins1_32[right2]",
-        "logic": "Ruins1_32[right2] | Ruins1_32[right1] + (ANYCLAW | Lever-Sanctum_West_Upper) + QUAKE"
+        "logic": "Ruins1_32[right2] | Ruins1_32[right1] + (ANYCLAW | Lever-Sanctum_West_Upper + WINGS + ENEMYPOGOS) + QUAKE"
     },
     {
         "name": "Geo_Chest-Soul_Master",
@@ -308,6 +312,10 @@
         "logic": "Mines_20[bot1] | Mines_20[left3] | Mines_20[right2] + Lever-Crystal_Peak_Tall_Room_Lower | Mines_20[left2] + Lever-Crystal_Peak_Tall_Room_Middle"
     },
     {
+        "name": "Mines_20[left3]",
+        "logic": "Mines_20[bot1] | Mines_20[left3] | Mines_20[right2] + Lever-Crystal_Peak_Tall_Room_Lower | Mines_20[left2] + Lever-Crystal_Peak_Tall_Room_Middle"
+    },
+    {
         "name": "Mines_20[right2]",
         "logic": "Mines_20[right2] | Mines_20 | Mines_20[bot1] + Lever-Crystal_Peak_Tall_Room_Lower"
     },
@@ -325,7 +333,7 @@
     },
     {
         "name": "Mines_04[top1]",
-        "logic": "Mines_04[top1] + (ANYCLAW | WINGS) | Mines_04 + (LEFTCLAW | WINGS) + Lever-Crystal_Peak_Below_Chest"
+        "logic": "Mines_04[top1] + (ANYCLAW | WINGS) | Mines_04 + (LEFTCLAW | WINGS + ENEMYPOGOS) + Lever-Crystal_Peak_Below_Chest"
     },
     {
         "name": "Mines_37[bot1]",
