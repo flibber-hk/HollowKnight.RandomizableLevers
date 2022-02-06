@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using ItemChanger;
+using RandomizerMod.RC;
 
 namespace RandomizableLevers.Rando
 {
@@ -9,12 +10,12 @@ namespace RandomizableLevers.Rando
     {
         public static void Hook()
         {
-            Events.AfterStartNewGame += RemoveExtraPlatforms;
+            RandoController.OnExportCompleted += RemoveExtraPlatforms;
         }
 
-        private static void RemoveExtraPlatforms()
+        private static void RemoveExtraPlatforms(RandoController rc)
         {
-            if (RandoInterop.Settings.RandomizeLevers && RandomizerMod.RandomizerMod.RS.GenerationSettings is not null)
+            if (rc.ctx.itemPlacements.Any(x => x.Item.Name == LeverNames.Lever_Waterways_Hwurmp_Arena))
             {
                 // Remove platforms in Waterways_04 in case they arrive there from the Waterways exit gate
                 List<IDeployer> deployers = ItemChanger.Internal.Ref.Settings.Deployers;
