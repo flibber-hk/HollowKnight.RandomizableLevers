@@ -141,12 +141,12 @@ namespace RandomizableLevers.Rando
                 rb.RemoveItemByName(ItemNames.Dirtmouth_Stag);
                 rb.RemoveLocationByName(LocationNames.Dirtmouth_Stag);
                 rb.StartItems.RemoveAll(ItemNames.Dirtmouth_Stag);
-                rb.Vanilla.RemoveAll(new(ItemNames.Dirtmouth_Stag, LocationNames.Dirtmouth_Stag));
+                rb.RemoveFromVanilla(LocationNames.Dirtmouth_Stag, ItemNames.Dirtmouth_Stag);
 
                 rb.RemoveItemByName(ItemNames.Resting_Grounds_Stag);
                 rb.RemoveLocationByName(LocationNames.Resting_Grounds_Stag);
                 rb.StartItems.RemoveAll(ItemNames.Resting_Grounds_Stag);
-                rb.Vanilla.RemoveAll(new(ItemNames.Resting_Grounds_Stag, LocationNames.Resting_Grounds_Stag));
+                rb.RemoveFromVanilla(LocationNames.Resting_Grounds_Stag, ItemNames.Resting_Grounds_Stag);
             }
 
             string[] leverPool = LeverNames.ToArray();
