@@ -152,8 +152,12 @@
         "logic": "Deepnest_26b[right2] | Deepnest_26b[right1] + Opened_Tramway_Exit_Gate"
     },
     {
+        "name": "Deepnest_26b[right1]",
+        "logic": "ORIG + (Deepnest_26b[right1] | Opened_Tramway_Exit_Gate)"
+    },
+    {
         "name": "Opened_Tramway_Exit_Gate",
-        "logic": "ORIG + Deepnest_26b[right2] | Deepnest_26b[right1] + Opened_Tramway_Exit_Gate"
+        "logic": "ORIG + Deepnest_26b[right2] | Deepnest_26b[right1] + Lever-Failed_Tramway_Left"
     },
     {
         "name": "Ruins1_30[right1]",
@@ -397,7 +401,7 @@
     },
     {
         "name": "Fungus2_21[right1]",
-        "logic": "Fungus2_21[right1] | Fungus2_21[left1] + ((RIGHTCLAW + (RIGHTDASH | (WINGS + AIRSTALL))) | RIGHTSUPERDASH | ACID | Lever-Pilgrim's_Way_Left + Lever-Pilgrim's_Way_Right) + CREST"
+        "logic": "Fungus2_21[right1] | Fungus2_21[left1] + ((RIGHTCLAW + (RIGHTDASH | (WINGS + AIRSTALL))) | RIGHTSUPERDASH | ACID | Lever-Pilgrim's_Way_Left + Lever-Pilgrim's_Way_Right | RIGHTDASH + WINGS + Lever-Pilgrim's_Way_Right) + CREST"
     },
     {
         "name": "Fungus2_21[left1]",
