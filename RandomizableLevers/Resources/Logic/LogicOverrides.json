@@ -418,5 +418,9 @@
     {
         "name": "RestingGrounds_06[top1]",
         "logic": "ORIG + (RestingGrounds_06[top1] | Opened_Resting_Grounds_Floor)"
+    },
+    {
+        "name": "Mask_Shard-Grey_Mourner",
+        "logic": "ORIG + (Upper_Tram | Right_Elevator | Switch-Lower_Resting_Grounds)"
     }
 ]
