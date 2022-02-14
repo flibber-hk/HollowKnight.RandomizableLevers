@@ -675,7 +675,29 @@
     "name": "Lever-Mantis_Lords_Access",
     "sceneName": "Fungus2_14",
     "flingType": "Everywhere",
-    "tags": null,
+    "tags": [
+      {
+        "$type": "RandomizableLevers.IC.PreventTransitionFixTag, RandomizableLevers",
+        "excludedTransition": {
+          "SceneName": "Fungus2_14",
+          "GateName": "bot1"
+        }
+      },
+      {
+        "$type": "RandomizableLevers.IC.PreventTransitionFixTag, RandomizableLevers",
+        "excludedTransition": {
+          "SceneName": "Fungus2_14",
+          "GateName": "bot2"
+        }
+      },
+      {
+        "$type": "RandomizableLevers.IC.PreventTransitionFixTag, RandomizableLevers",
+        "excludedTransition": {
+          "SceneName": "Fungus2_14",
+          "GateName": "bot3"
+        }
+      }    
+    ],
     "HintActive": false
   },
   "Lever-Fungal_Wastes_Thorns_Gauntlet": {
