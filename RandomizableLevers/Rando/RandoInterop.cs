@@ -45,7 +45,11 @@ namespace RandomizableLevers.Rando
             LeverNames.Lever_Sanctum_Bottom,
             LeverNames.Lever_Failed_Tramway_Left,
             LeverNames.Lever_Failed_Tramway_Right,
+            LeverNames.Lever_City_Spire_Sentry_Lower,
+            LeverNames.Lever_City_Spire_Sentry_Upper,
+            LeverNames.Lever_City_Bridge_Above_Fountain,
             LeverNames.Lever_Queens_Gardens_Ground_Block,
+            LeverNames.Lever_Waterways_Hwurmp_Arena,
         };
 
         private static readonly List<string> PalaceLevers = new()
