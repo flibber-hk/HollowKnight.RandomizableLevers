@@ -15,10 +15,11 @@ namespace RandomizableLevers.Rando
             RequestModifier.Hook();
             LateRandoChanges.Hook();
 
-            RandomizerMod.Logging.SettingsLog.AfterLogSettings += AddLeverRandoSettings;
+            SettingsLog.AfterLogSettings += AddLeverRandoSettings;
 
             // Add important levers to the condensed spoiler log
-            CondensedSpoilerLogger.AddCategory("Important Levers", (args) => true, ImportantLevers);
+            CondensedSpoilerLogger.AddCategory("Access Levers", (args) => true, AccessLevers);
+            CondensedSpoilerLogger.AddCategory("Useful Levers", (args) => true, UsefulLevers);
             CondensedSpoilerLogger.AddCategory("Palace Levers", (args) => true, PalaceLevers);
 
             if (ModHooks.GetMod(nameof(CondensedSpoilerLogger)) is not null)
@@ -35,10 +36,8 @@ namespace RandomizableLevers.Rando
             tw.WriteLine();
         }
 
-        private static readonly List<string> ImportantLevers = new()
+        private static readonly List<string> AccessLevers = new()
         {
-            LeverNames.Switch_Dirtmouth_Stag,
-            LeverNames.Lever_Resting_Grounds_Stag,
             LeverNames.Lever_Mantis_Claw,
             LeverNames.Lever_Mantis_Lords_Access,
             LeverNames.Lever_Sanctum_Soul_Warrior,
@@ -48,8 +47,18 @@ namespace RandomizableLevers.Rando
             LeverNames.Lever_City_Spire_Sentry_Lower,
             LeverNames.Lever_City_Spire_Sentry_Upper,
             LeverNames.Lever_City_Bridge_Above_Fountain,
+        };
+
+        private static readonly List<string> UsefulLevers = new()
+        {
+            LeverNames.Switch_Dirtmouth_Stag,
+            LeverNames.Lever_Resting_Grounds_Stag,
             LeverNames.Lever_Queens_Gardens_Ground_Block,
+            LeverNames.Switch_Petra_Arena,
+            LeverNames.Switch_Queens_Gardens_Stag,
             LeverNames.Lever_Waterways_Hwurmp_Arena,
+            LeverNames.Lever_City_Storerooms,
+            LeverNames.Switch_Lower_Resting_Grounds,
         };
 
         private static readonly List<string> PalaceLevers = new()

@@ -56,8 +56,10 @@ namespace RandomizableLevers
 
         private static string OverrideLanguageString(string key, string sheetTitle, string orig)
         {
-            LanguageKey obj = new LanguageKey(key, sheetTitle);
+            // If orig has already been overridden, then it was probably an ItemChanger language override
+            if (orig != Language.Language.GetInternal(key, sheetTitle)) return orig;
 
+            LanguageKey obj = new LanguageKey(key, sheetTitle);
             return LanguageStrings.TryGetValue(obj, out string overrideValue) ? overrideValue : orig;
         }
     }
