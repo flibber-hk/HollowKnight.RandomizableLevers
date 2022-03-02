@@ -23,6 +23,7 @@ namespace RandomizableLevers
         {
             if (s.RandoSettings == null)
             {
+                LogDebug("GlobalSettings: RandoSettings null");
                 s.RandoSettings = new();
             }
             GS = s;
