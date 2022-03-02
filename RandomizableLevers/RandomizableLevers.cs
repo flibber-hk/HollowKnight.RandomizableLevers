@@ -19,7 +19,14 @@ namespace RandomizableLevers
 		}
 
         public static GlobalSettings GS { get; set; } = new();
-        public void OnLoadGlobal(GlobalSettings s) => GS = s;
+        public void OnLoadGlobal(GlobalSettings s)
+        {
+            if (s.RandoSettings == null)
+            {
+                s.RandoSettings = new();
+            }
+            GS = s;
+        }
         public GlobalSettings OnSaveGlobal() => GS;
 
         public override void Initialize()
