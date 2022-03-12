@@ -41,7 +41,7 @@
     },
     {
         "name": "Lever-Sanctum_Bottom",
-        "logic": "Ruins1_23[right2] | Ruins1_23 + Lever-Sanctum_Bottom"
+        "logic": "Ruins1_23[right2] | Ruins1_23 + (ANYCLAW | WINGS) + Lever-Sanctum_Bottom"
     },
     {
         "name": "Lever-Sanctum_West_Upper",
