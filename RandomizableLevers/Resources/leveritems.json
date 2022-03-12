@@ -30,7 +30,16 @@
         "key": "Images.Switch"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Switch-Outside_Ancestral_Mound": {
@@ -70,7 +79,16 @@
         "key": "Images.Switch"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Switch-Greenpath_Stag": {
@@ -99,7 +117,16 @@
         "key": "Images.Switch"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Switch-Lower_Resting_Grounds": {
@@ -139,7 +166,16 @@
         "key": "Images.Switch"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Switch-Petra_Arena": {
@@ -168,7 +204,16 @@
         "key": "Images.Switch"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Switch-Queen's_Gardens_Stag": {
@@ -202,7 +247,16 @@
         "key": "Images.Switch"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Switch-Crossroads_East": {
@@ -232,7 +286,16 @@
         "key": "Images.Switch"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Dung_Defender": {
@@ -266,7 +329,16 @@
         "key": "Images.Crank"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Waterways_Hwurmp_Arena": {
@@ -300,7 +372,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Queen's_Station_Mask_Shard": {
@@ -329,7 +410,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Queen's_Gardens_Ground_Block": {
@@ -365,7 +455,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Below_Overgrown_Mound": {
@@ -394,7 +493,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Tower_of_Love": {
@@ -424,7 +532,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Resting_Grounds_Stag": {
@@ -459,6 +576,14 @@
     "tags": [
       {
         "$type": "RandomizableLevers.IC.IncrementStagsOnGiveTag, RandomizableLevers"
+      },
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
       }
     ],
     "obtainState": "Unobtained"
@@ -494,7 +619,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Failed_Tramway_Right": {
@@ -523,7 +657,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Failed_Tramway_Left": {
@@ -557,7 +700,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Below_Spell_Twister": {
@@ -586,7 +738,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Sanctum_East": {
@@ -615,7 +776,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Sanctum_Soul_Warrior": {
@@ -644,7 +814,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Sanctum_Bottom": {
@@ -673,7 +852,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Sanctum_West_Upper": {
@@ -702,7 +890,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Sanctum_West_Lower": {
@@ -731,7 +928,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-City_Fountain": {
@@ -760,7 +966,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-City_Spire_Sentry_Lower": {
@@ -789,7 +1004,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-City_Spire_Sentry_Upper": {
@@ -825,7 +1049,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-City_Bridge_Above_Fountain": {
@@ -854,7 +1087,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-City_Storerooms": {
@@ -883,7 +1125,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-City_Lemm": {
@@ -912,7 +1163,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-City_Above_Lemm_Right": {
@@ -941,7 +1201,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-City_Above_Lemm_Left": {
@@ -977,7 +1246,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-City_Above_Lemm_Upper": {
@@ -1006,7 +1284,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Shade_Soul_Exit": {
@@ -1035,7 +1322,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Emilitia": {
@@ -1069,7 +1365,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Mantis_Lords_Top_Left": {
@@ -1098,7 +1403,16 @@
         "key": "Images.MantisLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Mantis_Lords_Middle_Left": {
@@ -1127,7 +1441,16 @@
         "key": "Images.MantisLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Mantis_Lords_Bottom_Left": {
@@ -1156,7 +1479,16 @@
         "key": "Images.MantisLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Mantis_Lords_Middle_Right": {
@@ -1185,7 +1517,16 @@
         "key": "Images.MantisLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Mantis_Lords_Bottom_Right": {
@@ -1214,7 +1555,16 @@
         "key": "Images.MantisLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Mantis_Claw": {
@@ -1243,7 +1593,16 @@
         "key": "Images.MantisLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Mantis_Lords_Access": {
@@ -1272,7 +1631,16 @@
         "key": "Images.MantisLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Fungal_Wastes_Thorns_Gauntlet": {
@@ -1301,7 +1669,16 @@
         "key": "Images.MantisLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Fungal_Wastes_Below_Shrumal_Ogres": {
@@ -1330,7 +1707,16 @@
         "key": "Images.MantisLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Fungal_Wastes_Bouncy_Grub": {
@@ -1359,7 +1745,16 @@
         "key": "Images.MantisLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Dirtmouth_Elevator": {
@@ -1393,7 +1788,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Crystal_Peak_Tall_Room_Upper": {
@@ -1422,7 +1826,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Crystal_Peak_Tall_Room_Middle": {
@@ -1451,7 +1864,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Crystal_Peak_Tall_Room_Lower": {
@@ -1480,7 +1902,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Crystal_Peak_Spike_Grub": {
@@ -1509,7 +1940,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Crystal_Peak_Below_Chest": {
@@ -1538,7 +1978,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Crystal_Peak_Above_Chest": {
@@ -1567,7 +2016,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Crystal_Peak_Crushers_Grub": {
@@ -1596,7 +2054,16 @@
         "key": "Images.Stomper"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Crystal_Peak_Crushers_Chest": {
@@ -1625,7 +2092,16 @@
         "key": "Images.Stomper"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Palace_Atrium": {
@@ -1654,7 +2130,16 @@
         "key": "Images.PalaceLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Palace_Right": {
@@ -1689,7 +2174,16 @@
         "key": "Images.PalaceLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Palace_Final": {
@@ -1719,7 +2213,16 @@
         "key": "Images.PalaceLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Path_of_Pain": {
@@ -1748,7 +2251,16 @@
         "key": "Images.PalaceLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Palace_Entrance_Orb": {
@@ -1782,7 +2294,16 @@
         "key": "Images.PalaceOrbLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Palace_Left_Orb": {
@@ -1816,7 +2337,16 @@
         "key": "Images.PalaceOrbLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Palace_Right_Orb": {
@@ -1850,7 +2380,16 @@
         "key": "Images.PalaceOrbLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Pilgrim's_Way_Left": {
@@ -1874,7 +2413,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   },
   "Lever-Pilgrim's_Way_Right": {
@@ -1898,7 +2446,16 @@
         "key": "Images.RuinsLever"
       }
     },
-    "tags": null,
+    "tags": [
+      {
+        "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
+        "Properties": {
+          "ModSource": "RandomizableLevers",
+          "PoolGroup": "Levers"
+        },
+        "Message": "RandoSupplementalMetadata"
+      }
+    ],
     "obtainState": "Unobtained"
   }
 }
