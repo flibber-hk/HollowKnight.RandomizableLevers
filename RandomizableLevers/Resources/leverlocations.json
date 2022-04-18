@@ -946,7 +946,7 @@
     "nonreplaceable": false,
     "name": "Lever-Mantis_Lords_Middle_Left",
     "sceneName": "Fungus2_15",
-    "flingType": "Everywhere",
+    "flingType": "StraightUp",
     "tags": [
       {
         "$type": "ItemChanger.Tags.InteropTag, ItemChanger",
