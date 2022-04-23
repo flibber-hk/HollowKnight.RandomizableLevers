@@ -213,7 +213,7 @@
     },
     {
         "name": "Ruins2_01[top1]",
-        "logic": "Ruins2_01[top1] | Lever-City_Spire_Sentry_Upper + Ruins2_01[left2] | (ANYCLAW | WINGS) + (Ruins2_01[left2] | Ruins2_01[bot1]) + Lever-City_Spire_Sentry_Lower"
+        "logic": "Ruins2_01[top1] | Lever-City_Spire_Sentry_Upper + Ruins2_01[left2] | (ANYCLAW | WINGS + ENEMYPOGOS) + (Ruins2_01[left2] | Ruins2_01[bot1]) + Lever-City_Spire_Sentry_Lower"
     },
     {
         "name": "Geo_Rock-Watcher's_Spire",
