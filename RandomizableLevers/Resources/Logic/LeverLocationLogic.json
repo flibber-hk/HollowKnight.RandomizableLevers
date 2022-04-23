@@ -113,7 +113,7 @@
     },
     {
         "name": "Lever-Mantis_Lords_Access",
-        "logic": "((Fungus2_14 + (LEFTDASH | LEFTSUPERDASH | WINGS | FULLCLAW | ENEMYPOGOS) + (LEFTCLAW | (WINGS + RIGHTCLAW) | (RIGHTCLAW + ENEMYPOGOS))) | Fungus2_14[top1]) + (RIGHTCLAW | WINGS | (LEFTCLAW + (RIGHTDASH | RIGHTSUPERDASH | BACKGROUNDPOGOS)))"
+        "logic": "Fungus2_14 + ((((LEFTDASH | LEFTSUPERDASH | WINGS | FULLCLAW | ENEMYPOGOS) + (LEFTCLAW | WINGS + RIGHTCLAW | RIGHTCLAW + ENEMYPOGOS)) | Fungus2_14[top1]) + (RIGHTCLAW | WINGS | (LEFTCLAW + (RIGHTDASH | RIGHTSUPERDASH | BACKGROUNDPOGOS))) | Lever-Mantis_Lords_Access + ENEMYPOGOS | RIGHTCLAW | WINGS)"
     },
     {
         "name": "Lever-Fungal_Wastes_Below_Shrumal_Ogres",
