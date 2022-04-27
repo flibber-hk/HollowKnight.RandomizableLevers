@@ -13,7 +13,7 @@ namespace RandomizableLevers.Rando
             LogicPatcher.Hook();
             RandoMenuPage.Hook();
             RequestModifier.Hook();
-            LateRandoChanges.Hook();
+            MiscRandoChanges.Hook();
 
             SettingsLog.AfterLogSettings += AddLeverRandoSettings;
 

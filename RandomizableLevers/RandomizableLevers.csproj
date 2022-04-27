@@ -13,6 +13,7 @@
   <PropertyGroup>
     <HollowKnightRefs>..\API</HollowKnightRefs>
     <ExportDir>bin\Publish</ExportDir>
+    <CopyModDirectory>Randomizable Levers</CopyModDirectory>
   </PropertyGroup>
 
   <Import Project="LocalBuildProperties.props" Condition="Exists('LocalBuildProperties.props')" />
@@ -124,7 +125,7 @@
   </Target>
   
   <Target Name="CopyMod" AfterTargets="PostBuildEvent">
-    <Copy SourceFiles="$(TargetPath);$(TargetDir)$(TargetName).pdb" DestinationFolder="$(HollowKnightRefs)\Mods\$(TargetName)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(TargetPath);$(TargetDir)$(TargetName).pdb" DestinationFolder="$(HollowKnightRefs)\Mods\$(CopyModDirectory)" SkipUnchangedFiles="true" />
   </Target>
 
   <Target Name="CreateReleaseZip" AfterTargets="PostBuildEvent" Condition="'$(Configuration)' == 'Release'">

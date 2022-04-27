@@ -1,9 +1,5 @@
 ﻿[
     {
-        "name": "Opened_Waterways_Exit",
-        "logic": "ORIG | $StartLocation[West Waterways]"
-    },
-    {
         "name": "Crossroads_03",
         "logic": "ORIG | Crossroads_03[top1] + Switch-Crossroads_East"
     },
