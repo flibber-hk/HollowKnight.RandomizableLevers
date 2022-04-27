@@ -14,6 +14,8 @@
     <HollowKnightRefs>..\API</HollowKnightRefs>
     <ExportDir>bin\Publish</ExportDir>
   </PropertyGroup>
+
+  <Import Project="LocalBuildProperties.props" Condition="Exists('LocalBuildProperties.props')" />
   
   <ItemGroup>
     <None Remove="Resources\**\*.png" />
