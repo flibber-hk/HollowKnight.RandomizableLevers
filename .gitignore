@@ -6,6 +6,9 @@
 # Output zip
 RandomizableLevers.zip
 
+# LocalBuildProperties file
+LocalBuildProperties.props
+
 # User-specific files
 *.suo
 *.user
