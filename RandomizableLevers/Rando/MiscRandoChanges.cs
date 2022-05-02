@@ -40,8 +40,6 @@ namespace RandomizableLevers.Rando
                 (string westWaterwaysName, StartDef westWaterwaysStart) 
                     = startDefs.First(pair => pair.Value.SceneName == SceneNames.Waterways_09);
 
-                RandomizableLevers.instance.Log("PATCH START: " + westWaterwaysName);
-
                 startDefs[westWaterwaysName] = westWaterwaysStart with
                 {
                     // Change the start transition for WW_09 start
@@ -55,10 +53,40 @@ namespace RandomizableLevers.Rando
             catch (InvalidOperationException)
             {
                 // No west waterways start
-                RandomizableLevers.instance.LogDebug("No West Waterways start found");
+                RandomizableLevers.instance.LogWarn("No West Waterways start found");
             }
 
-            RandomizableLevers.instance.Log(startDefs["West Waterways"].Logic);
+            try
+            {
+                (string startName, StartDef start)
+                    = startDefs.First(pair => pair.Value.SceneName == SceneNames.Crossroads_ShamanTemple);
+
+                startDefs[startName] = start with
+                {
+                    // Exclude from randomization because dirtmouth isn't reachable itemless
+                    RandoLogic = $"({start.RandoLogic ?? start.Logic}) + (ROOMRANDO | MAPAREARANDO | FULLAREARANDO | {LeversUnrandomized})"
+                };
+            }
+            catch (InvalidOperationException)
+            {
+                RandomizableLevers.instance.LogWarn("No Ancestral Mound start found");
+            }
+
+            try
+            {
+                (string startName, StartDef start)
+                    = startDefs.First(pair => pair.Value.SceneName == SceneNames.Crossroads_50 && pair.Value.X > 200f);
+
+                startDefs[startName] = start with
+                {
+                    // Exclude from randomization because dirtmouth isn't reachable itemless
+                    RandoLogic = $"({start.RandoLogic ?? start.Logic}) + (ROOMRANDO | FULLAREARANDO | {LeversUnrandomized})"
+                };
+            }
+            catch (InvalidOperationException)
+            {
+                RandomizableLevers.instance.LogWarn("No East Blue Lake start found");
+            }
         }
 
         private static void RemoveExtraPlatforms(RandoController rc)
