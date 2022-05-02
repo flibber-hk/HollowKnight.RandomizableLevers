@@ -10,8 +10,8 @@ not necessarily apply when not in the room with the lever - for instance, obtain
 Crossroads will *not* open the pillar immediately.
 - The levers in White Palace and/or Path of Pain will be excluded according to the White Palace long location setting.
 - The lever group will behave as the base rando split groups (so will be randomized on start if the group is set to a value between 0 and 2).
-To restrict levers to be randomized among themselves, choose a number for this field that is different to the numbers in
-the 
+To restrict levers to be randomized among themselves, choose a positive number for this field that is different to the numbers being used
+for the other pools.
 - When randomizing levers, the Dirtmouth and Resting Grounds stag items will be replaced with lever items that behave identically, except
 the item is collected by hitting the lever rather than picking up a shiny (unless replaced). In particular, the stag can be called from Resting
 Grounds even without finding the item (just as in regular stag rando). This behaviour does not depend on the Stag randomization setting.
