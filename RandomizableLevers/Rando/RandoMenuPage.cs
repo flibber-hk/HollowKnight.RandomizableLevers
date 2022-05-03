@@ -43,6 +43,8 @@ namespace RandomizableLevers.Rando
             leverMEF = new(LeverRandoPage, RandoInterop.Settings);
             leverVIP = new(LeverRandoPage, new(0, 300), 75f, true, leverMEF.Elements);
             Localize(leverMEF);
+
+            leverMEF.ElementLookup[nameof(LeverRandomizationSettings.RandomizeLevers)].SelfChanged += _ => RandomizerMenuAPI.Menu.UpdateStartLocationSwitch();
         }
     }
 }
