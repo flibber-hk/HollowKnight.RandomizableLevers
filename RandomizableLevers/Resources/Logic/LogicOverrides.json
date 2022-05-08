@@ -309,7 +309,7 @@
     },
     {
         "name": "Mines_20[left2]",
-        "logic": "Mines_20[left2] | Mines_20 + Lever-Crystal_Peak_Tall_Room_Upper | Mines_20[bot1] + Lever-Crystal_Peak_Tall_Room_Middle"
+        "logic": "Mines_20[left2] | Mines_20 + Lever-Crystal_Peak_Tall_Room_Upper | Mines_20[bot1] + ANYCLAW + Lever-Crystal_Peak_Tall_Room_Middle"
     },
     {
         "name": "Mines_20[bot1]",
