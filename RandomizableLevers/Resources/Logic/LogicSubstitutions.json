@@ -93,5 +93,15 @@
         "name": "Ruins2_01[left2]",
         "old": "Ruins2_01[top1]",
         "replacement": "Ruins2_01[top1] + Lever-City_Spire_Sentry_Upper"
+    },
+    {
+        "name": "White_Palace_03_hub",
+        "old": "White_Palace_03_hub[left1]",
+        "replacement": "White_Palace_03_hub[left1] + Lever-Palace_Atrium"
+    },
+    {
+        "name": "Warp-White_Palace_Atrium_to_Palace_Grounds",
+        "old": "White_Palace_03_hub[left1]",
+        "replacement": "White_Palace_03_hub[left1] + Lever-Palace_Atrium"
     }
 ]
