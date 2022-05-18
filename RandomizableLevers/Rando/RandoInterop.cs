@@ -28,7 +28,7 @@ namespace RandomizableLevers.Rando
                 LogManager.AddLogger(new LeverByAreaLog());
             }
 
-            RandoVanillaTracker.AddInterop("Levers", () => Settings.RandomizeLevers, GetVanillaPlacements);
+            RandoVanillaTracker.AddInterop("Levers", GetVanillaPlacements);
         }
 
         private static void AddLeverRandoSettings(LogArguments args, System.IO.TextWriter tw)
