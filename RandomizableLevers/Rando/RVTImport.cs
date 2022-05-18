@@ -14,7 +14,7 @@ namespace RandomizableLevers.Rando
         }
         static RandoVanillaTracker()
         {
-            typeof(RandoVanillaTracker).ModInterop();
+            typeof(RandoVanillaTrackerImport).ModInterop();
         }
 
         public static void AddInterop(string pool, Func<bool> RandomizePool, Func<List<VanillaDef>> GetPlacements)
