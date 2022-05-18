@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Modding;
+using RandomizerMod.RandomizerData;
 using RandomizerMod.Logging;
 
 namespace RandomizableLevers.Rando
@@ -26,9 +27,11 @@ namespace RandomizableLevers.Rando
             {
                 LogManager.AddLogger(new LeverByAreaLog());
             }
+
+            RandoVanillaTracker.AddInterop("Levers", () => Settings.RandomizeLevers, GetVanillaPlacements);
         }
 
-        private static void AddLeverRandoSettings(RandomizerMod.Logging.LogArguments args, System.IO.TextWriter tw)
+        private static void AddLeverRandoSettings(LogArguments args, System.IO.TextWriter tw)
         {
             tw.WriteLine("Logging Lever Rando settings:");
             using Newtonsoft.Json.JsonTextWriter jtw = new(tw) { CloseOutput = false, };
@@ -71,5 +74,15 @@ namespace RandomizableLevers.Rando
             LeverNames.Lever_Palace_Final,
             LeverNames.Lever_Path_of_Pain,
         };
+
+        private static List<VanillaDef> GetVanillaPlacements()
+        {
+            List<VanillaDef> vanillaDefs = new();
+            foreach (string lever in LeverNames.ToArray())
+            {
+                vanillaDefs.Add(new VanillaDef(lever, lever));
+            }
+            return vanillaDefs;
+        }
     }
 }
