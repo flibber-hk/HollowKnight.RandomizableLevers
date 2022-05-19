@@ -161,7 +161,7 @@
     },
     {
         "name": "Lever-Palace_Final",
-        "logic": "White_Palace_12[right1] + Lever-Palace_Final + (WINGS | RIGHTCLAW) | White_Palace_12[bot1] + (SPIKETUNNELS | RIGHTDASH | (RIGHTSUPERDASH + LEFTCLAW) | WINGS) + RIGHTCLAW + LEFTSUPERDASH"
+        "logic": "White_Palace_12[right1] + Lever-Palace_Final + (WINGS | RIGHTCLAW + BACKGROUNDPOGOS) | White_Palace_12[bot1] + (SPIKETUNNELS | RIGHTDASH | (RIGHTSUPERDASH + LEFTCLAW) | WINGS) + RIGHTCLAW + LEFTSUPERDASH"
     },
     {
         "name": "Lever-Path_of_Pain",
