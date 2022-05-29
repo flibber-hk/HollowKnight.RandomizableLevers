@@ -45,7 +45,7 @@ namespace RandomizableLevers
 
             foreach (LanguageEntryData entry in RawLanguageEntries)
             {
-                LanguageKey key = new LanguageKey(entry.key, entry.sheet);
+                LanguageKey key = new(entry.sheet, entry.key);
 
                 LanguageStrings[key] = entry.text;
             }
@@ -59,7 +59,7 @@ namespace RandomizableLevers
             // If orig has already been overridden, then it was probably an ItemChanger language override
             if (orig != Language.Language.GetInternal(key, sheetTitle)) return orig;
 
-            LanguageKey obj = new LanguageKey(key, sheetTitle);
+            LanguageKey obj = new(sheetTitle, key);
             return LanguageStrings.TryGetValue(obj, out string overrideValue) ? overrideValue : orig;
         }
     }
