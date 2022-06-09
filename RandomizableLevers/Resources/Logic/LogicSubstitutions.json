@@ -103,5 +103,25 @@
         "name": "Warp-White_Palace_Atrium_to_Palace_Grounds",
         "old": "White_Palace_03_hub[left1]",
         "replacement": "White_Palace_03_hub[left1] + Lever-Palace_Atrium"
+    },
+    {
+        "name": "Geo_Rock-Above_Mantis_Lords_1",
+        "old": "Fungus2_15[right1]",
+        "replacement": "Fungus2_15[right1] + (Lever-Mantis_Lords_Middle_Right | ANYCLAW + WINGS)"
+    },
+    {
+        "name": "Geo_Rock-Above_Mantis_Lords_2",
+        "old": "Fungus2_15[right1]",
+        "replacement": "Fungus2_15[right1] + (Lever-Mantis_Lords_Middle_Right | ANYCLAW + WINGS)"
+    },
+    {
+        "name": "Lifeblood_Cocoon-Mantis_Village",
+        "old": "Fungus2_15[right1]",
+        "replacement": "Fungus2_15[right1] + (Lever-Mantis_Lords_Middle_Right | ANYCLAW + WINGS)"
+    },
+    {
+        "name": "Defeated_Mantis_Lords",
+        "old": "Fungus2_15[right1]",
+        "replacement": "Fungus2_15[right1] + (Lever-Mantis_Lords_Middle_Right | ANYCLAW + WINGS)"
     }
 ]
