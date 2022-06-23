@@ -301,7 +301,7 @@
     },
     {
         "name": "Fungus2_18[right1]",
-        "logic": "Fungus2_18[right1] | (Fungus2_18[bot1] | Fungus2_18[bot1] + (RIGHTCLAW | WINGS)) + Lever-Fungal_Wastes_Bouncy_Grub"
+        "logic": "Fungus2_18[right1] | (Fungus2_18[top1] | Fungus2_18[bot1] + (RIGHTCLAW | WINGS)) + Lever-Fungal_Wastes_Bouncy_Grub"
     },
     {
         "name": "Town[right1]",
