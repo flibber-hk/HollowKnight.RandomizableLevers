@@ -1,5 +1,5 @@
 Randomizer 4
 RandomizerCore
-ItemChanger
+ItemChanger at https://github.com/homothetyhk/HollowKnight.ItemChanger/releases/download/v2.0.7%2B699/ItemChanger.zip
 MenuChanger
 CondensedSpoilerLogger
