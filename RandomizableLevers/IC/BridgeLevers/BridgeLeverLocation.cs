@@ -63,7 +63,7 @@ namespace RandomizableLevers.IC.BridgeLevers
         private void ReplaceOnSceneChange(Scene scene)
         {
             Container c = Container.GetContainer(Placement.MainContainerType);
-            GameObject obj = c.GetNewContainer(Placement, Placement.Items, flingType, (Placement as ISingleCostPlacement)?.Cost);
+            GameObject obj = c.GetNewContainer(new ContainerInfo(c.Name, Placement, flingType, (Placement as ISingleCostPlacement)?.Cost));
             GameObject target = scene.FindGameObject(ObjectName);
             c.ApplyTargetContext(obj, target, elevation);
             target.SetActive(false); // Don't destroy because we need the target available to open the bridge
