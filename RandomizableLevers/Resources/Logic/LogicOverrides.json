@@ -361,7 +361,7 @@
     },
     {
         "name": "White_Palace_03_hub[left1]",
-        "logic": "White_Palace_03_hub[left1] | White_Palace_03_hub + Lever-Palace_Atrium + (LEFTCLAW | RIGHTCLAW + WINGS)"
+        "logic": "White_Palace_03_hub[left1] | White_Palace_03_hub + Lever-Palace_Atrium + (LEFTCLAW + WINGS | RIGHTCLAW + LEFTSUPERDASH)"
     },
     {
         "name": "Soul_Totem-White_Palace_Hub",
