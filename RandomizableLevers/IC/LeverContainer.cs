@@ -32,10 +32,6 @@ namespace RandomizableLevers.IC
          * The City Crest bridge levers are not controlled by FSM but rather a component; changing them isn't implemented through the container.
          */
         public override string Name => LeverContainer.Lever;
-        public override GameObject GetNewContainer(AbstractPlacement placement, IEnumerable<AbstractItem> items, FlingType flingType, Cost cost = null, Transition? changeSceneTo = null)
-        {
-            throw new NotImplementedException();
-        }
 
         public override void AddGiveEffectToFsm(PlayMakerFSM fsm, ContainerGiveInfo info)
         {
