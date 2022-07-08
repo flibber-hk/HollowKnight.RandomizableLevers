@@ -13,7 +13,7 @@
     },
     {
         "name": "Ruins1_23",
-        "logic": "Ruins1_23[bot1] | Ruins1_23[left1] | Ruins1_23[right2] + Lever-Sanctum_Bottom | Ruins1_23[top1] + Lever-Sanctum_Soul_Warrior"
+        "logic": "Ruins1_23[bot1] | Ruins1_23[left1] | Ruins1_23[right2] + Lever-Sanctum_Bottom | Ruins1_23[top1] + Lever-Sanctum_Soul_Warrior + Defeated_Sanctum_Warrior"
     },
     {
         "name": "Ruins2_01",
