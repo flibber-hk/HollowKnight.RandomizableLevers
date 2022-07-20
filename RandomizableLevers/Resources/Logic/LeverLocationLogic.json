@@ -89,23 +89,23 @@
     },
     {
         "name": "Lever-Mantis_Lords_Top_Left",
-        "logic": "(Fungus2_15[top3] | Fungus2_15[left1] + (RIGHTCLAW | LEFTCLAW + RIGHTSUPERDASH + WINGS) | Fungus2_15[right1] + (LEFTCLAW | (WINGS + RIGHTCLAW) | Lever-Mantis_Lords_Middle_Right)) + (RIGHTCLAW + (LEFTCLAW | RIGHTDASH | ENEMYPOGOS) | WINGS) | Fungus2_15[top3] + Lever-Mantis_Lords_Top_Left"
+        "logic": "(Fungus2_15[top3] | Fungus2_15[left1] + (RIGHTCLAW | LEFTCLAW + RIGHTSUPERDASH + WINGS) | Fungus2_15[right1] + (ANYCLAW + WINGS | Lever-Mantis_Lords_Middle_Right)) + (RIGHTCLAW + (LEFTCLAW | RIGHTDASH | ENEMYPOGOS) | WINGS) | Fungus2_15[top3] + Lever-Mantis_Lords_Top_Left"
     },
     {
         "name": "Lever-Mantis_Lords_Middle_Left",
-        "logic": "(Fungus2_15[top3] | Fungus2_15[left1] + (RIGHTCLAW | LEFTCLAW + RIGHTSUPERDASH + WINGS) | Fungus2_15[right1] + (LEFTCLAW | (WINGS + RIGHTCLAW) | Lever-Mantis_Lords_Middle_Right)) + ANYCLAW"
+        "logic": "(Fungus2_15[top3] | Fungus2_15[left1] + (RIGHTCLAW | LEFTCLAW + RIGHTSUPERDASH + WINGS) | Fungus2_15[right1] + (ANYCLAW + WINGS | Lever-Mantis_Lords_Middle_Right)) + ANYCLAW"
     },
     {
         "name": "Lever-Mantis_Lords_Bottom_Left",
-        "logic": "(Fungus2_15[top3] | Fungus2_15[left1] + (RIGHTCLAW | LEFTCLAW + RIGHTSUPERDASH + WINGS) | Fungus2_15[right1] + (LEFTCLAW | (WINGS + RIGHTCLAW) | Lever-Mantis_Lords_Middle_Right)) + (ANYCLAW | WINGS)"
+        "logic": "(Fungus2_15[top3] | Fungus2_15[left1] + (RIGHTCLAW | LEFTCLAW + RIGHTSUPERDASH + WINGS) | Fungus2_15[right1] + (ANYCLAW + WINGS | Lever-Mantis_Lords_Middle_Right)) + (ANYCLAW | WINGS)"
     },
     {
         "name": "Lever-Mantis_Lords_Middle_Right",
-        "logic": "(Fungus2_15[top3] | Fungus2_15[left1] + (RIGHTCLAW | LEFTCLAW + RIGHTSUPERDASH + WINGS) | Fungus2_15[right1] + (LEFTCLAW | (WINGS + RIGHTCLAW) | Lever-Mantis_Lords_Middle_Right)) + (FULLCLAW | (WINGS + ANYCLAW)) | Fungus2_15[right1]"
+        "logic": "(Fungus2_15[top3] | Fungus2_15[left1] + (RIGHTCLAW | LEFTCLAW + RIGHTSUPERDASH + WINGS) | Fungus2_15[right1] + (ANYCLAW + WINGS | Lever-Mantis_Lords_Middle_Right)) + (FULLCLAW | (WINGS + ANYCLAW)) | Fungus2_15[right1]"
     },
     {
         "name": "Lever-Mantis_Lords_Bottom_Right",
-        "logic": "(Fungus2_15[top3] | Fungus2_15[left1] + (RIGHTCLAW | LEFTCLAW + RIGHTSUPERDASH + WINGS) | Fungus2_15[right1] + (LEFTCLAW | (WINGS + RIGHTCLAW) | Lever-Mantis_Lords_Middle_Right)) + (RIGHTCLAW | WINGS + LEFTCLAW)"
+        "logic": "(Fungus2_15[top3] | Fungus2_15[left1] + (RIGHTCLAW | LEFTCLAW + RIGHTSUPERDASH + WINGS) | Fungus2_15[right1] + (ANYCLAW + WINGS | Lever-Mantis_Lords_Middle_Right)) + (RIGHTCLAW | WINGS + LEFTCLAW | Lever-Mantis_Lords_Bottom_Right)"
     },
     {
         "name": "Lever-Mantis_Claw",
