@@ -75,6 +75,11 @@
         "replacement": "Fungus2_18[right1] + Lever-Fungal_Wastes_Bouncy_Grub"
     },
     {
+        "name": "Fungus2_18",
+        "old": "Fungus2_18[right1]",
+        "replacement": "Fungus2_18[right1] + Lever-Fungal_Wastes_Bouncy_Grub"
+    },
+    {
         "name": "Fungal_Wastes_Map",
         "old": "Fungus2_18[right1]",
         "replacement": "Fungus2_18[right1] + Lever-Fungal_Wastes_Bouncy_Grub"
