@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace RandomizableLevers
 {
-    [RandoConstantGenerators.GenerateJsonConsts("$.*~", "leverlocations.json")]
+    [RandoConstantGenerators.GenerateJsonConsts("$.*.name", "leverlocations.json")]
     public static partial class LeverNames
     {
         public static string[] ToArray()
