@@ -33,8 +33,18 @@ namespace RandomizableLevers.Rando
         {
             JumpToLeverRandoButton = new(landingPage, Localize("Levers"));
             JumpToLeverRandoButton.AddHideAndShowEvent(landingPage, LeverRandoPage);
+            SetTopLevelButtonColor();
+
             button = JumpToLeverRandoButton;
             return true;
+        }
+
+        private void SetTopLevelButtonColor()
+        {
+            if (JumpToLeverRandoButton != null)
+            {
+                JumpToLeverRandoButton.Text.color = RandoInterop.Settings.Any ? Colors.TRUE_COLOR : Colors.DEFAULT_COLOR;
+            }
         }
 
         private void ConstructMenu(MenuPage landingPage)
@@ -45,6 +55,10 @@ namespace RandomizableLevers.Rando
             Localize(leverMEF);
 
             leverMEF.ElementLookup[nameof(LeverRandomizationSettings.RandomizeLevers)].SelfChanged += _ => RandomizerMenuAPI.Menu.UpdateStartLocationSwitch();
+            foreach (IValueElement e in leverMEF.Elements)
+            {
+                e.SelfChanged += obj => SetTopLevelButtonColor();
+            }
         }
     }
 }
