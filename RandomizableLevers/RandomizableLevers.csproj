@@ -18,6 +18,14 @@
 
   <Import Project="LocalBuildProperties.props" Condition="Exists('LocalBuildProperties.props')" />
   
+  <!--For Rando Const Generator-->
+  <PropertyGroup>
+    <AdditionalFileItemNames>EmbeddedResource</AdditionalFileItemNames>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="RandoConstantGenerators" Version="1.0.2" />
+  </ItemGroup>
+
   <ItemGroup>
     <None Remove="Resources\**\*.png" />
     <None Remove="Resources\**\*.json" />
