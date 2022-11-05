@@ -4,7 +4,7 @@ using RandoSettingsManager.SettingsManagement;
 using RandoSettingsManager.SettingsManagement.Versioning;
 using GlobalSettings = RandomizableLevers.GlobalSettings;
 
-namespace RandoPlus.Rando
+namespace RandomizableLevers.Rando
 {
     internal static class RandoSettingsManagerInterop
     {
@@ -16,10 +16,10 @@ namespace RandoPlus.Rando
 
     internal class LeverRandoSettingsProxy : RandoSettingsProxy<LeverRandomizationSettings, string>
     {
-        public override string ModKey => RandomizableLevers.RandomizableLevers.instance.GetName();
+        public override string ModKey => RandomizableLevers.instance.GetName();
 
         public override VersioningPolicy<string> VersioningPolicy { get; }
-            = new EqualityVersioningPolicy<string>(RandomizableLevers.RandomizableLevers.instance.GetVersion());
+            = new EqualityVersioningPolicy<string>(RandomizableLevers.instance.GetVersion());
 
         public override void ReceiveSettings(LeverRandomizationSettings settings)
         {
