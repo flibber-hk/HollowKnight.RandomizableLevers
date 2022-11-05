@@ -4,7 +4,7 @@ using RandoSettingsManager.SettingsManagement;
 using RandoSettingsManager.SettingsManagement.Versioning;
 using GlobalSettings = RandomizableLevers.GlobalSettings;
 
-namespace RandoPlus
+namespace RandoPlus.Rando
 {
     internal static class RandoSettingsManagerInterop
     {
