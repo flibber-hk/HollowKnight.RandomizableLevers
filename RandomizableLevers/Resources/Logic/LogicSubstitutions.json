@@ -128,5 +128,15 @@
         "name": "Defeated_Mantis_Lords",
         "old": "Fungus2_15[right1]",
         "replacement": "Fungus2_15[right1] + (Lever-Mantis_Lords_Middle_Right | ANYCLAW + WINGS)"
+    },
+    {
+        "name": "Geo_Rock-Crystal_Peak_Above_Crushers_Lower",
+        "old": "Mines_37[bot1]",
+        "replacement": "Mines_37[bot1] + (FULLDASH | Lever-Crystal_Peak_Crushers_Chest)"
+    },
+    {
+        "name": "Geo_Rock-Crystal_Peak_Above_Crushers_Upper",
+        "old": "Mines_37[bot1]",
+        "replacement": "Mines_37[bot1] + (FULLDASH | Lever-Crystal_Peak_Crushers_Chest)"
     }
 ]
