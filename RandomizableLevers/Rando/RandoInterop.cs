@@ -2,12 +2,17 @@
 using Modding;
 using RandomizerMod.RandomizerData;
 using RandomizerMod.Logging;
+using RandoPlus;
 
 namespace RandomizableLevers.Rando
 {
     internal static class RandoInterop
     {
-        public static LeverRandomizationSettings Settings => RandomizableLevers.GS.RandoSettings;
+        public static LeverRandomizationSettings Settings
+        {
+            get => RandomizableLevers.GS.RandoSettings;
+            set => RandomizableLevers.GS.RandoSettings = value;
+        }
 
         public static void HookRandomizer()
         {
@@ -29,6 +34,11 @@ namespace RandomizableLevers.Rando
             }
 
             RandoVanillaTracker.AddInterop("Levers", GetVanillaPlacements);
+
+            if (ModHooks.GetMod("RandoSettingsManager") is not null)
+            {
+                RandoSettingsManagerInterop.Hook();
+            }
         }
 
         private static void AddLeverRandoSettings(LogArguments args, System.IO.TextWriter tw)

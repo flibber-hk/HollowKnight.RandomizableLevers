@@ -13,10 +13,10 @@ namespace RandomizableLevers
             instance = this;
         }
         
-		public override string GetVersion()
-		{
+        public override string GetVersion()
+        {
             return GetType().Assembly.GetName().Version.ToString();
-		}
+        }
 
         public static GlobalSettings GS { get; set; } = new();
         public void OnLoadGlobal(GlobalSettings s)
