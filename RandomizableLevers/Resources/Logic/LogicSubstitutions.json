@@ -135,7 +135,7 @@
         "replacement": "Mines_37[bot1] + (FULLDASH | Lever-Crystal_Peak_Crushers_Chest)"
     },
     {
-        "name": "Geo_Rock-Crystal_Peak_Above_Crushers_Upper",
+        "name": "Geo_Rock-Crystal_Peak_Above_Crushers_Higher",
         "old": "Mines_37[bot1]",
         "replacement": "Mines_37[bot1] + (FULLDASH | Lever-Crystal_Peak_Crushers_Chest)"
     }
