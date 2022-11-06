@@ -14,28 +14,22 @@ namespace RandomizableLevers.Rando
         internal VerticalItemPanel leverVIP;
         
         internal SmallButton JumpToLeverRandoButton;
-
-        private static RandoMenuPage _instance = null;
-        internal static RandoMenuPage Instance => _instance ?? (_instance = new RandoMenuPage());
+        internal static RandoMenuPage Instance { get; private set; }
 
         public static void OnExitMenu()
         {
-            _instance = null;
+            Instance = null;
         }
 
         public static void Hook()
         {
-            RandomizerMenuAPI.AddMenuPage(Instance.ConstructMenu, Instance.HandleButton);
+            RandomizerMenuAPI.AddMenuPage(ConstructMenu, HandleButton);
             MenuChangerMod.OnExitMainMenu += OnExitMenu;
         }
 
-        private bool HandleButton(MenuPage landingPage, out SmallButton button)
+        private static bool HandleButton(MenuPage landingPage, out SmallButton button)
         {
-            JumpToLeverRandoButton = new(landingPage, Localize("Levers"));
-            JumpToLeverRandoButton.AddHideAndShowEvent(landingPage, LeverRandoPage);
-            SetTopLevelButtonColor();
-
-            button = JumpToLeverRandoButton;
+            button = Instance.JumpToLeverRandoButton;
             return true;
         }
 
@@ -47,7 +41,9 @@ namespace RandomizableLevers.Rando
             }
         }
 
-        private void ConstructMenu(MenuPage landingPage)
+        private static void ConstructMenu(MenuPage landingPage) => Instance = new(landingPage);
+
+        private RandoMenuPage(MenuPage landingPage)
         {
             LeverRandoPage = new MenuPage(Localize("Levers"), landingPage);
             leverMEF = new(LeverRandoPage, RandoInterop.Settings);
@@ -59,6 +55,10 @@ namespace RandomizableLevers.Rando
             {
                 e.SelfChanged += obj => SetTopLevelButtonColor();
             }
+
+            JumpToLeverRandoButton = new(landingPage, Localize("Levers"));
+            JumpToLeverRandoButton.AddHideAndShowEvent(landingPage, LeverRandoPage);
+            SetTopLevelButtonColor();
         }
     }
 }
