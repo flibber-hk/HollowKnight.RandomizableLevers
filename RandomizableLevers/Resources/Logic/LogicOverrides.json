@@ -29,7 +29,7 @@
     },
     {
         "name": "Fungus3_44",
-        "logic": "Fungus3_44[bot1] + (RIGHTCLAW | WINGS) + (RIGHTSHADOWDASH | Lever-Below_Overgrown_Mound) | Fungus3_44[door1] | Fungus3_44[right1]"
+        "logic": "Fungus3_44[bot1] + (RIGHTCLAW | WINGS) + (RIGHTSHADOWDASH + ANYCLAW | Lever-Below_Overgrown_Mound) | Fungus3_44[door1] | Fungus3_44[right1]"
     },
     {
         "name": "Crossroads_06[left1]",
