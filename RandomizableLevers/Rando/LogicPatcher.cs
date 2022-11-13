@@ -19,10 +19,23 @@ namespace RandomizableLevers.Rando
     {
         public static void Hook()
         {
-            RCData.RuntimeLogicOverride.Subscribe(0.3f, PatchLogic);
+            RCData.RuntimeLogicOverride.Subscribe(-999.7f, TryDefineTerms);
+            RCData.RuntimeLogicOverride.Subscribe(0.3f, TryPatchLogic);
+            RCData.RuntimeLogicOverride.Subscribe(1000.3f, TryMakeSubstitutions);
         }
 
-        private static void PatchLogic(GenerationSettings gs, LogicManagerBuilder lmb)
+        private static void TryMakeSubstitutions(GenerationSettings gs, LogicManagerBuilder lmb)
+        {
+            if (!RandoInterop.Settings.Any)
+            {
+                return;
+            }
+
+            // Make substitutions late to allow for more compatibility with route-adding connections
+            ApplyEmbeddedSubstitutions(gs, lmb);
+        }
+
+        private static void TryDefineTerms(GenerationSettings gs, LogicManagerBuilder lmb)
         {
             if (!RandoInterop.Settings.Any)
             {
@@ -31,9 +44,17 @@ namespace RandomizableLevers.Rando
 
             // For each lever, define a term to indicate that the lever has been obtained, and a capped item to correspond to giving the term.
             AddTermsAndItemsToLmb(gs, lmb);
+        }
+
+        private static void TryPatchLogic(GenerationSettings gs, LogicManagerBuilder lmb)
+        {
+            if (!RandoInterop.Settings.Any)
+            {
+                return;
+            }
 
             // For many existing locations and transitions, we need to apply edits to be compatible with lever rando.
-            ModifyExistingLogic(gs, lmb);
+            ApplyEmbeddedOverrides(gs, lmb);
 
             // For some lever locations, the logic will be identical to existing locations. (When it is identical to an existing transition, we simply mark its
             // logic as the logic for the transition - when the transition becomes accessible RandomizerCore will add it to logic.
@@ -133,11 +154,13 @@ namespace RandomizableLevers.Rando
             }
         }
 
-        private static void ModifyExistingLogic(GenerationSettings gs, LogicManagerBuilder lmb)
+        private static void ApplyEmbeddedOverrides(GenerationSettings gs, LogicManagerBuilder lmb)
         {
             using Stream s = typeof(LogicPatcher).Assembly.GetManifestResourceStream("RandomizableLevers.Resources.Logic.LogicOverrides.json");
             lmb.DeserializeJson(LogicManagerBuilder.JsonType.LogicEdit, s);
-
+        }
+        private static void ApplyEmbeddedSubstitutions(GenerationSettings gs, LogicManagerBuilder lmb)
+        {
             using Stream r = typeof(LogicPatcher).Assembly.GetManifestResourceStream("RandomizableLevers.Resources.Logic.LogicSubstitutions.json");
             lmb.DeserializeJson(LogicManagerBuilder.JsonType.LogicSubst, r);
         }
