@@ -422,5 +422,9 @@
     {
         "name": "White_Palace_01[top1]",
         "logic": "ORIG + (White_Palace_01 | LEFTCLAW | RIGHTCLAW + WINGS)"
+    },
+    {
+        "name": "Geo_Rock-Mantis_Village_After_Lever",
+        "logic": "ORIG + (RIGHTCLAW | WINGS) | Fungus2_14 + LEFTCLAW + (RIGHTDASH | RIGHTSUPERDASH) + Lever-Mantis_Lords_Access"
     }
 ]
