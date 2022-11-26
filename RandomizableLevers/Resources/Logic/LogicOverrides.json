@@ -245,7 +245,7 @@
     },
     {
         "name": "Ruins1_05[bot1]",
-        "logic": "ORIG | Ruins1_05[bot2] + ANYCLAW + Lever-City_Above_Lemm_Upper"
+        "logic": "ORIG | Ruins1_05[bot2] + (LEFTCLAW + WINGS | RIGHTCLAW) + Lever-City_Above_Lemm_Upper"
     },
     {
         "name": "Ruins1_31b[right1]",

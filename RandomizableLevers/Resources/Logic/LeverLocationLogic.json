@@ -85,7 +85,7 @@
     },
     {
         "name": "Lever-City_Above_Lemm_Upper",
-        "logic": "Ruins1_05[bot2] + ANYCLAW + Lever-City_Above_Lemm_Upper | Ruins1_05[bot1] + (FULLCLAW | (WINGS + (ANYCLAW | ENEMYPOGOS)))"
+        "logic": "Ruins1_05[bot2] + (LEFTCLAW + WINGS | RIGHTCLAW) + Lever-City_Above_Lemm_Upper | Ruins1_05[bot1] + (FULLCLAW | (WINGS + (ANYCLAW | ENEMYPOGOS)))"
     },
     {
         "name": "Lever-Mantis_Lords_Top_Left",
