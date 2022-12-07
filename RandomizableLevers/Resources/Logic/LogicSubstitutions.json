@@ -40,6 +40,11 @@
         "replacement": "Ruins1_23 + Lever-Sanctum_Soul_Warrior"
     },
     {
+        "name": "Defeated_Sanctum_Warrior",
+        "old": "Ruins1_23",
+        "replacement": "Ruins1_23 + Lever-Sanctum_Soul_Warrior"
+    },
+    {
         "name": "Ruins1_05c[top3]",
         "old": "Ruins1_05c[top2]",
         "replacement": "Ruins1_05c + (Lever-City_Above_Lemm_Left | Lever-City_Above_Lemm_Right)"
