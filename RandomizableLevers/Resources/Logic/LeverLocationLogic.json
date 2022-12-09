@@ -21,7 +21,7 @@
     },
     {
         "name": "Lever-Tower_of_Love",
-        "logic": "Ruins2_11_b[right1] | Ruins2_11_b[left1] | Ruins2_11_b[bot1] + ANYCLAW + Lever-Tower_of_Love"
+        "logic": "Ruins2_11_b[right1] | Ruins2_11_b[left1] | Ruins2_11_b[bot1] + Lever-Tower_of_Love"
     },
     {
         "name": "Lever-Failed_Tramway_Right",
