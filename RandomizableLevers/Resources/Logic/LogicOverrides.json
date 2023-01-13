@@ -105,19 +105,11 @@
     },
     {
         "name": "Fungus3_04[left1]",
-        "logic": "Fungus3_04[left1] | Fungus3_04[left2] | (Fungus3_04[right1] + Fungus3_04[right2]) + (ANYCLAW | WINGS) + Lever-Queen's_Gardens_Ground_Block"
+        "logic": "ORIG | Fungus3_04 + (ANYCLAW | WINGS) + Lever-Queen's_Gardens_Ground_Block"
     },
     {
         "name": "Fungus3_04[left2]",
-        "logic": "Fungus3_04[left1] | Fungus3_04[left2] | (Fungus3_04[right1] + Fungus3_04[right2]) + (ANYCLAW | WINGS) + Lever-Queen's_Gardens_Ground_Block"
-    },
-    {
-        "name": "Fungus3_04[right1]",
-        "logic": "Fungus3_04[right1] | Fungus3_04[right2] | (Fungus3_04[left1] | Fungus3_04[left2]) + Lever-Queen's_Gardens_Ground_Block"
-    },
-    {
-        "name": "Fungus3_04[right2]",
-        "logic": "Fungus3_04[right2] | Fungus3_04[right1] | (Fungus3_04[left1] | Fungus3_04[left2]) + Lever-Queen's_Gardens_Ground_Block"
+        "logic": "ORIG | Fungus3_04 + (ANYCLAW | WINGS) + Lever-Queen's_Gardens_Ground_Block"
     },
     {
         "name": "Fungus3_44[bot1]",
