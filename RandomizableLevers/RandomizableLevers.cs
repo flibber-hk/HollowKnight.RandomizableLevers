@@ -1,6 +1,9 @@
 using ItemChanger;
+using ItemChanger.Tags;
 using Modding;
 using RandomizableLevers.IC;
+using System;
+using System.Linq;
 
 namespace RandomizableLevers
 {
@@ -76,6 +79,42 @@ namespace RandomizableLevers
 
             ItemChanger.Events.OnItemChangerHook += LanguageData.Hook;
             ItemChanger.Events.OnItemChangerUnhook += LanguageData.Unhook;
+
+            Finder.GetLocationOverride += ReplaceStagLevers;
+        }
+
+        private void ReplaceStagLevers(GetLocationEventArgs args)
+        {
+            if (!GS.LeverStagLocations) return;
+
+            AbstractLocation newLoc;
+            switch (args.LocationName)
+            {
+                case LocationNames.Dirtmouth_Stag:
+                    newLoc = Finder.GetLocationInternal(LeverNames.Switch_Dirtmouth_Stag);
+                    newLoc.name = args.Current?.name ?? args.LocationName;
+                    break;
+                case LocationNames.Resting_Grounds_Stag:
+                    newLoc = Finder.GetLocationInternal(LeverNames.Lever_Resting_Grounds_Stag);
+                    newLoc.name = args.Current?.name ?? args.LocationName;
+                    break;
+
+                default:
+                    return;
+            }
+
+            newLoc.tags = newLoc.tags.Where(t => !IsLeverCmiTag(t)).ToList();
+
+            args.Current = newLoc;
+        }
+
+        private bool IsLeverCmiTag(Tag tag)
+        {
+            if (tag is not InteropTag it) return false;
+            if (!it.TryGetProperty("ModSource", out string source)) return false;
+            if (source != "RandomizableLevers") return false;
+
+            return true;
         }
     }
 }
