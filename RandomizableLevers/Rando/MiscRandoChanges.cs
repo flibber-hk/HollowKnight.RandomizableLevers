@@ -87,6 +87,24 @@ namespace RandomizableLevers.Rando
             {
                 RandomizableLevers.instance.LogWarn("No East Blue Lake start found");
             }
+
+
+            try
+            {
+                (string startName, StartDef start)
+                    = startDefs.First(pair => pair.Value.SceneName == SceneNames.Fungus2_14);
+
+                startDefs[startName] = start with
+                {
+                    // Exclude from randomization because dirtmouth isn't reachable itemless
+                    RandoLogic = $"({start.RandoLogic ?? start.Logic}) + (ROOMRANDO | FULLAREARANDO | {LeversUnrandomized})"
+                };
+            }
+            catch (InvalidOperationException)
+            {
+                RandomizableLevers.instance.LogWarn("No East Blue Lake start found");
+            }
+
         }
 
         private static void RemoveExtraPlatforms(RandoController rc)
