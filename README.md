@@ -27,3 +27,8 @@ all placed vanilla.
   - Create a custom pool containing all stags besides Dirtmouth and Resting Grounds (if you want stags randomized)
   - Exclude Dirtmouth Stag and Resting Grounds Stag (rather than the levers) from vanilla in the pool containing the Dirtmouth and Resting Grounds lever items.
 - All logic edits must be made with a priority greater than 0.3.
+
+
+The Lever Stag Locations toggle concerns when levers are *not* randomized; if enabled, the Dirtmouth and Resting Grounds stag locations will be presented as levers
+(rather than shinies). These locations will be treated as the regular location rather than the lever location, and will appear as e.g. 
+`Dirtmouth_Stag` rather than `Switch-Dirtmouth_Stag` in the randomizer logs.
