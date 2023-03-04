@@ -109,6 +109,8 @@ namespace RandomizableLevers.Rando
 
         private static void RemoveExtraPlatforms(RandoController rc)
         {
+            // Check for presence of item rather than the value of the setting so that adding this item
+            // through the CustomPoolInjector works
             if (rc.ctx.itemPlacements.Any(x => x.Item.Name == LeverNames.Lever_Waterways_Hwurmp_Arena))
             {
                 // Remove platforms in Waterways_04 in case they arrive there from the Waterways exit gate
