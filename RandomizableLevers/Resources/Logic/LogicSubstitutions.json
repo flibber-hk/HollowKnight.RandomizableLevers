@@ -143,5 +143,44 @@
         "name": "Geo_Rock-Crystal_Peak_Above_Crushers_Higher",
         "old": "Mines_37[bot1]",
         "replacement": "Mines_37[bot1] + (FULLDASH | Lever-Crystal_Peak_Crushers_Chest)"
+    },
+    {
+        "name": "Ruins1_32[right2]",
+        "old": "ANYCLAW",
+        "replacement": "ANYCLAW | Lever-Sanctum_West_Upper + WINGS + ENEMYPOGOS"
+    },
+    {
+        "name": "Geo_Chest-Soul_Master",
+        "old": "ANYCLAW",
+        "replacement": "ANYCLAW | Lever-Sanctum_West_Upper + WINGS + ENEMYPOGOS"
+    },
+    {
+        "name": "Hallownest_Seal-Soul_Sanctum",
+        "old": "ANYCLAW",
+        "replacement": "ANYCLAW | Lever-Sanctum_West_Upper"
+    },
+    {
+        "name": "Grub-Soul_Sanctum",
+        "old": "ANYCLAW",
+        "replacement": "ANYCLAW | Lever-Sanctum_West_Upper"
+    },
+    {
+        "name": "Geo_Rock-Soul_Sanctum",
+        "old": "ANYCLAW",
+        "replacement": "ANYCLAW | Lever-Sanctum_West_Upper + WINGS + ENEMYPOGOS"
+    },
+    {
+        "name": "Soul_Totem-Sanctum_Below_Chest",
+        "old": "ANYCLAW",
+        "replacement": "ANYCLAW | Lever-Sanctum_West_Upper + WINGS + ENEMYPOGOS"
+    },
+    {
+        "name": "Soul_Totem-Sanctum_Above_Grub",
+        "old": "ANYCLAW",
+        "replacement": "ANYCLAW | Lever-Sanctum_West_Upper"
+    },
+    {
+        "name": "Lore_Tablet-Sanctum_Past_Soul_Master",
+        "logic": "Ruins1_32[right1] + (ANYCLAW | Lever-Sanctum_West_Upper + WINGS + ENEMYPOGOS) + QUAKE"
     }
 ]
