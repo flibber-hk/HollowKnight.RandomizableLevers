@@ -85,6 +85,8 @@ namespace RandomizableLevers.Rando
                 (LeverNames.Lever_Palace_Entrance_Orb, "Palace_Entrance_Lantern_Lit"),
                 (LeverNames.Lever_Palace_Left_Orb, "Palace_Left_Lantern_Lit"),
                 // (LeverNames.Lever_Palace_Right_Orb, "Palace_Right_Lantern_Lit"),
+                (LeverNames.Lever_City_Fountain, "Lever-City_Fountain"),
+                (LeverNames.Lever_Path_of_Pain, "Lever-Path_of_Pain"),
             })
             {
                 lmb.LogicLookup[leverName] = lmb.LogicLookup[eventName];

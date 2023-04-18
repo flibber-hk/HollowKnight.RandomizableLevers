@@ -353,7 +353,7 @@
     },
     {
         "name": "Soul_Totem-Path_of_Pain_Below_Lever",
-        "logic": "White_Palace_17[bot1] + FULLCLAW + WINGS | White_Palace_17[right1] + Lever-Path_of_Pain"
+        "logic": "ORIG | White_Palace_17[right1] + Lever-Path_of_Pain"
     },
     {
         "name": "Fungus2_21[right1]",

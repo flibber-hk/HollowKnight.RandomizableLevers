@@ -181,6 +181,7 @@
     },
     {
         "name": "Lore_Tablet-Sanctum_Past_Soul_Master",
-        "logic": "Ruins1_32[right1] + (ANYCLAW | Lever-Sanctum_West_Upper + WINGS + ENEMYPOGOS) + QUAKE"
+        "old": "ANYCLAW",
+        "replacement": "ANYCLAW | Lever-Sanctum_West_Upper + WINGS + ENEMYPOGOS"
     }
 ]

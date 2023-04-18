@@ -52,10 +52,6 @@
         "logic": "Ruins1_32[right2] | Ruins1_32[right1] + QUAKE + (ANYCLAW | Lever-Sanctum_West_Upper) + (Lever-Sanctum_West_Lower | RIGHTCLAW | WINGS)"
     },
     {
-        "name": "Lever-City_Fountain",
-        "logic": "Ruins1_27[right1] | Ruins1_27[left1] + (RIGHTCLAW + WINGS | Lever-City_Fountain)"
-    },
-    {
         "name": "Lever-City_Spire_Sentry_Lower",
         "logic": "Ruins2_01[left2]"
     },
@@ -162,10 +158,6 @@
     {
         "name": "Lever-Palace_Final",
         "logic": "White_Palace_12[right1] + Lever-Palace_Final + (WINGS | RIGHTCLAW + BACKGROUNDPOGOS) | White_Palace_12[bot1] + (SPIKETUNNELS | RIGHTDASH | (RIGHTSUPERDASH + LEFTCLAW) | WINGS) + RIGHTCLAW + LEFTSUPERDASH"
-    },
-    {
-        "name": "Lever-Path_of_Pain",
-        "logic": "(White_Palace_17[right1] + Lever-Path_of_Pain | White_Palace_17[bot1]) + FULLDASH + FULLCLAW + WINGS + FULLSUPERDASH"
     },
     {
         "name": "Lever-Pilgrim's_Way_Left",
