@@ -382,5 +382,9 @@
     {
         "name": "Geo_Rock-Mantis_Village_After_Lever",
         "logic": "ORIG + (RIGHTCLAW | WINGS) | Fungus2_14 + LEFTCLAW + (RIGHTDASH | RIGHTSUPERDASH) + Lever-Mantis_Lords_Access"
+    },
+    {
+        "name": "Lever-Path_of_Pain",
+        "logic": "ORIG | White_Palace_17[right1] + Lever-Path_of_Pain"
     }
 ]

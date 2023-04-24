@@ -70,7 +70,6 @@ namespace RandomizableLevers.Rando
 
         private static void BifurcateLevers(GenerationSettings gs, LogicManagerBuilder lmb)
         {
-            // The logic for the event is "obtain the lever". The logic for the lever is what the old logic for the event was.
             foreach ((string leverName, string eventName) in new (string, string)[]
             {
                 (LeverNames.Lever_Shade_Soul_Exit, "Lever-Shade_Soul"),
@@ -89,8 +88,17 @@ namespace RandomizableLevers.Rando
                 (LeverNames.Lever_Path_of_Pain, "Lever-Path_of_Pain"),
             })
             {
-                lmb.LogicLookup[leverName] = lmb.LogicLookup[eventName];
-                lmb.LogicLookup[eventName] = lmb.LP.ParseInfixToClause(leverName);
+                if (leverName != eventName)
+                {
+                    // The logic for the event is "obtain the lever". The logic for the lever is what the old logic for the event was.
+                    lmb.LogicLookup[leverName] = lmb.LogicLookup[eventName];
+                    lmb.LogicLookup[eventName] = lmb.LP.ParseInfixToClause(leverName);
+                }
+                else
+                {
+                    // Turn the old waypoint into a location
+                    lmb.Waypoints.Remove(leverName);
+                }
             }
 
             // Manual changes
