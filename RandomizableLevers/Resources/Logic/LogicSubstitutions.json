@@ -47,7 +47,7 @@
     {
         "name": "Ruins1_05c[top3]",
         "old": "Ruins1_05c[top2]",
-        "replacement": "Ruins1_05c + (Lever-City_Above_Lemm_Left | Lever-City_Above_Lemm_Right)"
+        "replacement": "Ruins1_05c + (Lever-City_Above_Lemm_Left | Lever-City_Above_Lemm_Right + (LEFTCLAW | WINGS))"
     },
     {
         "name": "Ruins1_05c[top1]",
