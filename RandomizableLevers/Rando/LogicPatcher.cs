@@ -9,6 +9,7 @@ using RandomizerCore;
 using RandomizerCore.Logic;
 using RandomizerCore.LogicItems;
 using RandomizerCore.StringLogic;
+using RandomizerCore.Json;
 
 namespace RandomizableLevers.Rando
 {
@@ -31,8 +32,10 @@ namespace RandomizableLevers.Rando
                 return;
             }
 
+            JsonLogicFormat fmt = new();
+
             // Make substitutions late to allow for more compatibility with route-adding connections
-            ApplyEmbeddedSubstitutions(gs, lmb);
+            ApplyEmbeddedSubstitutions(gs, lmb, fmt);
         }
 
         private static void TryDefineTerms(GenerationSettings gs, LogicManagerBuilder lmb)
@@ -53,8 +56,10 @@ namespace RandomizableLevers.Rando
                 return;
             }
 
+            JsonLogicFormat fmt = new();
+
             // For many existing locations and transitions, we need to apply edits to be compatible with lever rando.
-            ApplyEmbeddedOverrides(gs, lmb);
+            ApplyEmbeddedOverrides(gs, lmb, fmt);
 
             // For some lever locations, the logic will be identical to existing locations. (When it is identical to an existing transition, we simply mark its
             // logic as the logic for the transition - when the transition becomes accessible RandomizerCore will add it to logic.
@@ -65,7 +70,7 @@ namespace RandomizableLevers.Rando
             BifurcateLevers(gs, lmb);
 
             // Provide the logic for the remaining lever locations.
-            AddLeverLocations(gs, lmb);
+            AddLeverLocations(gs, lmb, fmt);
         }
 
         private static void BifurcateLevers(GenerationSettings gs, LogicManagerBuilder lmb)
@@ -164,21 +169,23 @@ namespace RandomizableLevers.Rando
             }
         }
 
-        private static void ApplyEmbeddedOverrides(GenerationSettings gs, LogicManagerBuilder lmb)
+        private static void ApplyEmbeddedOverrides(GenerationSettings gs, LogicManagerBuilder lmb, JsonLogicFormat fmt)
         {
+            
+
             using Stream s = typeof(LogicPatcher).Assembly.GetManifestResourceStream("RandomizableLevers.Resources.Logic.LogicOverrides.json");
-            lmb.DeserializeJson(LogicManagerBuilder.JsonType.LogicEdit, s);
+            lmb.DeserializeFile(LogicFileType.LogicEdit, fmt, s);
         }
-        private static void ApplyEmbeddedSubstitutions(GenerationSettings gs, LogicManagerBuilder lmb)
+        private static void ApplyEmbeddedSubstitutions(GenerationSettings gs, LogicManagerBuilder lmb, JsonLogicFormat fmt)
         {
             using Stream r = typeof(LogicPatcher).Assembly.GetManifestResourceStream("RandomizableLevers.Resources.Logic.LogicSubstitutions.json");
-            lmb.DeserializeJson(LogicManagerBuilder.JsonType.LogicSubst, r);
+            lmb.DeserializeFile(LogicFileType.LogicSubst, fmt, r);
         }
 
-        private static void AddLeverLocations(GenerationSettings gs, LogicManagerBuilder lmb)
+        private static void AddLeverLocations(GenerationSettings gs, LogicManagerBuilder lmb, JsonLogicFormat fmt)
         {
             using Stream s = typeof(LogicPatcher).Assembly.GetManifestResourceStream("RandomizableLevers.Resources.Logic.LeverLocationLogic.json");
-            lmb.DeserializeJson(LogicManagerBuilder.JsonType.Locations, s);
+            lmb.DeserializeFile(LogicFileType.Locations, fmt, s);
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using ItemChanger;
 using RandomizerCore.Randomization;
 using RandomizerMod.RC;
@@ -34,7 +35,10 @@ namespace RandomizableLevers.Rando
                 if (igb.strategy is DefaultGroupPlacementStrategy dgps)
                 {
                     HashSet<string> leverNames = new(LeverNames.ToArray());
-                    dgps.Constraints += (x, y) => !(leverNames.Contains(x.Name) && x.Name == y.Name);
+                    dgps.ConstraintList.Add(new DefaultGroupPlacementStrategy.Constraint(
+                        (x, y) => !(leverNames.Contains(x.Name) && x.Name == y.Name),
+                        Label: "Lever Derangement"
+                        ));
                 }
             }
         }
