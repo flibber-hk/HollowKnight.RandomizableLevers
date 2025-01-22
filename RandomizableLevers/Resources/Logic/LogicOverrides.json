@@ -361,11 +361,11 @@
     },
     {
         "name": "Fungus2_21[left1]",
-        "logic": "Fungus2_21[left1] | Fungus2_21[right1] + ((FULLCLAW + (LEFTDASH | LEFTSUPERDASH)) | (ANYCLAW + WINGS)) + QUAKE + (Lever-Pilgrim's_Way_Left + Lever-Pilgrim's_Way_Right | LEFTSUPERDASH | ACID)"
+        "logic": "Fungus2_21[left1] | Fungus2_21[right1] + ((FULLCLAW + (LEFTDASH | LEFTSUPERDASH)) | (ANYCLAW + WINGS)) + Broke_Pilgrim's_Way_Quake_Floor + (Lever-Pilgrim's_Way_Left + Lever-Pilgrim's_Way_Right | LEFTSUPERDASH | ACID)"
     },
     {
         "name": "Soul_Totem-Pilgrim's_Way",
-        "logic": "Fungus2_21[left1] + (RIGHTCLAW | (LEFTCLAW + WINGS)) + (RIGHTDASH | RIGHTSUPERDASH | ACID) + (WINGS | Lever-Pilgrim's_Way_Left) | Fungus2_21[right1] + ((FULLCLAW + (LEFTDASH | LEFTSUPERDASH)) | (ANYCLAW + WINGS)) + QUAKE + Lever-Pilgrim's_Way_Right + (WINGS | Lever-Pilgrim's_Way_Left)"
+        "logic": "Fungus2_21[left1] + (RIGHTCLAW | (LEFTCLAW + WINGS)) + (RIGHTDASH | RIGHTSUPERDASH | ACID) + (WINGS | Lever-Pilgrim's_Way_Left) | Fungus2_21[right1] + ((FULLCLAW + (LEFTDASH | LEFTSUPERDASH)) | (ANYCLAW + WINGS)) + Broke_Pilgrim's_Way_Quake_Floor + Lever-Pilgrim's_Way_Right + (WINGS | Lever-Pilgrim's_Way_Left)"
     },
     {
         "name": "Fungus3_40[right1]",
