@@ -40,6 +40,11 @@
         "replacement": "Ruins1_23 + Lever-Sanctum_Soul_Warrior"
     },
     {
+        "name": "Lore_Tablet-Sanctum_Entrance",
+        "old": "Ruins1_23[right2]",
+        "replacement": "Ruins1_23[right2] + Lever-Sanctum_Bottom"
+    },
+    {
         "name": "Defeated_Sanctum_Warrior",
         "old": "Ruins1_23",
         "replacement": "Ruins1_23 + Lever-Sanctum_Soul_Warrior"
