@@ -102,5 +102,21 @@ namespace RandomizableLevers.IC.BridgeLevers
                 Location = this,
             };
         }
+
+        public override ContainerLocation AsContainerLocation()
+        {
+            if (nonreplaceable) throw new InvalidOperationException($"Location {name} is nonreplaceable.");
+            return new ObjectLocation
+            {
+                name = this.name,
+                objectName = this.ObjectName,
+                sceneName = this.sceneName,
+                forceShiny = false,
+                flingType = this.flingType,
+                elevation = this.elevation,
+                Placement = this.Placement,
+                tags = this.tags,
+            };
+        }
     }
 }
