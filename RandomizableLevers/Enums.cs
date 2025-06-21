@@ -8,9 +8,9 @@
         WaterwaysCrank,
         // e.g. Mantis Village levers
         Mantis,
-        // e.g. Peaks levers
+        // e.g. Peak's levers
         Mines,
-        // Peaks Crushers levers
+        // Peak's Crushers levers
         MinesCrushers,
         // Palace levers
         Palace,
