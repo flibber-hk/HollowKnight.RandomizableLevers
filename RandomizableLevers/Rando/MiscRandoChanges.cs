@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using ItemChanger;
+﻿using ItemChanger;
 using Modding;
 using RandomizerMod.Menu;
 using RandomizerMod.RC;
 using RandomizerMod.Settings;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using StartDef = RandomizerMod.RandomizerData.StartDef;
 
 namespace RandomizableLevers.Rando
@@ -33,78 +34,84 @@ namespace RandomizableLevers.Rando
             return false;
         }
 
+        private static bool TryGetStartForScene(
+            this Dictionary<string, StartDef> startDefs, string sceneName, out string name, out StartDef start, Func<StartDef, bool> predicate = null
+            )
+        {
+            foreach ((string sName, StartDef sStart) in startDefs)
+            {
+                if (sStart.SceneName == sceneName && (predicate?.Invoke(sStart) ?? true))
+                {
+                    name = sName;
+                    start = sStart;
+                    return true;
+                }
+            }
+            name = default;
+            start = default;
+            return false;
+        }
+
         private static void PatchStarts(Dictionary<string, StartDef> startDefs)
         {
-            try
-            {
-                (string westWaterwaysName, StartDef westWaterwaysStart) 
-                    = startDefs.First(pair => pair.Value.SceneName == SceneNames.Waterways_09);
+            bool leaveAlone = !RandoInterop.Settings.RandomizeLevers;
 
-                startDefs[westWaterwaysName] = westWaterwaysStart with
+            // Waterways
+            if (startDefs.TryGetStartForScene(SceneNames.Waterways_09, out string westWaterwaysName, out StartDef westWaterwaysStart))
+            {
+                if (leaveAlone)
                 {
-                    // Change the start transition for WW_09 start
-                    Transition = SceneNames.Waterways_09 + "[right1]",
-                    // Exclude West Waterways entirely from area rando because no transitions are reachable with common settings
-                    Logic = $"({westWaterwaysStart.Logic}) + (ROOMRANDO | ITEMRANDO | {LeversUnrandomized})",
-                    // Exclude West Waterways from randomization because only 1 check is reachable with common settings
-                    RandoLogic = $"({westWaterwaysStart.RandoLogic ?? westWaterwaysStart.Logic}) + (ROOMRANDO | {LeversUnrandomized})"
-                };
-            }
-            catch (InvalidOperationException)
-            {
-                // No west waterways start
-                RandomizableLevers.instance.LogWarn("No West Waterways start found");
-            }
-
-            try
-            {
-                (string startName, StartDef start)
-                    = startDefs.First(pair => pair.Value.SceneName == SceneNames.Crossroads_ShamanTemple);
-
-                startDefs[startName] = start with
+                    startDefs[westWaterwaysName] = westWaterwaysStart with
+                    {
+                        // We can safely keep this because the logic is unchanged unless levers are randomized
+                        // This is needed in the menu so we need to apply the change unconditionally
+                        Logic = $"({westWaterwaysStart.Logic}) + (ROOMRANDO | ITEMRANDO | {LeversUnrandomized})",
+                    };
+                }
+                else
                 {
-                    // Exclude from randomization because dirtmouth isn't reachable itemless
-                    RandoLogic = $"({start.RandoLogic ?? start.Logic}) + (ROOMRANDO | MAPAREARANDO | FULLAREARANDO | {LeversUnrandomized})"
-                };
-            }
-            catch (InvalidOperationException)
-            {
-                RandomizableLevers.instance.LogWarn("No Ancestral Mound start found");
+                    startDefs[westWaterwaysName] = westWaterwaysStart with
+                    {
+                        // Change the start transition for WW_09 start
+                        Transition = SceneNames.Waterways_09 + "[right1]",
+                        // Exclude West Waterways entirely from area rando because no transitions are reachable with common settings
+                        Logic = $"({westWaterwaysStart.Logic}) + (ROOMRANDO | ITEMRANDO | {LeversUnrandomized})",
+                        // Exclude West Waterways from randomization because only 1 check is reachable with common settings
+                        RandoLogic = $"({westWaterwaysStart.RandoLogic ?? westWaterwaysStart.Logic}) + (ROOMRANDO | {LeversUnrandomized})"
+                    };
+
+                }
             }
 
-            try
+            // AMound
+            if (startDefs.TryGetStartForScene(SceneNames.Crossroads_ShamanTemple, out string amoundName, out StartDef amoundStart) && !leaveAlone)
             {
-                (string startName, StartDef start)
-                    = startDefs.First(pair => pair.Value.SceneName == SceneNames.Crossroads_50 && pair.Value.X > 200f);
-
-                startDefs[startName] = start with
+                startDefs[amoundName] = amoundStart with
                 {
                     // Exclude from randomization because dirtmouth isn't reachable itemless
-                    RandoLogic = $"({start.RandoLogic ?? start.Logic}) + (ROOMRANDO | FULLAREARANDO | {LeversUnrandomized})"
+                    RandoLogic = $"({amoundStart.RandoLogic ?? amoundStart.Logic}) + (ROOMRANDO | MAPAREARANDO | FULLAREARANDO | {LeversUnrandomized})"
                 };
             }
-            catch (InvalidOperationException)
+
+            // East blue lake
+            if (startDefs.TryGetStartForScene(SceneNames.Crossroads_50, out string blueLakeName, out StartDef blueLakeStart, start => start.X > 200f) && !leaveAlone)
             {
-                RandomizableLevers.instance.LogWarn("No East Blue Lake start found");
-            }
-
-
-            try
-            {
-                (string startName, StartDef start)
-                    = startDefs.First(pair => pair.Value.SceneName == SceneNames.Fungus2_14);
-
-                startDefs[startName] = start with
+                startDefs[blueLakeName] = blueLakeStart with
                 {
                     // Exclude from randomization because dirtmouth isn't reachable itemless
-                    RandoLogic = $"({start.RandoLogic ?? start.Logic}) + (ROOMRANDO | FULLAREARANDO | {LeversUnrandomized})"
+                    RandoLogic = $"({blueLakeStart.RandoLogic ?? blueLakeStart.Logic}) + (ROOMRANDO | FULLAREARANDO | {LeversUnrandomized})"
                 };
             }
-            catch (InvalidOperationException)
-            {
-                RandomizableLevers.instance.LogWarn("No East Blue Lake start found");
-            }
 
+            // Mantis
+            if (startDefs.TryGetStartForScene(SceneNames.Fungus2_14, out string mantisVName, out StartDef mantisVStart) && !leaveAlone)
+            {
+                startDefs[mantisVName] = mantisVStart with
+                {
+                    // Exclude from randomization because dirtmouth isn't reachable itemless
+                    RandoLogic = $"({mantisVStart.RandoLogic ?? mantisVStart.Logic}) + (ROOMRANDO | FULLAREARANDO | {LeversUnrandomized})"
+                };
+            }
         }
 
         private static void RemoveExtraPlatforms(RandoController rc)
