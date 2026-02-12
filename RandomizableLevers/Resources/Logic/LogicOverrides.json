@@ -368,6 +368,10 @@
         "logic": "Fungus2_21[left1] + (RIGHTCLAW | (LEFTCLAW + WINGS)) + (RIGHTDASH | RIGHTSUPERDASH | ACID) + (WINGS | Lever-Pilgrim's_Way_Left) | Fungus2_21[right1] + ((FULLCLAW + (LEFTDASH | LEFTSUPERDASH)) | (ANYCLAW + WINGS)) + Broke_Pilgrim's_Way_Quake_Floor + Lever-Pilgrim's_Way_Right + (WINGS | Lever-Pilgrim's_Way_Left)"
     },
     {
+        "name": "Fungus2_21",
+        "logic": "ORIG + Lever-Pilgrim's_Way_Left + Lever-Pilgrim's_Way_Right"
+    },
+    {
         "name": "Fungus3_40[right1]",
         "logic": "ORIG + (Fungus3_40[right1] | Opened_Gardens_Stag_Exit)"
     },
