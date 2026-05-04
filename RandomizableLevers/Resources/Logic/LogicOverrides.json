@@ -16,6 +16,14 @@
         "logic": "Ruins1_23[bot1] | Ruins1_23[left1] | Ruins1_23[right2] + Lever-Sanctum_Bottom | Ruins1_23[top1] + Lever-Sanctum_Soul_Warrior + Defeated_Sanctum_Warrior"
     },
     {
+        "name": "Ruins1_25[left3]",
+        "logic": "Ruins1_25[left3] | (Ruins1_25[left1] + (ANYCLAW | WINGS | Lever-Sanctum_East)) | Ruins1_25[left2]"    
+    },
+    {
+        "name": "Ruins1_25[left2]",
+        "logic": "Ruins1_25[left2] | (Ruins1_25[left1] + (ANYCLAW | WINGS | Lever-Sanctum_East)) | (Ruins1_25[left3] + (ANYCLAW | WINGS))"    
+    },
+    {
         "name": "Ruins2_01",
         "logic": "Ruins2_01[top1] + (Lever-City_Spire_Sentry_Lower | Lever-City_Spire_Sentry_Upper) | Ruins2_01[bot1] | Ruins2_01[left2]"
     },
